@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bieszczady — Noha Tour | Dzikie Połoniny</title>
+    <meta name="description" content="Noha Tour — Bieszczady i największe atrakcje Podkarpacia. Połoniny, Tarnica, Jezioro Solińskie, cerkwie drewniane i inne atrakcje. Luksusowe podróże po Polsce.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1613757034887-98b35cd6cd32?w=1200&q=80&fit=crop">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%23c9a96e' stroke-width='1'/%3E%3Cpolygon points='16,3 18,14 16,11 14,14' fill='%23c9a96e'/%3E%3Cpolygon points='16,29 14,18 16,21 18,18' fill='%23c9a96e' opacity='0.4'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{--gold:#c9a96e;--gold-light:#d4bc8b;--gold-dark:#a8884f;--black:#0a0a0a;--dark:#1a1a1a;--dark-gray:#2a2a2a;--medium-gray:#888;--white:#fff;--cream:#faf8f4;--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Montserrat','Helvetica Neue',sans-serif;--transition:0.4s cubic-bezier(.25,.46,.45,.94)}
+        html{scroll-behavior:smooth;font-size:16px}
+        body{font-family:var(--font-sans);font-weight:300;color:var(--dark);background:var(--white);overflow-x:hidden;line-height:1.7}
+        a{text-decoration:none;color:inherit;transition:color var(--transition)}
+        img{max-width:100%;display:block}
+
+        /* HEADER */
+        header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.5rem 3rem;display:flex;align-items:center;justify-content:space-between;transition:all var(--transition);background:rgba(10,10,10,.95);backdrop-filter:blur(20px);box-shadow:0 2px 40px rgba(0,0,0,.3)}
+        .logo-wrap{display:flex;align-items:center;gap:1rem}
+        .logo-svg{width:50px;height:auto}
+        .logo{font-family:var(--font-serif);font-size:1.8rem;font-weight:300;color:var(--white);letter-spacing:.25em;text-transform:uppercase;display:flex;flex-direction:column;line-height:1}
+        .logo-sub{font-family:var(--font-sans);font-size:.5rem;letter-spacing:.5em;color:var(--gold);font-weight:400;margin-top:4px}
+        nav{display:flex;align-items:center;gap:2.5rem}
+        nav a{font-size:.72rem;font-weight:400;color:rgba(255,255,255,.85);letter-spacing:.15em;text-transform:uppercase;position:relative;padding:.5rem 0}
+        nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width var(--transition)}
+        nav a:hover{color:var(--gold)}
+        nav a:hover::after{width:100%}
+        nav a.active-nav{color:var(--gold)}
+        nav a.active-nav::after{width:100%}
+        .nav-right{display:flex;align-items:center;gap:1rem}
+        .header-phone{font-size:.72rem;color:rgba(255,255,255,.7);letter-spacing:.1em}
+        .header-phone:hover{color:var(--gold)}
+        .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001}
+        .hamburger span{width:28px;height:1px;background:var(--white);transition:all .3s ease}
+
+        /* HERO */
+        .page-hero{position:relative;height:75vh;min-height:550px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+        .page-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+        .page-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.55) 100%)}
+        .page-hero-content{position:relative;z-index:2;text-align:center;max-width:800px;padding:0 2rem}
+        .page-hero-label{font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .page-hero-title{font-family:var(--font-serif);font-size:4.5rem;font-weight:300;color:var(--white);line-height:1.1;margin-bottom:1.5rem}
+        .page-hero-title em{font-style:italic;color:var(--gold)}
+        .page-hero-desc{font-size:.95rem;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto;line-height:1.8}
+
+        /* INTRO */
+        .intro{padding:6rem 5%;background:var(--cream)}
+        .intro-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+        .intro-img{border-radius:8px;overflow:hidden;aspect-ratio:4/3}
+        .intro-img img{width:100%;height:100%;object-fit:cover;transition:transform 6s ease}
+        .intro-img:hover img{transform:scale(1.05)}
+        .intro-text .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .intro-text h2{font-family:var(--font-serif);font-size:2.8rem;font-weight:300;color:var(--dark);line-height:1.2;margin-bottom:1.5rem}
+        .intro-text h2 em{font-style:italic;color:var(--gold)}
+        .intro-text p{font-size:.9rem;color:#555;line-height:1.9;margin-bottom:1rem}
+
+        /* SECTION HEADER */
+        .section-header{text-align:center;margin-bottom:4rem}
+        .section-header .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .section-header h2{font-family:var(--font-serif);font-size:3rem;font-weight:300;color:var(--dark);line-height:1.2;margin-bottom:1rem}
+        .section-header h2 em{font-style:italic;color:var(--gold)}
+        .section-header p{font-size:.9rem;color:#555;max-width:600px;margin:0 auto}
+
+        /* ATTRACTIONS GRID */
+        .attractions{padding:6rem 5%;background:var(--white)}
+        .attr-grid{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+        .attr-card{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:3/4;cursor:pointer}
+        .attr-card.featured{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+        .attr-card img{width:100%;height:100%;object-fit:cover;transition:transform 8s ease}
+        .attr-card:hover img{transform:scale(1.06)}
+        .attr-card-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.7) 0%,rgba(0,0,0,.05) 50%);transition:background .5s ease}
+        .attr-card:hover .attr-card-overlay{background:linear-gradient(0deg,rgba(0,0,0,.8) 0%,rgba(0,0,0,.15) 50%)}
+        .attr-card-content{position:absolute;bottom:0;left:0;right:0;padding:2rem;z-index:2;transform:translateY(15px);transition:transform .5s ease}
+        .attr-card:hover .attr-card-content{transform:translateY(0)}
+        .attr-card-tag{font-size:.6rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;font-weight:500}
+        .attr-card-title{font-family:var(--font-serif);font-size:1.8rem;font-weight:400;color:var(--white);line-height:1.25;margin-bottom:.5rem}
+        .attr-card.featured .attr-card-title{font-size:2.5rem}
+        .attr-card-desc{font-size:.78rem;color:rgba(255,255,255,.7);line-height:1.7;max-height:0;overflow:hidden;opacity:0;transition:max-height .5s ease,opacity .4s ease}
+        .attr-card:hover .attr-card-desc{max-height:200px;opacity:1}
+        .attr-card-meta{display:flex;gap:1.5rem;margin-top:.8rem;padding-top:.8rem;border-top:1px solid rgba(255,255,255,.15)}
+        .attr-card-meta span{font-size:.6rem;letter-spacing:.1em;color:rgba(255,255,255,.5);text-transform:uppercase}
+
+        /* NATURE / EXPERIENCE SECTIONS */
+        .season-section{padding:6rem 5%}
+        .season-section.winter{background:var(--cream)}
+        .season-section.summer{background:var(--white)}
+        .season-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:2rem;margin-top:3rem}
+        .season-card{background:var(--white);border-radius:10px;overflow:hidden;box-shadow:0 4px 30px rgba(0,0,0,.06);transition:transform .4s ease,box-shadow .4s ease}
+        .season-section.winter .season-card{background:var(--white)}
+        .season-section.summer .season-card{background:var(--cream)}
+        .season-card:hover{transform:translateY(-5px);box-shadow:0 12px 40px rgba(0,0,0,.1)}
+        .season-card-img{aspect-ratio:16/10;overflow:hidden}
+        .season-card-img img{width:100%;height:100%;object-fit:cover;transition:transform 6s ease}
+        .season-card:hover .season-card-img img{transform:scale(1.05)}
+        .season-card-body{padding:1.5rem}
+        .season-card-tag{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;font-weight:500}
+        .season-card-title{font-family:var(--font-serif);font-size:1.4rem;font-weight:400;color:var(--dark);margin-bottom:.7rem}
+        .season-card-desc{font-size:.8rem;color:#666;line-height:1.7}
+
+        /* CTA */
+        .cta-section{position:relative;padding:8rem 5%;overflow:hidden;text-align:center}
+        .cta-section img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+        .cta-overlay{position:absolute;inset:0;background:rgba(0,0,0,.65)}
+        .cta-content{position:relative;z-index:2;max-width:700px;margin:0 auto}
+        .cta-content .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .cta-content h2{font-family:var(--font-serif);font-size:3rem;font-weight:300;color:var(--white);line-height:1.2;margin-bottom:1.5rem}
+        .cta-content h2 em{font-style:italic;color:var(--gold)}
+        .cta-content p{font-size:.9rem;color:rgba(255,255,255,.8);margin-bottom:2rem;line-height:1.8}
+        .cta-btn{display:inline-block;padding:1rem 3rem;border:1px solid var(--gold);color:var(--gold);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;font-weight:500;transition:all var(--transition);border-radius:2px}
+        .cta-btn:hover{background:var(--gold);color:var(--black)}
+
+        /* FOOTER */
+        footer{background:var(--black);padding:3rem 5%;text-align:center}
+        .footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+        .footer-brand{font-family:var(--font-serif);font-size:1.2rem;color:var(--white);letter-spacing:.2em}
+        .footer-links{display:flex;gap:2rem}
+        .footer-links a{font-size:.7rem;color:rgba(255,255,255,.5);letter-spacing:.12em;text-transform:uppercase;transition:color .3s}
+        .footer-links a:hover{color:var(--gold)}
+        .footer-copy{font-size:.65rem;color:rgba(255,255,255,.3);letter-spacing:.05em}
+        .footer-social{display:flex;gap:1rem;margin-top:1rem}
+        .footer-social a{width:38px;height:38px;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:.7rem;color:rgba(255,255,255,.5);transition:all var(--transition);border-radius:50%}
+        .footer-social a:hover{border-color:var(--gold);color:var(--gold)}
+
+        /* ANIMATIONS */
+        .reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+        .reveal.visible{opacity:1;transform:translateY(0)}
+
+        /* MOBILE NAV */
+        @media(max-width:768px){
+            nav.mob-open{display:flex;flex-direction:column;position:fixed;inset:0;background:rgba(10,10,10,.98);justify-content:center;align-items:center;gap:2rem;z-index:999}
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:1024px){
+            .intro-inner{grid-template-columns:1fr;gap:2rem}
+            .attr-grid{grid-template-columns:1fr 1fr}
+            .attr-card.featured{grid-column:span 2}
+            .page-hero-title{font-size:3rem}
+        }
+        @media(max-width:768px){
+            header{padding:1rem 1.5rem}
+            nav{display:none}
+            .hamburger{display:flex}
+            .page-hero{height:60vh;min-height:400px}
+            .page-hero-title{font-size:2.5rem}
+            .section-header h2{font-size:2.2rem}
+            .intro-text h2{font-size:2rem}
+            .attr-grid{grid-template-columns:1fr}
+            .attr-card.featured{grid-column:span 1}
+            .attr-card-desc{max-height:200px;opacity:1}
+            .attr-card-content{transform:translateY(0)}
+            .season-grid{grid-template-columns:1fr}
+            .footer-inner{flex-direction:column;text-align:center}
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="index.html" class="logo-wrap">
+        <svg class="logo-svg" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="26" stroke="#c9a96e" stroke-width="0.8"/><polygon points="30,5 33,28 30,22 27,28" fill="#c9a96e"/><polygon points="30,55 27,32 30,38 33,32" fill="#c9a96e" opacity="0.35"/><line x1="30" y1="62" x2="30" y2="75" stroke="#c9a96e" stroke-width="0.5"/></svg>
+        <div class="logo">NOHA TOUR<span class="logo-sub">LUXURY TRAVEL IN POLAND</span></div>
+    </a>
+    <nav>
+        <a href="index.html#destinations" class="active-nav" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
+        <a href="index.html#inspirations" data-pl="Inspiracje" data-en="Inspirations" data-ar="إلهام">Inspiracje</a>
+        <a href="doswiadczenie.html" data-pl="Doświadczenie" data-en="Experience" data-ar="تجربة">Doświadczenie</a>
+        <a href="index.html#cars" data-pl="Wynajem aut" data-en="Car Rental" data-ar="تأجير سيارات">Wynajem aut</a>
+        <a href="index.html#about" data-pl="O nas" data-en="About" data-ar="من نحن">O nas</a>
+        <a href="index.html#contact" data-pl="Kontakt" data-en="Contact" data-ar="اتصل بنا">Kontakt</a>
+    </nav>
+    <div class="nav-right">
+        <a href="tel:+48000000000" class="header-phone">+48 000 000 000</a>
+    </div>
+    <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('mob-open')">
+        <span></span><span></span><span></span>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80&fit=crop" alt="Bieszczady mountain landscape">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <div class="page-hero-label" data-pl="Podkarpacie — Dzikie Połoniny" data-en="Subcarpathia — Wild Meadows" data-ar="شرق الكاربات — مروج برية">Podkarpacie — Dzikie Połoniny</div>
+        <h1 class="page-hero-title" data-pl="Odkryj<br><em>Bieszczady</em>" data-en="Discover<br><em>Bieszczady</em>" data-ar="اكتشف<br><em>بيشتشادي</em>">Odkryj<br><em>Bieszczady</em></h1>
+        <p class="page-hero-desc" data-pl="Polska najdalsza i najdzika góra. Bieszczady to połączenie mitycznych połonin, miłośników przyrody, ciemnych nieb i niezapomnianego spokoju — miejsce dla tych, którzy szukają autentycznego oderwania się od świata." data-en="Poland's wildest and most remote mountains. Bieszczady combines mythical meadows, nature lovers, dark skies and unforgettable peace — a place for those seeking authentic escape from the world." data-ar="أبعد وأكثر الجبال برية في بولندا. تجمع بيشتشادي بين المروج الأسطورية وعشاق الطبيعة والسماء المظلمة والسلام الذي لا يُنسى — مكان لأولئك الذين يبحثون عن هروب حقيقي من العالم.">Polska najdalsza i najdzika góra. Bieszczady to połączenie mitycznych połonin, miłośników przyrody, ciemnych nieb i niezapomnianego spokoju — miejsce dla tych, którzy szukają autentycznego oderwania się od świata.</p>
+    </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+    <div class="intro-inner reveal">
+        <div class="intro-img">
+            <img src="https://images.unsplash.com/photo-1469022563149-aa64dbd37d0e?w=800&q=80&fit=crop" alt="Bieszczady wilderness">
+        </div>
+        <div class="intro-text">
+            <div class="section-label" data-pl="O Bieszczadach" data-en="About Bieszczady" data-ar="حول بيشتشادي">O Bieszczadach</div>
+            <h2 data-pl="Dzikie serce<br><em>Podkarpacia</em>" data-en="The wild heart of<br><em>Subcarpathia</em>" data-ar="القلب البري<br><em>لشرق الكاربات</em>">Dzikie serce<br><em>Podkarpacia</em></h2>
+            <p data-pl="Bieszczady to ostatnie wielkie pustkowie Europy Środkowej — niemal pusta dolina, gdzie gęstość zaludnienia jest najniższa w Polsce. Tutaj dominuje przyroda, a ludzie są gośćmi. Bieszczadzki Park Narodowy chroni niepowtarzalne ekosystemy: od słynnych połonin (bezleśnych polan na szczytach gór) po gęste lasy z wilkami i niedźwiedziami, które powracają do tych stron." data-en="Bieszczady is the last great wilderness of Central Europe — an almost empty valley where the population density is the lowest in Poland. Nature dominates here, and humans are guests. Bieszczadzki National Park protects unique ecosystems: from famous połoniny (treeless mountain meadows) to dense forests with returning wolves and bears." data-ar="بيشتشادي هي آخر حدود البرية الكبرى في وسط أوروبا — وادي شبه فارغ حيث تكون كثافة السكان الأقل في بولندا. تهيمن الطبيعة هنا، والبشر ضيوف. حديقة بيشتشادسكي الوطنية تحمي الأنظمة البيئية الفريدة: من مروج بولونينا الشهيرة إلى الغابات الكثيفة.">Bieszczady to ostatnie wielkie pustkowie Europy Środkowej — niemal pusta dolina, gdzie gęstość zaludnienia jest najniższa w Polsce. Tutaj dominuje przyroda, a ludzie są gośćmi. Bieszczadzki Park Narodowy chroni niepowtarzalne ekosystemy: od słynnych połonin (bezleśnych polan na szczytach gór) po gęste lasy z wilkami i niedźwiedziami, które powracają do tych stron.</p>
+            <p data-pl="Wyróżniającą się cechą Bieszczadów są ciemne nieba — wyjątkowa czystość nocy bez zanieczyszczenia światła. To idealne miejsce do obserwacji gwiazd i zjawisk astronomicznych. Kombinacja dzikości, kultury łemkowskiej i wyjątkowych doświadczeń przyrody czyni Bieszczady muszą być celem dla każdego szukającego autentycznego kontaktu z dziką природą." data-en="A distinctive feature of Bieszczady is its dark skies — exceptional night purity without light pollution. This is the ideal place for stargazing and astronomical phenomena. The combination of wildness, Lemko culture, and unique nature experiences makes Bieszczady a must-visit for anyone seeking authentic contact with untamed wilderness." data-ar="ميزة مميزة لبيشتشادي هي سماواتها المظلمة — نقاء الليل الاستثنائي بدون تلوث الضوء. هذا هو المكان المثالي لمراقبة النجوم والظواهر الفلكية. يجعل مزيج البرية والثقافة الليمكية والتجارب الطبيعية الفريدة بيشتشادي يجب أن تكون وجهة لأي شخص يسعى إلى الاتصال الحقيقي بالبرية.">Wyróżniającą się cechą Bieszczadów są ciemne nieba — wyjątkowa czystość nocy bez zanieczyszczenia światła. To idealne miejsce do obserwacji gwiazd i zjawisk astronomicznych. Kombinacja dzikości, kultury łemkowskiej i wyjątkowych doświadczeń przyrody czyni Bieszczady muszą być celem dla każdego szukającego autentycznego kontaktu z dziką przyrodą.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TOP ATTRACTIONS -->
+<section class="attractions">
+    <div class="section-header reveal">
+        <div class="section-label" data-pl="Największe Atrakcje" data-en="Top Attractions" data-ar="أفضل المناطق الجذابة">Największe Atrakcje</div>
+        <h2 data-pl="Miejsca, które <em>musisz zobaczyć</em>" data-en="Places you <em>must see</em>" data-ar="الأماكن التي <em>يجب أن تراها</em>">Miejsca, które <em>musisz zobaczyć</em></h2>
+        <p data-pl="Najpiękniejsze atrakcje Bieszczadów — od mitycznych połonin po UNESCO cerkwie, od najwyższych szczytów po tajemnicze jeziora" data-en="The most beautiful attractions of Bieszczady — from mythical meadows to UNESCO churches, from the highest peaks to mysterious lakes" data-ar="أجمل المناطق الجذابة في بيشتشادي — من المروج الأسطورية إلى كنائس اليونسكو، من أعلى القمم إلى الأسطورة">Najpiękniejsze atrakcje Bieszczadów — od mitycznych połonin po UNESCO cerkwie, od najwyższych szczytów po tajemnicze jeziora</p>
+    </div>
+
+    <div class="attr-grid reveal">
+
+        <!-- POŁONINY - featured -->
+        <div class="attr-card featured">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80&fit=crop" alt="Bieszczady mountain meadows" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag" data-pl="Ikona Bieszczadów" data-en="Bieszczady Icon" data-ar="رمز بيشتشادي">Ikona Bieszczadów</div>
+                <div class="attr-card-title" data-pl="Połoniny" data-en="Połoniny" data-ar="بولونينا">Połoniny</div>
+                <div class="attr-card-desc" data-pl="Słynne bezleśne polany na szczytach gór — Tarnica, Halicz, Caryńska Pass. Widoki rozpościerające się na miliardy hektarów dzikiej przyrody. Te mityczne połoniny to serce Bieszczadów, idealne do trekkingu i obserwacji przyrody o każdej porze roku." data-en="Famous treeless mountain meadows on peaks — Tarnica, Halicz, Caryńska Pass. Vistas stretching across vast wilderness. These mythical meadows are the heart of Bieszczady, perfect for trekking and nature observation year-round." data-ar="مروج جبلية شهيرة خالية من الأشجار على القمم — تارنيتسا وهاليتش وكاريننسكا باس. إطلالات تمتد عبر البرية الشاسعة. هذه المروج الأسطورية هي قلب بيشتشادي.">Słynne bezleśne polany na szczytach gór — Tarnica, Halicz, Caryńska Pass. Widoki rozpościerające się na miliardy hektarów dzikiej przyrody. Te mityczne połoniny to serce Bieszczadów, idealne do trekkingu i obserwacji przyrody o każdej porze roku.</div>
+                <div class="attr-card-meta">
+                    <span data-pl="Szczyty" data-en="Peaks" data-ar="القمم">Szczyty: Tarnica, Halicz</span>
+                    <span data-pl="Wysokość" data-en="Elevation" data-ar="الارتفاع">Wysokość: 1300-1350 m</span>
+                    <span data-pl="Czas" data-en="Time" data-ar="الوقت">Czas: 2-4 godz.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- JEZIORO SOLIŃSKIE -->
+        <div class="attr-card">
+            <img src="https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&q=80&fit=crop" alt="Lake Solińskie" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag" data-pl="Jedno z siedmiu cudów" data-en="Modern Wonder" data-ar="عجيبة حديثة">Jedno z siedmiu cudów</div>
+                <div class="attr-card-title" data-pl="Jezioro Solińskie" data-en="Lake Solińskie" data-ar="بحيرة سولينسكي">Jezioro Solińskie</div>
+                <div class="attr-card-desc" data-pl="Największe sztuczne jezioro w Polsce — „Bieszczadzkie Morze". Turkusowe wody, piaszczyste plaże i góry w tle. Idealne do żeglowania, kajaków i relaksu nad wodą latem. Historia budowy tamy opowiada dzieje inżynierii XX wieku." data-en="Poland's largest artificial lake — 'Bieszczady Sea'. Turquoise waters, sandy beaches and mountains in the background. Perfect for sailing, kayaking and waterside relaxation in summer." data-ar="أكبر بحيرة اصطناعية في بولندا — 'بحر بيشتشادي'. المياه الفيروزية والشواطئ الرملية والجبال في الخلفية.">Największe sztuczne jezioro w Polsce — „Bieszczadzkie Morze". Turkusowe wody, piaszczyste plaże i góry w tle. Idealne do żeglowania, kajaków i relaksu nad wodą latem.</div>
+            </div>
+        </div>
+
+        <!-- TARNICA -->
+        <div class="attr-card">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Tarnica peak" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag" data-pl="Najwyższy szczyt" data-en="Highest Peak" data-ar="أعلى قمة">Najwyższy szczyt</div>
+                <div class="attr-card-title" data-pl="Tarnica" data-en="Tarnica" data-ar="تارنيتسا">Tarnica</div>
+                <div class="attr-card-desc" data-pl="Najwyższy szczyt Bieszczadów na terenie Polski (1346 m n.p.m.). Charakterystyczna „łysa" górka z widokiem na całą Bieszczadzką sieć szlaków. Początek i koniec wielu klasycznych tras trekkingowych." data-en="The highest peak of Polish Bieszczady (1346 m). Distinctive bare mountain top with views of the entire Bieszczady trail network. Starting point for many classic trekking routes." data-ar="أعلى قمة لبيشتشادي البولندية (1346 متر). قمة جبل مميزة مع إطلالات على شبكة مسارات بيشتشادي بأكملها.">Najwyższy szczyt Bieszczadów na terenie Polski (1346 m n.p.m.). Charakterystyczna „łysa" górka z widokiem na całą Bieszczadzką sieć szlaków. Początek i koniec wielu klasycznych tras trekkingowych.</div>
+            </div>
+        </div>
+
+        <!-- CERKWIE DREWNIANE -->
+        <div class="attr-card">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Wooden Orthodox churches" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag" data-pl="UNESCO" data-en="UNESCO" data-ar="اليونسكو">UNESCO</div>
+                <div class="attr-card-title" data-pl="Cerkwie drewniane" data-en="Wooden Churches" data-ar="الكنائس الخشبية">Cerkwie drewniane</div>
+                <div class="attr-card-desc" data-pl="16 drewnianych cerkwii wpisanych na listę światowego dziedzictwa UNESCO. Świadectwo bogatej kultury łemkowskiej i tradycji Kościoła greckokatolickiego. Każda cerkiew to arcydzieło drewnianych mistrzów z wiekami historii." data-en="16 wooden churches on the UNESCO World Heritage list. Testament to rich Lemko culture and Greek Catholic Church traditions. Each church is a masterpiece of wooden craftsmanship with centuries of history." data-ar="16 كنيسة خشبية مدرجة في قائمة التراث العالمي لليونسكو. شهادة على الثقافة الليمكية الغنية وتقاليد الكنيسة الكاثوليكية اليونانية.">16 drewnianych cerkwii wpisanych na listę światowego dziedzictwa UNESCO. Świadectwo bogatej kultury łemkowskiej i tradycji Kościoła greckokatolickiego. Każda cerkiew to arcydzieło drewnianych mistrzów z wiekami historii.</div>
+            </div>
+        </div>
+
+        <!-- BIESZCZADZKA KOLEJKA LEŚNA -->
+        <div class="attr-card">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Forest railway" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag" data-pl="Kolejka" data-en="Railway" data-ar="السكة الحديدية">Kolejka</div>
+                <div class="attr-card-title" data-pl="Bieszczadzka Kolejka Leśna" data-en="Bieszczady Forest Railway" data-ar="سكة بيشتشادي الحديدية">Bieszczadzka Kolejka Leśna</div>
+                <div class="attr-card-desc" data-pl="Historyczna wąskotorowa kolejka leśna kursująca przez gęste lasy. Nostalgiczna podróż starym pociągiem parowym między Ciechanowcem a Majdan Narodowy. Idealne dla rodzin i miłośników kolei." data-en="Historic narrow-gauge forest railway running through dense forests. Nostalgic journey on vintage steam trains between villages. Perfect for families and railway enthusiasts." data-ar="سكة حديدية قديمة ذات مقياس ضيق تعمل عبر الغابات الكثيفة. رحلة حنين في القطارات البخارية القديمة بين القرى.">Historyczna wąskotorowa kolejka leśna kursująca przez gęste lasy. Nostalgiczna podróż starym pociągiem parowym między Ciechanowcem a Majdan Narodowy. Idealne dla rodzin i miłośników kolei.</div>
+            </div>
+        </div>
+
+        <!-- WETLINA -->
+        <div class="attr-card">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Wetlina village" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag" data-pl="Brama szlaków" data-en="Gateway" data-ar="البوابة">Brama szlaków</div>
+                <div class="attr-card-title" data-pl="Wetlina" data-en="Wetlina" data-ar="ويتلينا">Wetlina</div>
+                <div class="attr-card-desc" data-pl="Urocze górskie miasteczko — brama do najpopularniejszych szlaków Bieszczadów. Gościnne karczmy, hospicje i noclegi dla turystów. Punkt startowy do Tarnici i Halicza. Autentyczne miasteczko pełne местной atmosfery." data-en="Charming mountain village — gateway to Bieszczady's most popular trails. Welcoming inns and accommodations for tourists. Starting point for hikes to major peaks. Authentic village full of local atmosphere." data-ar="قرية جبلية سحابة — بوابة إلى مسارات بيشتشادي الأكثر شيوعاً. بيوت ضيافة وأماكن إقامة للسياح. نقطة انطلاق رائعة للمشي لمسافات طويلة.">Urocze górskie miasteczko — brama do najpopularniejszych szlaków Bieszczadów. Gościnne karczmy, hospicje i noclegi dla turystów. Punkt startowy do Tarnici i Halicza. Autentyczne miasteczko pełne lokalnej atmosfery.</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- NATURE SECTION -->
+<section class="season-section winter">
+    <div class="section-header reveal">
+        <div class="section-label" data-pl="Przyroda Bieszczadów" data-en="Bieszczady Nature" data-ar="طبيعة بيشتشادي">Przyroda Bieszczadów</div>
+        <h2 data-pl="Życie na <em>ostatniej granicy</em>" data-en="Life on the <em>last frontier</em>" data-ar="الحياة على <em>الحدود الأخيرة</em>">Życie na <em>ostatniej granicy</em></h2>
+        <p data-pl="Bieszczady to raj dla biologa i obserwatora przyrody. Rzadkie gatunki, ekosystemy nie zmienione od wieków, ciemne nieba idealne do obserwacji astronomicznych" data-en="Bieszczady is a paradise for biologists and nature observers. Rare species, centuries-old ecosystems, and dark skies perfect for astronomical observation" data-ar="بيشتشادي هي جنة لعلماء الأحياء ومراقبي الطبيعة. أنواع نادرة وأنظمة بيئية لم تتغير منذ قرون، وسماء مظلمة مثالية للمراقبة الفلكية">Bieszczady to raj dla biologa i obserwatora przyrody. Rzadkie gatunki, ekosystemy nie zmienione od wieków, ciemne nieba idealne do obserwacji astronomicznych</p>
+    </div>
+
+    <div class="season-grid reveal">
+        <div class="season-card">
+            <div class="season-card-img">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Bears and wolves" loading="lazy">
+            </div>
+            <div class="season-card-body">
+                <div class="season-card-tag" data-pl="Dzikie zwierzęta" data-en="Wildlife" data-ar="الحيوانات البرية">Dzikie zwierzęta</div>
+                <div class="season-card-title" data-pl="Niedźwiedzie i wilki" data-en="Bears and Wolves" data-ar="الدببة والذئاب">Niedźwiedzie i wilki</div>
+                <div class="season-card-desc" data-pl="Po dziesięcioleciach nieobecności, wilki i niedźwiedzie powracają do Bieszczadów. Obserwacja naturalnego powrotu tych ikonicznych drapieżników to fenomen biologiczny. Zwiększona ochrona parku narodowego umożliwia odbudowę populacji." data-en="After decades of absence, wolves and bears are returning to Bieszczady. Observing the natural return of these iconic predators is a biological phenomenon. Increased national park protection enables population recovery." data-ar="بعد عقود من الغياب، تعود الذئاب والدببة إلى بيشتشادي. مراقبة العودة الطبيعية لهذه الحيوانات المفترسة الرمزية هي ظاهرة بيولوجية.">Po dziesięcioleciach nieobecności, wilki i niedźwiedzie powracają do Bieszczadów. Obserwacja naturalnego powrotu tych ikonicznych drapieżników to fenomen biologiczny. Zwiększona ochrona parku narodowego umożliwia odbudowę populacji.</div>
+            </div>
+        </div>
+
+        <div class="season-card">
+            <div class="season-card-img">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Starry night sky" loading="lazy">
+            </div>
+            <div class="season-card-body">
+                <div class="season-card-tag" data-pl="Astronomia" data-en="Astronomy" data-ar="علم الفلك">Astronomia</div>
+                <div class="season-card-title" data-pl="Ciemne niebo" data-en="Dark Skies" data-ar="السماء المظلمة">Ciemne niebo</div>
+                <div class="season-card-desc" data-pl="Bieszczady mają najmniej zanieczyszczenia światła w Polsce. Ciemne nieba umożliwiają obserwację Drogi Mlecznej, planet i meteorów z niezwykłą czystością. Każda noc to nowe odkrycie gwiazd i zjawisk astronomicznych." data-en="Bieszczady has the least light pollution in Poland. Dark skies enable observation of the Milky Way, planets, and meteors with exceptional clarity. Every night offers new astronomical discoveries." data-ar="بيشتشادي لديها أقل تلوث ضوء في بولندا. تتيح السماء المظلمة مراقبة درب التبانة والكواكب والنيازك بوضوح استثنائي.">Bieszczady mają najmniej zanieczyszczenia światła w Polsce. Ciemne nieba umożliwiają obserwację Drogi Mlecznej, planet i meteorów z niezwykłą czystością. Każda noc to nowe odkrycie gwiazd i zjawisk astronomicznych.</div>
+            </div>
+        </div>
+
+        <div class="season-card">
+            <div class="season-card-img">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Mountain streams and waterfalls" loading="lazy">
+            </div>
+            <div class="season-card-body">
+                <div class="season-card-tag" data-pl="Wody" data-en="Waters" data-ar="المياه">Wody</div>
+                <div class="season-card-title" data-pl="Potoki i wodospady" data-en="Streams and Waterfalls" data-ar="الينابيع والشلالات">Potoki i wodospady</div>
+                <div class="season-card-desc" data-pl="Przepływające potoki i ukryte wodospady w gęstych lasach. San, Osława i Soł to główne rzeki Bieszczadów, otoczone zeroślinością. Idealne do cichych spacerów i obserwacji przyrody w jej najlepszej odsłonie." data-en="Flowing streams and hidden waterfalls in dense forests. Clear mountain rivers surrounded by pristine vegetation. Perfect for quiet walks and nature observation at its finest." data-ar="الجداول المتدفقة والشلالات المخفية في الغابات الكثيفة. أنهار جبلية نقية محاطة بالنباتات البكر.">Przepływające potoki i ukryte wodospady w gęstych lasach. San, Osława i Soł to główne rzeki Bieszczadów, otoczone zeroślinością. Idealne do cichych spacerów i obserwacji przyrody w jej najlepszej odsłonie.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCES SECTION -->
+<section class="season-section summer">
+    <div class="section-header reveal">
+        <div class="section-label" data-pl="Doświadczenia" data-en="Experiences" data-ar="التجارب">Doświadczenia</div>
+        <h2 data-pl="Jak przeżyć <em>Bieszczady</em>" data-en="How to experience <em>Bieszczady</em>" data-ar="كيفية تجربة <em>بيشتشادي</em>">Jak przeżyć <em>Bieszczady</em></h2>
+        <p data-pl="Od namiotowych wypraw po luksusowe hospicje, od samotnych wędrówek po wycieczki z przewodnikami — każdy znajdzie tu swoją przygodę" data-en="From tent expeditions to luxury hospices, from solo hikes to guided tours — everyone will find their adventure here" data-ar="من رحلات التخييم إلى بيوت الضيافة الفاخرة، من المشي المنفرد إلى الجولات الموجهة — سيجد الجميع مغامرتهم هنا">Od namiotowych wypraw po luksusowe hospicje, od samotnych wędrówek po wycieczki z przewodnikami — każdy znajdzie tu swoją przygodę</p>
+    </div>
+
+    <div class="season-grid reveal">
+        <div class="season-card">
+            <div class="season-card-img">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Horseback riding" loading="lazy">
+            </div>
+            <div class="season-card-body">
+                <div class="season-card-tag" data-pl="Tradycyjne" data-en="Traditional" data-ar="التقليدية">Tradycyjne</div>
+                <div class="season-card-title" data-pl="Konno po połoninach" data-en="Horseback Riding" data-ar="ركوب الخيل">Konno po połoninach</div>
+                <div class="season-card-desc" data-pl="Tradycyjne wędrówki konne po górskich meadów i starych szlakach pasterskich. Konno przez połoniny Tarnici z przewodnikami znającymi każdy kamień. Połączenie przygody, relaksu i kontaktu z naturą." data-en="Traditional horseback treks across mountain meadows and ancient pastoral routes. Rides through Tarnica meadows with experienced guides. Adventure, relaxation, and authentic nature connection combined." data-ar="رحلات الخيل التقليدية عبر المروج الجبلية والمسارات الرعوية القديمة. ركوب عبر مروج تارنيتسا مع أدلاء ذوي خبرة.">Tradycyjne wędrówki konne po górskich meadów i starych szlakach pasterskich. Konno przez połoniny Tarnici z przewodnikami znającymi każdy kamień. Połączenie przygody, relaksu i kontaktu z naturą.</div>
+            </div>
+        </div>
+
+        <div class="season-card">
+            <div class="season-card-img">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Solo hiking" loading="lazy">
+            </div>
+            <div class="season-card-body">
+                <div class="season-card-tag" data-pl="Samotność" data-en="Solitude" data-ar="العزلة">Samotność</div>
+                <div class="season-card-title" data-pl="Samotne wędrówki" data-en="Solo Hiking" data-ar="المشي المنفرد">Samotne wędrówki</div>
+                <div class="season-card-desc" data-pl="Bieszczady to idealne miejsce dla tych szukających samotności i głębokich rozmów z naturą. Znakowane szlaki, proste nawigacja, brak tłumów. Możliwość całkowitego odcinięcia się od cyfrowego świata i uwewnętrznienia się." data-en="Bieszczady is ideal for those seeking solitude and deep communion with nature. Well-marked trails, easy navigation, no crowds. Opportunity for complete digital detox and inner reflection." data-ar="بيشتشادي مثالية لأولئك الذين يسعون إلى العزلة والاتصال العميق بالطبيعة. مسارات محددة وملاحة سهلة وبدون حشود.">Bieszczady to idealne miejsce dla tych szukających samotności i głębokich rozmów z naturą. Znakowane szlaki, proste nawigacja, brak tłumów. Możliwość całkowitego odcinięcia się od cyfrowego świata i uwewnętrznienia się.</div>
+            </div>
+        </div>
+
+        <div class="season-card">
+            <div class="season-card-img">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&fit=crop" alt="Local culture" loading="lazy">
+            </div>
+            <div class="season-card-body">
+                <div class="season-card-tag" data-pl="Kultura" data-en="Culture" data-ar="الثقافة">Kultura</div>
+                <div class="season-card-title" data-pl="Bieszczadzkie klimaty" data-en="Local Culture" data-ar="الثقافة المحلية">Bieszczadzkie klimaty</div>
+                <div class="season-card-desc" data-pl="Lokalne muzyka, tradycyjne potrawy z regionu (żurek, kluski), opowieści łemkowskie. Wizyty w orkiestrach tradycyjnych, festiwale folklorystyczne, spotkania z lokalnymi artyzanami. Autentyczne przeżycie górskiej kultury." data-en="Local music, traditional regional dishes, Lemko stories. Visits to traditional ensembles, folk festivals, meetings with local artisans. Authentic mountain cultural experiences." data-ar="الموسيقى المحلية والأطباق التقليدية والقصص الليمكية. زيارات الفرق التقليدية والمهرجانات الشعبية واللقاءات مع الحرفيين المحليين.">Lokalna muzyka, tradycyjne potrawy z regionu (żurek, kluski), opowieści łemkowskie. Wizyty w orkiestrach tradycyjnych, festiwale folklorystyczne, spotkania z lokalnymi artyzanami. Autentyczne przeżycie górskiej kultury.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80&fit=crop" alt="Bieszczady sunset" loading="lazy">
+    <div class="cta-overlay"></div>
+    <div class="cta-content reveal">
+        <div class="section-label" data-pl="Zaplanuj wizytę" data-en="Plan Your Visit" data-ar="خطط لزيارتك">Zaplanuj wizytę</div>
+        <h2 data-pl="Uciekaj w <em>bezkres</em> Bieszczadów" data-en="Escape to <em>wilderness</em>" data-ar="هروب إلى <em>البرية</em>">Uciekaj w <em>bezkres</em> Bieszczadów</h2>
+        <p data-pl="Pozwól nam zaplanować Twoją przygodę w Bieszczadach — od namiotowych wypraw po luksusowe hospicje, od samotnych wędrówek po wycieczki z przewodnikami doświadczonymi. Bieszczady czekają." data-en="Let us plan your Bieszczady adventure — from camping expeditions to luxury hospices, from solo hikes to guided tours with experienced guides. Bieszczady awaits." data-ar="دع لنا نخطط لمغامرتك في بيشتشادي — من رحلات التخييم إلى بيوت ضيافة فاخرة، من المشي المنفرد إلى جولات موجهة.">Pozwól nam zaplanować Twoją przygodę w Bieszczadach — od namiotowych wypraw po luksusowe hospicje, od samotnych wędrówek po wycieczki z przewodnikami doświadczonymi. Bieszczady czekają.</p>
+        <a href="index.html#contact" class="cta-btn" data-pl="Skontaktuj się z nami" data-en="Contact Us" data-ar="اتصل بنا">Skontaktuj się z nami</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">NOHA TOUR</div>
+        <div class="footer-links">
+            <a href="index.html" data-pl="Strona główna" data-en="Home" data-ar="الصفحة الرئيسية">Strona główna</a>
+            <a href="index.html#destinations" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
+            <a href="doswiadczenie.html" data-pl="Doświadczenie" data-en="Experience" data-ar="تجربة">Doświadczenie</a>
+            <a href="index.html#contact" data-pl="Kontakt" data-en="Contact" data-ar="اتصل بنا">Kontakt</a>
+        </div>
+        <div class="footer-social"><a href="https://www.instagram.com/mypolishgetaway" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a><a href="https://www.tiktok.com/@mypolishgetaway" target="_blank" rel="noopener" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52V6.8a4.84 4.84 0 01-1-.11z"/></svg></a><a href="https://wa.me/48000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.47A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-2.115 0-4.09-.652-5.716-1.764l-.41-.243-2.742.872.871-2.692-.27-.427A9.709 9.709 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg></a></div>
+        <div class="footer-copy">&copy; 2026 Noha Tour. Wszelkie prawa zastrzeżone.</div>
+    </div>
+</footer>
+
+<script>
+// Scroll reveal
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+}, {threshold: 0.15});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Smooth scroll to top on load
+window.scrollTo(0, 0);
+</script>
+
+</body>
+</html>

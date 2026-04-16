@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatry — Noha Travel | Alpejska Perła Polski</title>
+    <meta name="description" content="Noha Travel — Tatry, malownicze góry pełne przygód. Morskie Oko, Orla Perć, Kasprowy Wierch. Narciarstwo zimą, trekking latem. Luksusowe podróże po Tatrzańskim Parku Narodowym.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1672357868582-5d5674032bff?w=1200&q=80&fit=crop">
+    <link rel="canonical" href="https://nohatravel.com/tatry.html">
+    <link rel="alternate" hreflang="pl" href="https://nohatravel.com/tatry.html">
+    <link rel="alternate" hreflang="en" href="https://nohatravel.com/tatry.html">
+    <link rel="alternate" hreflang="ar" href="https://nohatravel.com/tatry.html">
+    <link rel="alternate" hreflang="x-default" href="https://nohatravel.com/tatry.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Noha Travel Sp. z o.o.">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:url" content="https://nohatravel.com/tatry.html">
+    <meta property="og:site_name" content="Noha Travel">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%23c9a96e' stroke-width='1'/%3E%3Cpolygon points='16,3 18,14 16,11 14,14' fill='%23c9a96e'/%3E%3Cpolygon points='16,29 14,18 16,21 18,18' fill='%23c9a96e' opacity='0.4'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{--gold:#c9a96e;--gold-light:#d4bc8b;--gold-dark:#a8884f;--black:#0a0a0a;--dark:#1a1a1a;--dark-gray:#2a2a2a;--medium-gray:#888;--white:#fff;--cream:#faf8f4;--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Montserrat','Helvetica Neue',sans-serif;--transition:0.4s cubic-bezier(.25,.46,.45,.94)}
+        html{scroll-behavior:smooth;font-size:16px}
+        body{font-family:var(--font-sans);font-weight:300;color:var(--dark);background:var(--white);overflow-x:hidden;line-height:1.7}
+        a{text-decoration:none;color:inherit;transition:color var(--transition)}
+        img{max-width:100%;display:block}
+
+        /* HEADER */
+        header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.5rem 3rem;display:flex;align-items:center;justify-content:space-between;transition:all var(--transition);background:rgba(10,10,10,.95);backdrop-filter:blur(20px);box-shadow:0 2px 40px rgba(0,0,0,.3)}
+        .logo-wrap{display:flex;align-items:center;gap:1rem}
+        .logo-svg{width:50px;height:auto}
+        .logo{font-family:var(--font-serif);font-size:1.8rem;font-weight:300;color:var(--white);letter-spacing:.25em;text-transform:uppercase;display:flex;flex-direction:column;line-height:1}
+        .logo-sub{font-family:var(--font-sans);font-size:.5rem;letter-spacing:.5em;color:var(--gold);font-weight:400;margin-top:4px}
+        nav{display:flex;align-items:center;gap:2.5rem}
+        nav a{font-size:.72rem;font-weight:400;color:rgba(255,255,255,.85);letter-spacing:.15em;text-transform:uppercase;position:relative;padding:.5rem 0}
+        nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width var(--transition)}
+        nav a:hover{color:var(--gold)}
+        nav a:hover::after{width:100%}
+        nav a.active-nav{color:var(--gold)}
+        nav a.active-nav::after{width:100%}
+        .nav-right{display:flex;align-items:center;gap:1rem}.lang-switch{font-size:.7rem;letter-spacing:.1em;color:rgba(255,255,255,.5);cursor:pointer;padding:.3rem .5rem;border:1px solid transparent;border-radius:3px;transition:all var(--transition)}.lang-switch:hover{color:var(--gold);border-color:var(--gold)}.lang-switch.active{color:var(--gold);border-color:var(--gold)}
+        .header-phone{font-size:.72rem;color:rgba(255,255,255,.7);letter-spacing:.1em}
+        .header-phone:hover{color:var(--gold)}
+        .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001}
+        .hamburger span{width:28px;height:1px;background:var(--white);transition:all .3s ease}
+
+        /* HERO */
+        .page-hero{position:relative;height:75vh;min-height:550px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+        .page-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+        .page-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.55) 100%)}
+        .page-hero-content{position:relative;z-index:2;text-align:center;max-width:800px;padding:0 2rem}
+        .page-hero-label{font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .page-hero-title{font-family:var(--font-serif);font-size:4.5rem;font-weight:300;color:var(--white);line-height:1.1;margin-bottom:1.5rem}
+        .page-hero-title em{font-style:italic;color:var(--gold)}
+        .page-hero-desc{font-size:.95rem;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto;line-height:1.8}
+
+        /* INTRO */
+        .intro{padding:6rem 5%;background:var(--cream)}
+        .intro-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+        .intro-img{border-radius:8px;overflow:hidden;aspect-ratio:4/3}
+        .intro-img img{width:100%;height:100%;object-fit:cover;transition:transform 6s ease}
+        .intro-img:hover img{transform:scale(1.05)}
+        .intro-text .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .intro-text h2{font-family:var(--font-serif);font-size:2.8rem;font-weight:300;color:var(--dark);line-height:1.2;margin-bottom:1.5rem}
+        .intro-text h2 em{font-style:italic;color:var(--gold)}
+        .intro-text p{font-size:.9rem;color:#555;line-height:1.9;margin-bottom:1rem}
+
+        /* SECTION HEADER */
+        .section-header{text-align:center;margin-bottom:4rem}
+        .section-header .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .section-header h2{font-family:var(--font-serif);font-size:3rem;font-weight:300;color:var(--dark);line-height:1.2;margin-bottom:1rem}
+        .section-header h2 em{font-style:italic;color:var(--gold)}
+        .section-header p{font-size:.9rem;color:#555;max-width:600px;margin:0 auto}
+
+        /* ATTRACTIONS GRID */
+        .attractions{padding:6rem 5%;background:var(--white)}
+        .attr-grid{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+        .attr-card{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:3/4;cursor:pointer}
+        .attr-card.featured{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+        .attr-card img{width:100%;height:100%;object-fit:cover;transition:transform 8s ease}
+        .attr-card:hover img{transform:scale(1.06)}
+        .attr-card-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.7) 0%,rgba(0,0,0,.05) 50%);transition:background .5s ease}
+        .attr-card:hover .attr-card-overlay{background:linear-gradient(0deg,rgba(0,0,0,.8) 0%,rgba(0,0,0,.15) 50%)}
+        .attr-card-content{position:absolute;bottom:0;left:0;right:0;padding:2rem;z-index:2;transform:translateY(15px);transition:transform .5s ease}
+        .attr-card:hover .attr-card-content{transform:translateY(0)}
+        .attr-card-tag{font-size:.6rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;font-weight:500}
+        .attr-card-title{font-family:var(--font-serif);font-size:1.8rem;font-weight:400;color:var(--white);line-height:1.25;margin-bottom:.5rem}
+        .attr-card.featured .attr-card-title{font-size:2.5rem}
+        .attr-card-desc{font-size:.78rem;color:rgba(255,255,255,.7);line-height:1.7;max-height:0;overflow:hidden;opacity:0;transition:max-height .5s ease,opacity .4s ease}
+        .attr-card:hover .attr-card-desc{max-height:200px;opacity:1}
+        .attr-card-meta{display:flex;gap:1.5rem;margin-top:.8rem;padding-top:.8rem;border-top:1px solid rgba(255,255,255,.15)}
+        .attr-card-meta span{font-size:.6rem;letter-spacing:.1em;color:rgba(255,255,255,.5);text-transform:uppercase}
+
+        /* WINTER / SUMMER SECTIONS */
+        .season-section{padding:6rem 5%}
+        .season-section.winter{background:var(--cream)}
+        .season-section.summer{background:var(--white)}
+        .season-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:2rem;margin-top:3rem}
+        .season-card{background:var(--white);border-radius:10px;overflow:hidden;box-shadow:0 4px 30px rgba(0,0,0,.06);transition:transform .4s ease,box-shadow .4s ease}
+        .season-section.winter .season-card{background:var(--white)}
+        .season-section.summer .season-card{background:var(--cream)}
+        .season-card:hover{transform:translateY(-5px);box-shadow:0 12px 40px rgba(0,0,0,.1)}
+        .season-card-img{aspect-ratio:16/10;overflow:hidden}
+        .season-card-img img{width:100%;height:100%;object-fit:cover;transition:transform 6s ease}
+        .season-card:hover .season-card-img img{transform:scale(1.05)}
+        .season-card-body{padding:1.5rem}
+        .season-card-tag{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;font-weight:500}
+        .season-card-title{font-family:var(--font-serif);font-size:1.4rem;font-weight:400;color:var(--dark);margin-bottom:.7rem}
+        .season-card-desc{font-size:.8rem;color:#666;line-height:1.7}
+
+        /* CTA */
+        .cta-section{position:relative;padding:8rem 5%;overflow:hidden;text-align:center}
+        .cta-section img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+        .cta-overlay{position:absolute;inset:0;background:rgba(0,0,0,.65)}
+        .cta-content{position:relative;z-index:2;max-width:700px;margin:0 auto}
+        .cta-content .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .cta-content h2{font-family:var(--font-serif);font-size:3rem;font-weight:300;color:var(--white);line-height:1.2;margin-bottom:1.5rem}
+        .cta-content h2 em{font-style:italic;color:var(--gold)}
+        .cta-content p{font-size:.9rem;color:rgba(255,255,255,.8);margin-bottom:2rem;line-height:1.8}
+        .cta-btn{display:inline-block;padding:1rem 3rem;border:1px solid var(--gold);color:var(--gold);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;font-weight:500;transition:all var(--transition);border-radius:2px}
+        .cta-btn:hover{background:var(--gold);color:var(--black)}
+
+        /* FOOTER */
+        footer{background:var(--black);padding:3rem 5%;text-align:center}
+        .footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+        .footer-brand{font-family:var(--font-serif);font-size:1.2rem;color:var(--white);letter-spacing:.2em}
+        .footer-links{display:flex;gap:2rem}
+        .footer-links a{font-size:.7rem;color:rgba(255,255,255,.5);letter-spacing:.12em;text-transform:uppercase;transition:color .3s}
+        .footer-links a:hover{color:var(--gold)}
+        .footer-copy{font-size:.65rem;color:rgba(255,255,255,.3);letter-spacing:.05em}
+        .footer-social{display:flex;gap:1rem;margin-top:1rem}
+        .footer-social a{width:38px;height:38px;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:.7rem;color:rgba(255,255,255,.5);transition:all var(--transition);border-radius:50%}
+        .footer-social a:hover{border-color:var(--gold);color:var(--gold)}
+
+        /* ANIMATIONS */
+        .reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+        .reveal.visible{opacity:1;transform:translateY(0)}
+
+        /* MOBILE NAV */
+        @media(max-width:768px){
+            nav.mob-open{display:flex;flex-direction:column;position:fixed;inset:0;background:rgba(10,10,10,.98);justify-content:center;align-items:center;gap:2rem;z-index:999}
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:1024px){
+            .intro-inner{grid-template-columns:1fr;gap:2rem}
+            .attr-grid{grid-template-columns:1fr 1fr}
+            .attr-card.featured{grid-column:span 2}
+            .page-hero-title{font-size:3rem}
+        }
+        @media(max-width:768px){
+            header{padding:1rem 1.5rem}
+            nav{display:none}
+            .hamburger{display:flex}
+            .page-hero{height:60vh;min-height:400px}
+            .page-hero-title{font-size:2.5rem}
+            .section-header h2{font-size:2.2rem}
+            .intro-text h2{font-size:2rem}
+            .attr-grid{grid-template-columns:1fr}
+            .attr-card.featured{grid-column:span 1}
+            .attr-card-desc{max-height:200px;opacity:1}
+            .attr-card-content{transform:translateY(0)}
+            .season-grid{grid-template-columns:1fr}
+            .footer-inner{flex-direction:column;text-align:center}
+        }
+
+        /* WHATSAPP BUTTON */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 9999;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25D366;
+            border: 2px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.12);
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.4);
+            animation: whatsapp-pulse 0.6s ease;
+        }
+        @keyframes whatsapp-pulse {
+            0%, 100% {
+                box-shadow: 0 6px 28px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 8px 36px rgba(37, 211, 102, 0.6);
+            }
+        }
+        .whatsapp-button svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="index.html" class="logo-wrap">
+        <svg class="logo-svg" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="26" stroke="#c9a96e" stroke-width="0.8"/><polygon points="30,5 33,28 30,22 27,28" fill="#c9a96e"/><polygon points="30,55 27,32 30,38 33,32" fill="#c9a96e" opacity="0.35"/><line x1="30" y1="62" x2="30" y2="75" stroke="#c9a96e" stroke-width="0.5"/></svg>
+        <div class="logo" data-pl="NOHA TRAVEL" data-en="NOHA TRAVEL" data-ar="نهى تور">NOHA TRAVEL<span class="logo-sub" data-pl="LUXURY TRAVEL IN POLAND" data-en="LUXURY TRAVEL IN POLAND" data-ar="الرحلات الفاخرة في بولندا">LUXURY TRAVEL IN POLAND</span></div>
+    </a>
+    <nav>
+        <a href="index.html#destinations" class="active-nav" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
+        <a href="index.html#inspirations" data-pl="Inspiracje" data-en="Inspirations" data-ar="إلهام">Inspiracje</a>
+        <a href="doswiadczenie.html" data-pl="Doświadczenie" data-en="Experience" data-ar="تجربة">Doświadczenie</a>
+        <a href="index.html#cars" data-pl="Wynajem aut" data-en="Car Rental" data-ar="تأجير سيارات">Wynajem aut</a>
+        <a href="index.html#about" data-pl="O nas" data-en="About Us" data-ar="من نحن">O nas</a>
+        <a href="index.html#contact" data-pl="Kontakt" data-en="Contact" data-ar="اتصل بنا">Kontakt</a>
+    </nav>
+    <div class="nav-right">
+        <a href="tel:+48519692404" class="header-phone">+48 519 692 404</a>
+        <span class="lang-switch active" data-lang="pl" onclick="switchLang('pl')">PL</span>
+        <span class="lang-switch" data-lang="en" onclick="switchLang('en')">EN</span>
+        <span class="lang-switch" data-lang="ar" onclick="switchLang('ar')">AR</span>
+        <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('mob-open')"><span></span><span></span><span></span></div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1672357868582-5d5674032bff?w=1920&q=80&fit=crop" alt="Tatry panorama">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <div class="page-hero-label" data-pl="Góry — Alpejska Perła Polski" data-en="Mountains — Alpine Pearl of Poland" data-ar="الجبال — الجوهرة الألبية لبولندا">Góry — Alpejska Perła Polski</div>
+        <h1 class="page-hero-title">Odkryj<br><em>Tatry</em></h1>
+        <p class="page-hero-desc">Najmniejszy łańcuch gór alpejskich w Europie, otoczony Tatrzańskim Parkiem Narodowym. Tatry to ikoniczne szczyty, szmaragdowe jeziora, wymagające szlaki i niezapomniane widoki.</p>
+    </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+    <div class="intro-inner reveal">
+        <div class="intro-img">
+            <img src="https://images.unsplash.com/photo-1601822984430-be3c3edaf636?w=800&q=80&fit=crop" alt="Tatry w sezonie letnim">
+        </div>
+        <div class="intro-text">
+            <div class="section-label" data-pl="O Tatrach" data-en="About the Tatras" data-ar="عن تاترا">O Tatrach</div>
+            <h2 data-pl="Gdzie góry osiągają<br><em>swe szczęśliwe apogeum</em>" data-en="Where mountains reach<br><em>their happy apogee</em>" data-ar="حيث تصل الجبال إلى<br><em>ذروتها السعيدة</em>">Gdzie góry osiągają<br><em>swe szczęśliwe apogeum</em></h2>
+            <p>Tatry to najmniejszy alpejski łańcuch gór w Polsce, ale zarazem jeden z najokazalszych. Na obszarze zaledwie 100 km długości znajduje się ponad 50 szczytów powyżej 2000 metrów, wśród których króluje Rysy (2499 m n.p.m.) — najwyższe wzniesienie Polski.</p>
+            <p>Tatrzański Park Narodowy ochronia tę wyjątkową strefę od 1954 roku. Tutaj odkryjesz niezwyke stworzenia: rysów, marmoty, kozice alpejskie. Zamieszkują je również rzadkie gatunki roślin — turze przebiśniegi, aksamitne storczyki i alpejskie łąki pokryte krokusom wiosną. Tatry czekają na odkrycie — zarówno latem dla trekkera, jak i zimą dla narciarza.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TOP ATTRACTIONS -->
+<section class="attractions">
+    <div class="section-header reveal">
+        <div class="section-label" data-pl="Największe Atrakcje" data-en="Top Attractions" data-ar="أفضل المعالم السياحية">Największe Atrakcje</div>
+        <h2 data-pl="Miejsca, które <em>musisz zobaczyć</em>" data-en="Places you <em>must visit</em>" data-ar="الأماكن التي <em>يجب أن تزورها</em>">Miejsca, które <em>musisz zobaczyć</em></h2>
+        <p>Najpiękniejsze atrakcje Tatr — od ikonicznych jezior po wymagające szlaki i spektakularne panoramy</p>
+    </div>
+
+    <div class="attr-grid reveal">
+
+        <!-- MORSKIE OKO - featured -->
+        <div class="attr-card featured">
+            <img src="https://images.unsplash.com/photo-1581697390820-dd0678135aa8?w=1200&q=80&fit=crop" alt="Morskie Oko zimą" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag" data-pl="Ikona Tatr" data-en="Icon of Tatras" data-ar="أيقونة تاترا">Ikona Tatr</div>
+                <div class="attr-card-title" data-pl="Morskie Oko" data-en="Eye of the Sea" data-ar="عين البحر">Morskie Oko</div>
+                <div class="attr-card-desc">Najpiękniejsze jezioro górskie w Polsce — szmaragdowe wody otoczone potężnymi ścianami Mięguszowieckich Szczytów. Klasyczna wycieczka z Palenicy Białczańskiej to obowiązkowy punkt programu dla każdego gościa Tatr.</div>
+                <div class="attr-card-meta">
+                    <span>Szlak: 9 km</span>
+                    <span>Wysokość: 1395 m n.p.m.</span>
+                    <span>Czas: 2-3 godz.</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- KASPROWY WIERCH -->
+        <div class="attr-card">
+            <img src="https://images.unsplash.com/photo-1590612828306-25dcc31f64e0?w=800&q=80&fit=crop" alt="Kasprowy Wierch" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag" data-pl="Szczyt" data-en="Peak" data-ar="القمة">Szczyt</div>
+                <div class="attr-card-title" data-pl="Kasprowy Wierch" data-en="Kasprowy Wierch" data-ar="كاسبروفي فيرخ">Kasprowy Wierch</div>
+                <div class="attr-card-desc">Legendarny szczyt (1987 m n.p.m.) dostępny kolejką linową. Panorama całych Tatr, trasy narciarskie zimą, szlaki turystyczne latem. Jedno z najchętniej odwiedzanych miejsc w górach.</div>
+            </div>
+        </div>
+
+        <!-- DOLINA PIĘCIU STAWÓW -->
+        <div class="attr-card">
+            <img src="https://images.unsplash.com/photo-1666001145648-931da0e82010?w=800&q=80&fit=crop" alt="Dolina Pięciu Stawów" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag" data-pl="Dolina" data-en="Valley" data-ar="الوادي">Dolina</div>
+                <div class="attr-card-title" data-pl="Dolina Pięciu Stawów" data-en="Five Ponds Valley" data-ar="وادي البرك الخمسة">Dolina Pięciu Stawów</div>
+                <div class="attr-card-desc">Malownicza dolina ze sławnymi pięcioma jeziorami polodowcowymi — Wielkim, Czarnym, Różowym, Czwartym i Zmarzłym. Szlak z Doliny Białej Wody to jedno z piękniejszych doświadczeń trekkingowych w Tatrach.</div>
+            </div>
+        </div>
+
+        <!-- ORLA PERĆ -->
+        <div class="attr-card">
+            <img src="https://images.unsplash.com/photo-1697789438554-726aca9b9435?w=800&q=80&fit=crop" alt="Orla Perć" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag">Szlak Najwyższy</div>
+                <div class="attr-card-title" data-pl="Orla Perć" data-en="Eagle's Path" data-ar="مسار النسر">Orla Perć</div>
+                <div class="attr-card-desc">Najsłynniejszy i najbardziej wymagający szlak w Tatrach — widokowa przesmyk biegnący po grzbietach między Zawratkiem a Przełęczą pod Chłodną. Łańcuchy, krawędź, adrenalina i widoki bezcenne.</div>
+            </div>
+        </div>
+
+        <!-- DOLINA KOŚCIELISKA -->
+        <div class="attr-card">
+            <img src="https://images.unsplash.com/photo-1624508755044-eb494b2003d1?w=800&q=80&fit=crop" alt="Dolina Kościeliska" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag">Zachodnie Tatry</div>
+                <div class="attr-card-title" data-pl="Dolina Kościeliska" data-en="Kościeliska Valley" data-ar="وادي كوسييلسكا">Dolina Kościeliska</div>
+                <div class="attr-card-desc">Malownicza dolina w Tatrach Zachodnich — jaskinie, potoki, stare drewniane gospodarstwa. Łatwe szlaki idealne dla rodzin i tych szukających spokojnych spacerów wśród przyrody.</div>
+            </div>
+        </div>
+
+        <!-- DOLINA CHOCHOŁOWSKA -->
+        <div class="attr-card">
+            <img src="https://images.unsplash.com/photo-1649395147125-a06a2e193455?w=800&q=80&fit=crop" alt="Dolina Chochołowska" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag">Największa Dolina</div>
+                <div class="attr-card-title" data-pl="Dolina Chochołowska" data-en="Chochołowska Valley" data-ar="وادي تشوتشولوفسكا">Dolina Chochołowska</div>
+                <div class="attr-card-desc">Największa dolina Tatr — rozległa kotlina otoczona wysokimi ścianami skalnych szczytów. Na wiosnę pokryta fioletowymi krokusami. Doskonała dla spacerów, obserwacji przyrody i fotografii przyrody.</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SUMMER ATTRACTIONS -->
+<section class="season-section summer">
+    <div class="section-header reveal">
+        <div class="section-label" data-pl="Aktywności Letnie" data-en="Summer Activities" data-ar="الأنشطة الصيفية">Aktywności Letnie</div>
+        <h2 data-pl="Szlaki, wspinaczka i <em>przygody górskie</em>" data-en="Trails, climbing and <em>mountain adventures</em>" data-ar="المسارات والتسلق و<em>المغامرات الجبلية</em>">Szlaki, wspinaczka i <em>przygody górskie</em></h2>
+        <p>Lato w Tatrach to sezon dla trekkerów, wspinaczy i miłośników gościnności alpejskiej przyrody</p>
+    </div>
+
+    <div class="season-grid reveal">
+        <div class="season-card">
+            <div class="season-card-img">
+                <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80&fit=crop" alt="Trekking w Tatrach" loading="lazy">
+            </div>
+            <div class="season-card-body">
+                <div class="season-card-tag">Trekking</div>
+                <div class="season-card-title" data-pl="Trekking po szlakach" data-en="Trail Trekking" data-ar="المشي لمسافات طويلة على المسارات">Trekking po szlakach</div>
+                <div class="season-card-desc">Ponad 270 kilometrów znakowanych szlaków turystycznych w Tatrzańskim Parku Narodowym. Od łatwych spacerów przez doliny, po wymagające trawersje grzbietów i zdobywanie szczytów 2000+ metrów.</div>
+            </div>
+        </div>
+
+        <div class="season-card">
+            <div class="season-card-img">
+                <img src="https://images.unsplash.com/photo-1615845522846-02f89af04c2e?w=800&q=80&fit=crop" alt="Wspinaczka skałkowa" loading="lazy">
+            </div>
+            <div class="season-card-body">
+                <div class="season-card-tag">Wspinaczka</div>
+                <div class="season-card-title" data-pl="Wspinaczka skałkowa" data-en="Rock Climbing" data-ar="تسلق الصخور">Wspinaczka skałkowa</div>
+                <div class="season-card-desc">Tatry to raj dla wspinaczy skalnych — od małych przechodziń i Via Ferraty po wymagające drogi wielotomodówkowe na ścianach Mięguszowieckich i Pięciu Stawów. Szkoły wspinaczki dostępne w Zakopanem.</div>
+            </div>
+        </div>
+
+        <div class="season-card">
+            <div class="season-card-img">
+                <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&q=80&fit=crop" alt="Kajakarstwo na Dunajcu" loading="lazy">
+            </div>
+            <div class="season-card-body">
+                <div class="season-card-tag">Wodna przygoda</div>
+                <div class="season-card-title" data-pl="Kajakarstwo na Dunajcu" data-en="Kayaking on Dunajec" data-ar="الكانوه على نهر دونيتس">Kajakarstwo na Dunajcu</div>
+                <div class="season-card-desc">Dunajec Gorge tworzy granicę między Tatrami a Pieniny. Spływ rzeki kajakiem to oszałamiająca przygoda przez wąwóz ze ścianami wznosącymi się 300 metrów wyżej. Dostępne wycieczki dla każdego poziomu umiejętności.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WINTER ATTRACTIONS -->
+<section class="season-section winter">
+    <div class="section-header reveal">
+        <div class="section-label" data-pl="Aktywności Zimowe" data-en="Winter Activities" data-ar="الأنشطة الشتوية">Aktywności Zimowe</div>
+        <h2 data-pl="Narciarstwo, skitouring i <em>zimowa magia</em>" data-en="Skiing, ski touring and <em>winter magic</em>" data-ar="التزلج والتزلج الجبلي و<em>السحر الشتوي</em>">Narciarstwo, skitouring i <em>zimowa magia</em></h2>
+        <p>Zima w Tatrach oferuje szlaki zarośnięte śniegiem, zawzięte zjazdy i ciszone szczyty w czarno-białej scenerii</p>
+    </div>
+
+    <div class="season-grid reveal">
+        <div class="season-card">
+            <div class="season-card-img">
+                <img src="https://images.unsplash.com/photo-1551524559-8af4e6624178?w=800&q=80&fit=crop" alt="Narciarstwo w Tatrach" loading="lazy">
+            </div>
+            <div class="season-card-body">
+                <div class="season-card-tag">Narciarstwo</div>
+                <div class="season-card-title">Narciarstwo alpejskie</div>
+                <div class="season-card-desc">Stacje narciarskie Kasprowy Wierch, Nosal i Białka Tatrzańska oferują trasy dla każdego poziomu — od łagodnych stoków dla początkujących po czarne zjazdy dla doświadczonych narciarzy. Panorama górska podczas jazdy to niezapomniany dodatek.</div>
+            </div>
+        </div>
+
+        <div class="season-card">
+            <div class="season-card-img">
+                <img src="https://images.unsplash.com/photo-1615011950300-ffd3dcfc509f?w=800&q=80&fit=crop" alt="Skitouring w Tatrach" loading="lazy">
+            </div>
+            <div class="season-card-body">
+                <div class="season-card-tag">Skitouring</div>
+                <div class="season-card-title">Skitouring i narciarstwo górskie</div>
+                <div class="season-card-desc">Dla przygodowców — wspinanie się na szczyty z nartami na plecach, zajeżdżane zjazdami po śniegu przez nieznamane stoki. Skitouring wymaga doświadczenia i znajomości gór, ale oferuje bezprecedensową wolność i cisę.</div>
+            </div>
+        </div>
+
+        <div class="season-card">
+            <div class="season-card-img">
+                <img src="https://images.unsplash.com/photo-1547933164-aa3f41f51e0c?w=800&q=80&fit=crop" alt="Wędrówki na śniżycy" loading="lazy">
+            </div>
+            <div class="season-card-body">
+                <div class="season-card-tag">Zimowe treking</div>
+                <div class="season-card-title">Wędrówki na śnieżycy</div>
+                <div class="season-card-desc">Dla tych, którzy chcą odkrywać Tatry zimą bez nart — śnieżyce (racquettes) pozwalają na wędrówki po zaśnieżonych polankach i łagodniejszych szlakach. Cisza, biały krajobraz i czystość alpejskiej przyrody.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <img src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?w=1920&q=80&fit=crop" alt="Tatry o zachodzie słońca" loading="lazy">
+    <div class="cta-overlay"></div>
+    <div class="cta-content reveal">
+        <div class="section-label" data-pl="Zaplanuj wizytę" data-en="Plan Your Visit" data-ar="خطط لزيارتك">Zaplanuj wizytę</div>
+        <h2 data-pl="Twoja przygoda w <em>Tatrach</em> zaczyna się tutaj" data-en="Your adventure in the <em>Tatras</em> starts here" data-ar="تبدأ مغامرتك في <em>تاترا</em> من هنا">Twoja przygoda w <em>Tatrach</em> zaczyna się tutaj</h2>
+        <p>Pozwól nam zaplanować Twój idealny pobyt — od luksusowego zakwaterowania z widokiem na góry, przez przewodzone wycieczki alpejskie i szkoły wspinaczki, po wieczory w najlepszych restauracjach podnóża Tatr.</p>
+        <a href="index.html#contact" class="cta-btn">Skontaktuj się z nami</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">NOHA TRAVEL</div>
+        <div class="footer-links">
+            <a href="index.html">Strona główna</a>
+            <a href="index.html#destinations" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
+            <a href="doswiadczenie.html" data-pl="Doświadczenie" data-en="Experience" data-ar="تجربة">Doświadczenie</a>
+            <a href="index.html#contact" data-pl="Kontakt" data-en="Contact" data-ar="اتصل بنا">Kontakt</a>
+        </div>
+        <div class="footer-social"><a href="https://www.instagram.com/mypolishgetaway" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a><a href="https://www.tiktok.com/@mypolishgetaway" target="_blank" rel="noopener" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52V6.8a4.84 4.84 0 01-1-.11z"/></svg></a><a href="https://wa.me/48519692404" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.47A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-2.115 0-4.09-.652-5.716-1.764l-.41-.243-2.742.872.871-2.692-.27-.427A9.709 9.709 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg></a></div>
+        <div class="footer-copy">&copy; 2026 Noha Travel. Wszelkie prawa zastrzeżone.</div>
+    </div>
+</footer>
+
+<script>
+// Scroll reveal
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+}, {threshold: 0.15});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Smooth scroll to top on load
+window.scrollTo(0, 0);
+</script>
+
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/48519692404?text=Dzień%20dobry!%20Chciałbym%20zapytać%20o%20ofertę%20Noha%20Travel" target="_blank" rel="noopener" class="whatsapp-button" aria-label="Kontakt WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a5.505 5.505 0 00-5.487 5.505c0 1.416.356 2.786.997 3.973L3.957 21l4.8-1.257c1.164.639 2.487 1.01 3.822 1.01h.004A5.507 5.507 0 0018.35 15.494 5.505 5.505 0 0012.051 6.979"/>
+    </svg>
+</a>
+
+<script>
+let currentLang='pl';
+function switchLang(lang){
+  currentLang=lang;
+  const html=document.documentElement;
+  html.lang=lang;
+  html.dir=lang==='ar'?'rtl':'ltr';
+  document.querySelectorAll('[data-'+lang+']').forEach(el=>{
+    const val=el.getAttribute('data-'+lang);
+    if(val){
+      if(el.tagName==='INPUT'||el.tagName==='TEXTAREA'){el.placeholder=val}
+      else{el.textContent=val}
+    }
+  });
+  document.querySelectorAll('.lang-switch').forEach(s=>{
+    s.classList.toggle('active',s.getAttribute('data-lang')===lang);
+  });
+}
+</script>
+
+</body>
+</html>

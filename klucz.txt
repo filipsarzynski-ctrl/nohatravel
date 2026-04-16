@@ -1,0 +1,1 @@
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFJP3aPbyEkRFoTEm581QnaekQmw7tvji0iI+Q9gWtmK filip@macbook-air-2.home

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doświadczenie — Noha Travel | Niecodzienne przeżycia w grupie</title>
+    <meta name="description" content="Noha Travel Doświadczenie — krótkie wyjazdy 3-4 dniowe dla małych grup. Niecodzienne przeżycia, tematyczne pakiety przygodowe, budowanie relacji.">
+    <link rel="canonical" href="https://nohatravel.com/doswiadczenie.html">
+    <link rel="alternate" hreflang="pl" href="https://nohatravel.com/doswiadczenie.html">
+    <link rel="alternate" hreflang="en" href="https://nohatravel.com/doswiadczenie.html">
+    <link rel="alternate" hreflang="ar" href="https://nohatravel.com/doswiadczenie.html">
+    <link rel="alternate" hreflang="x-default" href="https://nohatravel.com/doswiadczenie.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Noha Travel Sp. z o.o.">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:url" content="https://nohatravel.com/doswiadczenie.html">
+    <meta property="og:site_name" content="Noha Travel">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%23c9a96e' stroke-width='1'/%3E%3Cpolygon points='16,3 18,14 16,11 14,14' fill='%23c9a96e'/%3E%3Cpolygon points='16,29 14,18 16,21 18,18' fill='%23c9a96e' opacity='0.4'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{--gold:#c9a96e;--gold-light:#d4bc8b;--gold-dark:#a8884f;--black:#0a0a0a;--dark:#1a1a1a;--dark-gray:#2a2a2a;--medium-gray:#888;--white:#fff;--cream:#faf8f4;--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Montserrat','Helvetica Neue',sans-serif;--transition:0.4s cubic-bezier(.25,.46,.45,.94)}
+        html{scroll-behavior:smooth;font-size:16px}
+        body{font-family:var(--font-sans);font-weight:300;color:var(--dark);background:var(--white);overflow-x:hidden;line-height:1.7}
+        a{text-decoration:none;color:inherit;transition:color var(--transition)}
+        img{max-width:100%;display:block}
+
+        /* HEADER */
+        header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.5rem 3rem;display:flex;align-items:center;justify-content:space-between;transition:all var(--transition);background:rgba(10,10,10,.95);backdrop-filter:blur(20px);box-shadow:0 2px 40px rgba(0,0,0,.3)}
+        .logo-wrap{display:flex;align-items:center;gap:1rem}
+        .logo-svg{width:50px;height:auto}
+        .logo{font-family:var(--font-serif);font-size:1.8rem;font-weight:300;color:var(--white);letter-spacing:.25em;text-transform:uppercase;display:flex;flex-direction:column;line-height:1}
+        .logo-sub{font-family:var(--font-sans);font-size:.5rem;letter-spacing:.5em;color:var(--gold);font-weight:400;margin-top:4px}
+        nav{display:flex;align-items:center;gap:2.5rem}
+        nav a{font-size:.72rem;font-weight:400;color:rgba(255,255,255,.85);letter-spacing:.15em;text-transform:uppercase;position:relative;padding:.5rem 0}
+        nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width var(--transition)}
+        nav a:hover{color:var(--gold)}
+        nav a:hover::after{width:100%}
+        nav a.active-nav{color:var(--gold)}
+        nav a.active-nav::after{width:100%}
+        .nav-right{display:flex;align-items:center;gap:1rem}.lang-switch{font-size:.7rem;letter-spacing:.1em;color:rgba(255,255,255,.5);cursor:pointer;padding:.3rem .5rem;border:1px solid transparent;border-radius:3px;transition:all var(--transition)}.lang-switch:hover{color:var(--gold);border-color:var(--gold)}.lang-switch.active{color:var(--gold);border-color:var(--gold)}
+        .header-phone{font-size:.72rem;color:rgba(255,255,255,.7);letter-spacing:.1em}
+        .header-phone:hover{color:var(--gold)}
+        .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001}
+        .hamburger span{width:28px;height:1px;background:var(--white);transition:all .3s ease}
+
+        /* HERO SECTION */
+        .page-hero{position:relative;height:70vh;min-height:500px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+        .page-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+        .page-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,.6) 100%)}
+        .page-hero-content{position:relative;z-index:2;text-align:center;max-width:800px;padding:0 2rem}
+        .page-hero-label{font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .page-hero-title{font-family:var(--font-serif);font-size:4rem;font-weight:300;color:var(--white);line-height:1.15;margin-bottom:1.5rem}
+        .page-hero-title em{font-style:italic;color:var(--gold)}
+        .page-hero-desc{font-size:.95rem;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto;line-height:1.8}
+
+        /* CONCEPT SECTION */
+        .concept{padding:6rem 5%;background:var(--cream)}
+        .concept-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+        .concept-img{border-radius:8px;overflow:hidden;aspect-ratio:4/3}
+        .concept-img img{width:100%;height:100%;object-fit:cover;transition:transform 6s ease}
+        .concept-img:hover img{transform:scale(1.05)}
+        .concept-text .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .concept-text h2{font-family:var(--font-serif);font-size:2.8rem;font-weight:300;color:var(--dark);line-height:1.2;margin-bottom:1.5rem}
+        .concept-text h2 em{font-style:italic;color:var(--gold)}
+        .concept-text p{font-size:.9rem;color:#555;line-height:1.9;margin-bottom:1rem}
+        .concept-stats{display:flex;gap:3rem;margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(0,0,0,.08)}
+        .concept-stat-num{font-family:var(--font-serif);font-size:2.5rem;font-weight:300;color:var(--gold)}
+        .concept-stat-label{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--medium-gray);margin-top:.3rem}
+
+        /* EXPERIENCES GRID */
+        .experiences{padding:6rem 5%;background:var(--white)}
+        .section-header{text-align:center;margin-bottom:4rem}
+        .section-header .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .section-header h2{font-family:var(--font-serif);font-size:3rem;font-weight:300;color:var(--dark);line-height:1.2;margin-bottom:1rem}
+        .section-header h2 em{font-style:italic;color:var(--gold)}
+        .section-header p{font-size:.9rem;color:#555;max-width:600px;margin:0 auto}
+        .exp-grid{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:2rem}
+        .exp-card{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:3/4;cursor:pointer;group:true}
+        .exp-card img{width:100%;height:100%;object-fit:cover;transition:transform 8s ease}
+        .exp-card:hover img{transform:scale(1.08)}
+        .exp-card-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,.1) 40%,rgba(0,0,0,.05) 100%);transition:background .5s ease}
+        .exp-card:hover .exp-card-overlay{background:linear-gradient(0deg,rgba(0,0,0,.85) 0%,rgba(0,0,0,.2) 50%,rgba(0,0,0,.1) 100%)}
+        .exp-card-content{position:absolute;bottom:0;left:0;right:0;padding:2rem;z-index:2;transform:translateY(20px);transition:transform .5s ease}
+        .exp-card:hover .exp-card-content{transform:translateY(0)}
+        .exp-card-tag{font-size:.6rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem;font-weight:500}
+        .exp-card-location{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:.5rem}
+        .exp-card-title{font-family:var(--font-serif);font-size:1.7rem;font-weight:400;color:var(--white);line-height:1.25;margin-bottom:.7rem}
+        .exp-card-desc{font-size:.78rem;color:rgba(255,255,255,.7);line-height:1.7;margin-bottom:1rem;max-height:0;overflow:hidden;transition:max-height .5s ease,opacity .4s ease;opacity:0}
+        .exp-card:hover .exp-card-desc{max-height:200px;opacity:1}
+        .exp-card-guide{display:flex;align-items:center;gap:.7rem;padding-top:.7rem;border-top:1px solid rgba(255,255,255,.15)}
+        .exp-card-guide-name{font-size:.7rem;color:rgba(255,255,255,.9);font-weight:400;letter-spacing:.05em}
+        .exp-card-guide-role{font-size:.6rem;color:var(--gold);letter-spacing:.1em}
+        .exp-card-duration{position:absolute;top:1.5rem;right:1.5rem;background:rgba(0,0,0,.5);backdrop-filter:blur(10px);padding:.4rem 1rem;border-radius:20px;font-size:.65rem;color:var(--white);letter-spacing:.1em;font-weight:400;z-index:3}
+
+        /* ADDITIONAL PROPOSALS */
+        .proposals{padding:6rem 5%;background:var(--cream)}
+        .proposals-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem;margin-top:3rem}
+        .proposal-card{background:var(--white);border-radius:10px;overflow:hidden;box-shadow:0 4px 30px rgba(0,0,0,.06);transition:transform .4s ease,box-shadow .4s ease}
+        .proposal-card:hover{transform:translateY(-5px);box-shadow:0 12px 40px rgba(0,0,0,.1)}
+        .proposal-card-img{aspect-ratio:16/9;overflow:hidden}
+        .proposal-card-img img{width:100%;height:100%;object-fit:cover;transition:transform 6s ease}
+        .proposal-card:hover .proposal-card-img img{transform:scale(1.05)}
+        .proposal-card-body{padding:1.5rem}
+        .proposal-card-tag{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;font-weight:500}
+        .proposal-card-title{font-family:var(--font-serif);font-size:1.4rem;font-weight:400;color:var(--dark);margin-bottom:.7rem}
+        .proposal-card-desc{font-size:.8rem;color:#666;line-height:1.7}
+
+        /* CTA SECTION */
+        .cta-section{position:relative;padding:8rem 5%;overflow:hidden;text-align:center}
+        .cta-section img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+        .cta-overlay{position:absolute;inset:0;background:rgba(0,0,0,.65)}
+        .cta-content{position:relative;z-index:2;max-width:700px;margin:0 auto}
+        .cta-content .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .cta-content h2{font-family:var(--font-serif);font-size:3rem;font-weight:300;color:var(--white);line-height:1.2;margin-bottom:1.5rem}
+        .cta-content h2 em{font-style:italic;color:var(--gold)}
+        .cta-content p{font-size:.9rem;color:rgba(255,255,255,.8);margin-bottom:2rem;line-height:1.8}
+        .cta-btn{display:inline-block;padding:1rem 3rem;border:1px solid var(--gold);color:var(--gold);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;font-weight:500;transition:all var(--transition);border-radius:2px}
+        .cta-btn:hover{background:var(--gold);color:var(--black)}
+
+        /* FOOTER */
+        footer{background:var(--black);padding:3rem 5%;text-align:center}
+        .footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+        .footer-brand{font-family:var(--font-serif);font-size:1.2rem;color:var(--white);letter-spacing:.2em}
+        .footer-links{display:flex;gap:2rem}
+        .footer-links a{font-size:.7rem;color:rgba(255,255,255,.5);letter-spacing:.12em;text-transform:uppercase;transition:color .3s}
+        .footer-links a:hover{color:var(--gold)}
+        .footer-copy{font-size:.65rem;color:rgba(255,255,255,.3);letter-spacing:.05em}
+        .footer-social{display:flex;gap:1rem;margin-top:1rem}
+        .footer-social a{width:38px;height:38px;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:.7rem;color:rgba(255,255,255,.5);transition:all var(--transition);border-radius:50%}
+        .footer-social a:hover{border-color:var(--gold);color:var(--gold)}
+
+        /* ANIMATIONS */
+        .reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+        .reveal.visible{opacity:1;transform:translateY(0)}
+
+        /* RESPONSIVE */
+        @media(max-width:1024px){
+            .concept-inner{grid-template-columns:1fr;gap:2rem}
+            .exp-grid{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+            .page-hero-title{font-size:3rem}
+        }
+        @media(max-width:768px){
+            header{padding:1rem 1.5rem}
+            nav{display:none}
+            .hamburger{display:flex}
+            .page-hero{height:60vh;min-height:400px}
+            .page-hero-title{font-size:2.2rem}
+            .section-header h2{font-size:2.2rem}
+            .concept-text h2{font-size:2rem}
+            .exp-grid{grid-template-columns:1fr}
+            .exp-card{aspect-ratio:3/4}
+            .exp-card-desc{max-height:200px;opacity:1}
+            .exp-card-content{transform:translateY(0)}
+            .concept-stats{flex-direction:column;gap:1.5rem}
+            .proposals-grid{grid-template-columns:1fr}
+            .footer-inner{flex-direction:column;text-align:center}
+        }
+        /* OFFROAD GALLERY LIGHTBOX */
+        .offroad-gallery-overlay{position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:2000;display:none;flex-direction:column;align-items:center;justify-content:center;opacity:0;transition:opacity .35s ease}
+        .offroad-gallery-overlay.active{display:flex;opacity:1}
+        .offroad-gallery-close{position:absolute;top:1.5rem;right:2rem;font-size:2.5rem;color:rgba(255,255,255,.7);cursor:pointer;z-index:2010;font-weight:200;font-family:var(--font-sans);transition:color .3s}
+        .offroad-gallery-close:hover{color:var(--gold)}
+        .offroad-gallery-img-wrap{position:relative;width:90vw;max-width:1100px;height:75vh;display:flex;align-items:center;justify-content:center}
+        .offroad-gallery-img-wrap img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;opacity:0;transition:opacity .3s ease}
+        .offroad-gallery-img-wrap img.loaded{opacity:1}
+        .offroad-gallery-nav{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.1);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.15);color:var(--white);font-size:1.3rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .3s,border-color .3s}
+        .offroad-gallery-nav:hover{background:rgba(201,169,110,.25);border-color:var(--gold)}
+        .offroad-gallery-prev{left:-60px}
+        .offroad-gallery-next{right:-60px}
+        .offroad-gallery-counter{margin-top:1.2rem;font-size:.75rem;color:rgba(255,255,255,.5);letter-spacing:.2em}
+        .offroad-gallery-thumbs{display:flex;gap:.5rem;margin-top:1rem;overflow-x:auto;max-width:90vw;padding:.5rem 0;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+        .offroad-gallery-thumbs img{width:60px;height:42px;object-fit:cover;border-radius:4px;opacity:.4;cursor:pointer;transition:opacity .3s,border .3s;border:2px solid transparent;flex-shrink:0}
+        .offroad-gallery-thumbs img.active{opacity:1;border-color:var(--gold)}
+        .offroad-gallery-thumbs img:hover{opacity:.8}
+        .offroad-gallery-icon{position:absolute;top:1.5rem;left:1.5rem;width:36px;height:36px;background:rgba(0,0,0,.5);backdrop-filter:blur(10px);border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:3;cursor:pointer;border:1px solid rgba(201,169,110,.4);transition:background .3s,border-color .3s}
+        .offroad-gallery-icon:hover{background:rgba(201,169,110,.25);border-color:var(--gold)}
+        .offroad-gallery-icon svg{width:16px;height:16px;stroke:var(--gold);fill:none;stroke-width:1.5}
+        @media(max-width:768px){
+            .offroad-gallery-prev{left:0.5rem}
+            .offroad-gallery-next{right:0.5rem}
+            .offroad-gallery-img-wrap{width:95vw;height:60vh}
+        }
+
+        /* WHATSAPP BUTTON */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 9999;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25D366;
+            border: 2px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.12);
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.4);
+            animation: whatsapp-pulse 0.6s ease;
+        }
+        @keyframes whatsapp-pulse {
+            0%, 100% {
+                box-shadow: 0 6px 28px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 8px 36px rgba(37, 211, 102, 0.6);
+            }
+        }
+        .whatsapp-button svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="index.html" class="logo-wrap">
+        <svg class="logo-svg" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="26" stroke="#c9a96e" stroke-width="0.8"/><polygon points="30,5 33,28 30,22 27,28" fill="#c9a96e"/><polygon points="30,55 27,32 30,38 33,32" fill="#c9a96e" opacity="0.35"/><line x1="30" y1="62" x2="30" y2="75" stroke="#c9a96e" stroke-width="0.5"/></svg>
+        <div class="logo" data-pl="NOHA TRAVEL" data-en="NOHA TRAVEL" data-ar="نهى تور">NOHA TRAVEL<span class="logo-sub" data-pl="LUXURY TRAVEL IN POLAND" data-en="LUXURY TRAVEL IN POLAND" data-ar="الرحلات الفاخرة في بولندا">LUXURY TRAVEL IN POLAND</span></div>
+    </a>
+    <nav>
+        <a href="index.html#destinations" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
+        <a href="index.html#inspirations" data-pl="Inspiracje" data-en="Inspirations" data-ar="إلهام">Inspiracje</a>
+        <a href="doswiadczenie.html" class="active-nav" data-pl="Doświadczenie" data-en="Experience" data-ar="تجربة">Doświadczenie</a>
+        <a href="index.html#cars" data-pl="Wynajem aut" data-en="Car Rental" data-ar="تأجير سيارات">Wynajem aut</a>
+        <a href="index.html#about" data-pl="O nas" data-en="About Us" data-ar="من نحن">O nas</a>
+        <a href="index.html#contact" data-pl="Kontakt" data-en="Contact" data-ar="اتصل بنا">Kontakt</a>
+    </nav>
+    <div class="nav-right">
+        <a href="tel:+48519692404" class="header-phone">+48 519 692 404</a>
+        <span class="lang-switch active" data-lang="pl" onclick="switchLang('pl')">PL</span>
+        <span class="lang-switch" data-lang="en" onclick="switchLang('en')">EN</span>
+        <span class="lang-switch" data-lang="ar" onclick="switchLang('ar')">AR</span>
+        <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('mob-open')"><span></span><span></span><span></span></div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1483634831823-4fb19cf47c3a?w=1920&q=80&fit=crop" alt="Przyjaciele na przygodzie">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <div class="page-hero-label" data-pl="Noha Travel — Doświadczenie" data-en="Noha Travel — Experiences" data-ar="نهى تور — التجارب">Noha Travel — Doświadczenie</div>
+        <h1 class="page-hero-title">Przeżycia, które<br><em>zbliżają ludzi</em></h1>
+        <p class="page-hero-desc">Krótkie, 3-4 dniowe wyjazdy w kameralnych grupach do 10 osób. Niecodzienne aktywności prowadzone przez najlepszych ekspertów w Polsce. Buduj relacje przez wspólne przygody.</p>
+    </div>
+</section>
+
+<!-- CONCEPT -->
+<section class="concept">
+    <div class="concept-inner reveal">
+        <div class="concept-img">
+            <img src="https://images.unsplash.com/photo-1770564512661-eb2e142c26fd?w=800&q=80&fit=crop" alt="Grupa na przygodzie">
+        </div>
+        <div class="concept-text">
+            <div class="section-label" data-pl="Nasz koncept" data-en="Our Concept" data-ar="مفهومنا">Nasz koncept</div>
+            <h2 data-pl="Nie tylko wyjazd.<br><em>Transformacja.</em>" data-en="Not just a trip.<br><em>Transformation.</em>" data-ar="ليس مجرد رحلة.<br><em>تحول.</em>">Nie tylko wyjazd.<br><em>Transformacja.</em></h2>
+            <p>Każdy pakiet Doświadczenie to starannie zaplanowany, 3-4 dniowy wyjazd dla kameralnej grupy ok. 10 osób. Łączymy niecodzienne aktywności z momentami refleksji, luksusowym zakwaterowaniem i wyjątkową kuchnią.</p>
+            <p>Główne założenie? Przeżyć coś, czego nie da się kupić w sklepie — i zrobić to razem. Wyjazdy budują głębokie relacje, wyciągają z rutyny i dają energię na miesiące.</p>
+            <div class="concept-stats">
+                <div><div class="concept-stat-num">3-4</div><div class="concept-stat-label">Dni doświadczeń</div></div>
+                <div><div class="concept-stat-num">~10</div><div class="concept-stat-label">Osób w grupie</div></div>
+                <div><div class="concept-stat-num">100%</div><div class="concept-stat-label">Organizacja przez nas</div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCES GRID -->
+<section class="experiences" id="pakiety">
+    <div class="section-header">
+        <div class="section-label" data-pl="Pakiety doświadczeń" data-en="Experience Packages" data-ar="حزم التجارب">Pakiety doświadczeń</div>
+        <h2 data-pl="Wybierz swoją <em>przygodę</em>" data-en="Choose your <em>adventure</em>" data-ar="اختر <em>مغامرتك</em>">Wybierz swoją <em>przygodę</em></h2>
+        <p>Każdy pakiet to unikalny program prowadzony przez najlepszych ekspertów. Pełna organizacja, luksusowe noclegi, wyżywienie i transfery w cenie.</p>
+    </div>
+    <div class="exp-grid">
+
+        <!-- 1. Wim Hof - Karkonosze -->
+        <div class="exp-card reveal">
+            <img src="https://images.unsplash.com/photo-1702285229572-8aa35e6e3f5d?w=800&q=80&fit=crop" alt="Ice bath Wim Hof">
+            <div class="exp-card-overlay"></div>
+            <div class="exp-card-duration">3 dni</div>
+            <div class="exp-card-content">
+                <div class="exp-card-tag">Zimne wyzwanie</div>
+                <div class="exp-card-location">Przesieka, Karkonosze</div>
+                <div class="exp-card-title">Metoda Wim Hofa &amp; radzenie sobie z zimnem</div>
+                <div class="exp-card-desc">Nauka technik oddechowych i stopniowej ekspozycji na zimno w sercu Karkonoszy. Morsowanie w górskich potokach, ćwiczenia na śniegu i medytacja w otoczeniu natury. Program oparty na metodologii Wim Hof Method&reg;.</div>
+                <div class="exp-card-guide">
+                    <div>
+                        <div class="exp-card-guide-name">Certyfikowani instruktorzy WHM</div>
+                        <div class="exp-card-guide-role">Wim Hof Method&reg;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Żeglarstwo - Kusznierewicz -->
+        <div class="exp-card reveal">
+            <img src="https://images.unsplash.com/photo-1758632535370-f5954a9686c1?w=800&q=80&fit=crop" alt="Żeglarstwo na Mazurach">
+            <div class="exp-card-overlay"></div>
+            <div class="exp-card-duration">4 dni</div>
+            <div class="exp-card-content">
+                <div class="exp-card-tag">Żeglarstwo</div>
+                <div class="exp-card-location">Mazury, Polska</div>
+                <div class="exp-card-title">Żagle z Mistrzem Olimpijskim</div>
+                <div class="exp-card-desc">Nauka żeglowania pod okiem Mateusza Kusznierewicza — złotego medalisty olimpijskiego z Atlanty 1996, jednego z najbardziej utytułowanych polskich żeglarzy. Wykłady motywacyjne, regaty i wieczory pod żaglami na mazurskich jeziorach.</div>
+                <div class="exp-card-guide">
+                    <div>
+                        <div class="exp-card-guide-name">Mateusz Kusznierewicz</div>
+                        <div class="exp-card-guide-role">Mistrz Olimpijski, Żeglarz</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Wspinaczka - Karol Hennig -->
+        <div class="exp-card reveal">
+            <img src="https://images.unsplash.com/photo-1627214523227-5d9b1a721a02?w=800&q=80&fit=crop" alt="Wspinaczka górska">
+            <div class="exp-card-overlay"></div>
+            <div class="exp-card-duration">4 dni</div>
+            <div class="exp-card-content">
+                <div class="exp-card-tag">Wspinaczka</div>
+                <div class="exp-card-location">Tatry / Alpy</div>
+                <div class="exp-card-title">Wspinaczka z trenerem himalaistów</div>
+                <div class="exp-card-desc">Nauka wspinaczki skalnej i alpejskiej z Karolem Hennigiem — założycielem Forma na Szczyt, trenerem kadry narodowej himalaistów, m.in. uczestników Narodowej Zimowej Wyprawy na K2 2017/2018. Absolwent AWF z publikacjami w prestiżowym High Altitude Medicine &amp; Biology.</div>
+                <div class="exp-card-guide">
+                    <div>
+                        <div class="exp-card-guide-name">Karol Hennig</div>
+                        <div class="exp-card-guide-role">Forma na Szczyt, Trener Himalaistów</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Skoki spadochronowe -->
+        <div class="exp-card reveal">
+            <img src="https://images.unsplash.com/photo-1630879937467-4afa290b1a6b?w=800&q=80&fit=crop" alt="Skok spadochronowy">
+            <div class="exp-card-overlay"></div>
+            <div class="exp-card-duration">3 dni</div>
+            <div class="exp-card-content">
+                <div class="exp-card-tag">Adrenalina</div>
+                <div class="exp-card-location">Warszawa / Chrcynno</div>
+                <div class="exp-card-title">Skoki z samolotu</div>
+                <div class="exp-card-desc">Skok w tandemie lub samodzielny kurs spadochronowy z instruktorami Aeroklubu Warszawskiego — jednego z najstarszych klubów lotniczych w Polsce. Program obejmuje szkolenie teoretyczne, lot samolotem i niezapomniany skok z widokiem na Mazowsze.</div>
+                <div class="exp-card-guide">
+                    <div>
+                        <div class="exp-card-guide-name">Aeroklub Warszawski</div>
+                        <div class="exp-card-guide-role">Szkolenie spadochronowe od 1927 r.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Biegnij Warszawo -->
+        <div class="exp-card reveal">
+            <img src="https://images.unsplash.com/photo-1774178290349-6ca5ea0db428?w=800&q=80&fit=crop" alt="Bieg grupowy w mieście">
+            <div class="exp-card-overlay"></div>
+            <div class="exp-card-duration">3 dni</div>
+            <div class="exp-card-content">
+                <div class="exp-card-tag">Bieganie</div>
+                <div class="exp-card-location">Warszawa, Polska</div>
+                <div class="exp-card-title">Biegnij Warszawo</div>
+                <div class="exp-card-desc">Wspólny bieg ulicami stolicy Polski — od Starego Miasta przez Łazienki Królewskie po bulwary wiślane. Trasy dopasowane do poziomu uczestników, wspólne śniadania biegowe i wieczorne integracje w najlepszych restauracjach Warszawy.</div>
+                <div class="exp-card-guide">
+                    <div>
+                        <div class="exp-card-guide-name">Profesjonalni trenerzy biegowi</div>
+                        <div class="exp-card-guide-role">Certyfikowani instruktorzy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Pętelka Tarzańska -->
+        <div class="exp-card reveal">
+            <img src="https://images.unsplash.com/photo-1710170600723-9095d7d3a480?w=800&q=80&fit=crop" alt="Kolarstwo szosowe w górach">
+            <div class="exp-card-overlay"></div>
+            <div class="exp-card-duration">4 dni</div>
+            <div class="exp-card-content">
+                <div class="exp-card-tag">Kolarstwo</div>
+                <div class="exp-card-location">Tatry / Pieniny</div>
+                <div class="exp-card-title">Pętelka Tarzańska</div>
+                <div class="exp-card-desc">Przejazd rowerami szosowymi przez malownicze drogi górskie wokół Tatr. Podjazdy z widokiem na panoramę Tatr, zjazdy przez Przełęcz nad Łapszanką i wieczory w góralskich schroniskach. Wsparcie serwisu technicznego i samochodu zabezpieczającego.</div>
+                <div class="exp-card-guide">
+                    <div>
+                        <div class="exp-card-guide-name">Doświadczeni przewodnicy</div>
+                        <div class="exp-card-guide-role">Kolarstwo szosowe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. Downhill Białka -->
+        <div class="exp-card reveal" id="downhill-card" onclick="openDownhillGallery()">
+            <picture>
+  <source srcset="downhill/DSC03289.webp" type="image/webp">
+  <img src="downhill/DSC03289.jpg" alt="Downhill rower górski — Białka Tatrzańska">
+</picture>
+            <div class="exp-card-overlay"></div>
+            <div class="exp-card-duration">3 dni</div>
+            <div class="offroad-gallery-icon" title="Zobacz galerię zdjęć">
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+            <div class="exp-card-content">
+                <div class="exp-card-tag">Downhill</div>
+                <div class="exp-card-location">Białka Tatrzańska</div>
+                <div class="exp-card-title">Downhill w Białce</div>
+                <div class="exp-card-desc">Adrenalina na rowerze górskim w jednym z najlepszych bike parków w Polsce. Profesjonalni instruktorzy nauczą techniki zjazdu, doboru linii i bezpiecznego hamowania. Trasy od łatwych flow trail po wymagające trasy DH.</div>
+                <div class="exp-card-guide">
+                    <div>
+                        <div class="exp-card-guide-name">Certyfikowani instruktorzy DH</div>
+                        <div class="exp-card-guide-role">Bike Park Białka Tatrzańska</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. Oddech - Olga Sochanek -->
+        <div class="exp-card reveal">
+            <img src="https://images.unsplash.com/photo-1643682661119-28da0685be2c?w=800&q=80&fit=crop" alt="Sesja oddechowa">
+            <div class="exp-card-overlay"></div>
+            <div class="exp-card-duration">3 dni</div>
+            <div class="exp-card-content">
+                <div class="exp-card-tag">Oddech &amp; mindfulness</div>
+                <div class="exp-card-location">Okolice Warszawy</div>
+                <div class="exp-card-title">Szkolenie z oddechu</div>
+                <div class="exp-card-desc">Warsztaty z Olgą Sochanek — certyfikowaną instruktorką PSYCHEDELIC BREATH&reg;, absolwentką AWF, łączącą wiedzę o fizjologii oddechu z praktykami mindfulness. 90-minutowe sesje oddechowe do muzyki elektronicznej, praca z ciałem i głęboka regeneracja.</div>
+                <div class="exp-card-guide">
+                    <div>
+                        <div class="exp-card-guide-name">Olga Sochanek</div>
+                        <div class="exp-card-guide-role">Certyfikowana instruktorka PSYCHEDELIC BREATH&reg;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. Off-road Quad/ATV -->
+        <div class="exp-card reveal" id="offroad-card" onclick="openOffroadGallery()">
+            <picture>
+  <source srcset="offroad/DSC00300-kopia.webp" type="image/webp">
+  <img src="offroad/DSC00300-kopia.jpg" alt="Off-road Quad ATV">
+</picture>
+            <div class="exp-card-overlay"></div>
+            <div class="exp-card-duration">1 dzień</div>
+            <div class="offroad-gallery-icon" title="Zobacz galerię zdjęć">
+                <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+            <div class="exp-card-content">
+                <div class="exp-card-tag">Off-road</div>
+                <div class="exp-card-location">Podhale / Tatry</div>
+                <div class="exp-card-title">Wycieczka Off-road Quad/ATV</div>
+                <div class="exp-card-desc">Adrenalina na czterech kółkach w malowniczym terenie Podhala. Jazda quadami i ATV po górskich szlakach, leśnych duktach i błotnistych trasach z widokiem na Tatry. Profesjonalny sprzęt i doświadczeni instruktorzy zapewniają bezpieczeństwo i niezapomniane wrażenia.</div>
+                <div class="exp-card-guide">
+                    <div>
+                        <div class="exp-card-guide-name">Doświadczeni instruktorzy off-road</div>
+                        <div class="exp-card-guide-role">Wycieczki quadowe, Podhale</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- OFFROAD GALLERY LIGHTBOX -->
+<div class="offroad-gallery-overlay" id="offroadGallery">
+    <div class="offroad-gallery-close" onclick="closeOffroadGallery()">&times;</div>
+    <div class="offroad-gallery-img-wrap">
+        <button class="offroad-gallery-nav offroad-gallery-prev" onclick="prevOffroadImg()">&#8249;</button>
+        <img id="offroadMainImg" src="" alt="Off-road galeria">
+        <button class="offroad-gallery-nav offroad-gallery-next" onclick="nextOffroadImg()">&#8250;</button>
+    </div>
+    <div class="offroad-gallery-counter" id="offroadCounter"></div>
+    <div class="offroad-gallery-thumbs" id="offroadThumbs"></div>
+</div>
+
+<!-- DOWNHILL GALLERY LIGHTBOX -->
+<div class="offroad-gallery-overlay" id="downhillGallery">
+    <div class="offroad-gallery-close" onclick="closeDownhillGallery()">&times;</div>
+    <div class="offroad-gallery-img-wrap">
+        <button class="offroad-gallery-nav offroad-gallery-prev" onclick="prevDownhillImg()">&#8249;</button>
+        <img id="downhillMainImg" src="" alt="Downhill galeria">
+        <button class="offroad-gallery-nav offroad-gallery-next" onclick="nextDownhillImg()">&#8250;</button>
+    </div>
+    <div class="offroad-gallery-counter" id="downhillCounter"></div>
+    <div class="offroad-gallery-thumbs" id="downhillThumbs"></div>
+</div>
+
+<!-- ADDITIONAL PROPOSALS -->
+<section class="proposals">
+    <div class="section-header">
+        <div class="section-label" data-pl="Wkrótce w ofercie" data-en="Coming Soon" data-ar="قريباً في العرض">Wkrótce w ofercie</div>
+        <h2 data-pl="Więcej <em>inspiracji</em>" data-en="More <em>inspiration</em>" data-ar="<em>مزيد من الإلهام</em>">Więcej <em>inspiracji</em></h2>
+        <p>Pracujemy nad kolejnymi pakietami doświadczeń. Oto aktywności, które planujemy wprowadzić.</p>
+    </div>
+    <div class="proposals-grid">
+
+        <div class="proposal-card reveal">
+            <div class="proposal-card-img">
+                <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80&fit=crop" alt="Kitesurfing">
+            </div>
+            <div class="proposal-card-body">
+                <div class="proposal-card-tag">Wodne sporty</div>
+                <div class="proposal-card-title">Kitesurfing na Helu</div>
+                <div class="proposal-card-desc">Nauka kitesurfingu na Półwyspie Helskim — jednym z najlepszych spotów w Europie. Płytka woda Zatoki Puckiej i stały wiatr to idealne warunki dla początkujących.</div>
+            </div>
+        </div>
+
+        <div class="proposal-card reveal">
+            <div class="proposal-card-img">
+                <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80&fit=crop" alt="Survival">
+            </div>
+            <div class="proposal-card-body">
+                <div class="proposal-card-tag">Survival</div>
+                <div class="proposal-card-title">Survival w Puszczy Kampinoskiej</div>
+                <div class="proposal-card-desc">Szkolenie survivalowe w dzikiej puszczy pod Warszawą. Budowa schronienia, rozpalanie ognia, orientacja w terenie i gotowanie w warunkach polowych.</div>
+            </div>
+        </div>
+
+        <div class="proposal-card reveal">
+            <div class="proposal-card-img">
+                <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=600&q=80&fit=crop" alt="Jazda konna">
+            </div>
+            <div class="proposal-card-body">
+                <div class="proposal-card-tag">Konne przygody</div>
+                <div class="proposal-card-title">Rajd konny w Bieszczadach</div>
+                <div class="proposal-card-desc">Wielodniowa wyprawa konna szlakami Bieszczadów — przez połoniny, bukowe lasy i malownicze doliny. Noclegi w górskich bacówkach z tradycyjną kuchnią.</div>
+            </div>
+        </div>
+
+        <div class="proposal-card reveal">
+            <div class="proposal-card-img">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80&fit=crop" alt="Freediving">
+            </div>
+            <div class="proposal-card-body">
+                <div class="proposal-card-tag">Pod wod&#261;</div>
+                <div class="proposal-card-title">Freediving — nurkowanie na wstrzymanym oddechu</div>
+                <div class="proposal-card-desc">Kurs freedivingu od podstaw — nauka technik oddechowych, nurkowania głębokiego i relaksacji pod wodą. Połączenie sportu z medytacją w ruchu.</div>
+            </div>
+        </div>
+
+        <div class="proposal-card reveal">
+            <div class="proposal-card-img">
+                <img src="https://images.unsplash.com/photo-1508357941501-0924cf398691?w=600&q=80&fit=crop" alt="Kajakarstwo">
+            </div>
+            <div class="proposal-card-body">
+                <div class="proposal-card-tag">Eksploracja</div>
+                <div class="proposal-card-title">Spływ kajakowy Krutynią</div>
+                <div class="proposal-card-desc">Wielodniowy spływ najpiękniejszą rzeką Mazur. Biwakowanie na dzikich plażach, obserwacja bobrów i żurawi, wieczory przy ognisku z gwiazdami nad głową.</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <img src="https://images.unsplash.com/photo-1761064039797-837fc97e5c86?w=1920&q=80&fit=crop" alt="Grupa przyjaciół">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+        <div class="section-label" data-pl="Gotowy na przygodę?" data-en="Ready for adventure?" data-ar="هل أنت مستعد للمغامرة؟">Gotowy na przygodę?</div>
+        <h2 data-pl="Zbierz grupę.<br>My zajmiemy się <em>resztą.</em>" data-en="Gather a group.<br>We'll handle the <em>rest.</em>" data-ar="اجمع مجموعة.<br>سنتولى <em>الباقي.</em>">Zbierz grupę.<br>My zajmiemy się <em>resztą.</em></h2>
+        <p>Skontaktuj się z nami, a stworzymy spersonalizowany pakiet doświadczeń idealnie dopasowany do Twojej grupy. Pełna organizacja od A do Z.</p>
+        <a href="index.html#contact" class="cta-btn">Zaplanuj doświadczenie</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">NOHA TRAVEL</div>
+        <div class="footer-links">
+            <a href="index.html">Strona główna</a>
+            <a href="index.html#destinations" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
+            <a href="doswiadczenie.html" data-pl="Doświadczenie" data-en="Experience" data-ar="تجربة">Doświadczenie</a>
+            <a href="index.html#contact" data-pl="Kontakt" data-en="Contact" data-ar="اتصل بنا">Kontakt</a>
+        </div>
+        <div class="footer-social"><a href="https://www.instagram.com/mypolishgetaway" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a><a href="https://www.tiktok.com/@mypolishgetaway" target="_blank" rel="noopener" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52V6.8a4.84 4.84 0 01-1-.11z"/></svg></a><a href="https://wa.me/48519692404" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.47A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-2.115 0-4.09-.652-5.716-1.764l-.41-.243-2.742.872.871-2.692-.27-.427A9.709 9.709 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg></a></div>
+        <div class="footer-copy">&copy; 2026 Noha Travel. Wszelkie prawa zastrzeżone.</div>
+    </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/48519692404" target="_blank" style="position:fixed;bottom:2rem;right:2rem;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.2);z-index:999;transition:transform .3s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.673-6.303-1.833l-.452-.276-3.148 1.055 1.055-3.148-.276-.452A9.96 9.96 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+</a>
+
+<script>
+// Reveal animations
+const revealEls = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1 });
+revealEls.forEach(el => revealObserver.observe(el));
+
+// Mobile nav
+document.querySelector('.hamburger')?.addEventListener('click', () => {
+    const nav = document.querySelector('nav');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    nav.style.position = 'fixed';
+    nav.style.top = '0';
+    nav.style.left = '0';
+    nav.style.right = '0';
+    nav.style.bottom = '0';
+    nav.style.background = 'rgba(10,10,10,.98)';
+    nav.style.flexDirection = 'column';
+    nav.style.alignItems = 'center';
+    nav.style.justifyContent = 'center';
+    nav.style.zIndex = '1000';
+    nav.style.gap = '2rem';
+});
+
+// OFFROAD GALLERY
+const offroadImages = [
+    'offroad/DSC00300-kopia.jpg',
+    'offroad/DSC00337-kopia 2.jpg',
+    'offroad/DSC00349-2-kopia.jpg',
+    'offroad/DSC00458-kopia 3.jpg',
+    'offroad/DSC00538-kopia 2.jpg',
+    'offroad/DSC00545-kopia 2.jpg',
+    'offroad/DSC00681-kopia.jpg',
+    'offroad/DSC00710-kopia 2.jpg',
+    'offroad/DSC00710-kopia 3.jpg',
+    'offroad/DSC00767-kopia.jpg',
+    'offroad/DSC00777-kopia 2.jpg',
+    'offroad/DSC00786-kopia.jpg',
+    'offroad/DSC00823-kopia.jpg',
+    'offroad/DSC01325-kopia.jpg',
+    'offroad/DSC01423-kopia.jpg',
+    'offroad/DSC01489-kopia.jpg',
+    'offroad/DSC01542-kopia.jpg',
+    'offroad/DSC01611-kopia.jpg',
+    'offroad/DSC01652-kopia.jpg',
+    'offroad/DSC01701-kopia.jpg',
+    'offroad/DSC01708-kopia.jpg',
+    'offroad/DSC01731-kopia.jpg',
+    'offroad/DSC01736-kopia.jpg',
+    'offroad/DSC01771-kopia.jpg',
+    'offroad/DSC01854-kopia 2.jpg',
+    'offroad/DSC01964-kopia.jpg',
+    'offroad/DSC02127-kopia.jpg',
+    'offroad/DSC02142-kopia.jpg',
+    'offroad/DSC02278-kopia.jpg',
+    'offroad/DSC02317-kopia.jpg',
+    'offroad/DSC02366-kopia.jpg',
+    'offroad/DSC02460-kopia.jpg',
+    'offroad/DSC02512-kopia.jpg',
+    'offroad/DSC02515-kopia.jpg',
+    'offroad/DSC02593-2-kopia.jpg',
+    'offroad/DSC02603-kopia.jpg',
+    'offroad/DSC02651-kopia.jpg'
+];
+let offroadIdx = 0;
+
+function buildOffroadThumbs() {
+    const container = document.getElementById('offroadThumbs');
+    container.innerHTML = '';
+    offroadImages.forEach((src, i) => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = 'Miniatura ' + (i + 1);
+        img.loading = 'lazy';
+        if (i === 0) img.classList.add('active');
+        img.onclick = () => showOffroadImg(i);
+        container.appendChild(img);
+    });
+}
+buildOffroadThumbs();
+
+function showOffroadImg(idx) {
+    offroadIdx = idx;
+    const mainImg = document.getElementById('offroadMainImg');
+    mainImg.classList.remove('loaded');
+    const newImg = new Image();
+    newImg.onload = () => { mainImg.src = newImg.src; mainImg.classList.add('loaded'); };
+    newImg.src = offroadImages[idx];
+    document.getElementById('offroadCounter').textContent = (idx + 1) + ' / ' + offroadImages.length;
+    document.querySelectorAll('#offroadThumbs img').forEach((t, i) => t.classList.toggle('active', i === idx));
+    const activeThumb = document.querySelector('#offroadThumbs img.active');
+    if (activeThumb) activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+}
+
+function openOffroadGallery() {
+    const overlay = document.getElementById('offroadGallery');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    showOffroadImg(0);
+}
+
+function closeOffroadGallery() {
+    document.getElementById('offroadGallery').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function nextOffroadImg() { showOffroadImg((offroadIdx + 1) % offroadImages.length); }
+function prevOffroadImg() { showOffroadImg((offroadIdx - 1 + offroadImages.length) % offroadImages.length); }
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+    const gallery = document.getElementById('offroadGallery');
+    if (!gallery.classList.contains('active')) return;
+    if (e.key === 'Escape') closeOffroadGallery();
+    if (e.key === 'ArrowRight') nextOffroadImg();
+    if (e.key === 'ArrowLeft') prevOffroadImg();
+});
+
+// Close on overlay click (not on image)
+document.getElementById('offroadGallery').addEventListener('click', (e) => {
+    if (e.target === document.getElementById('offroadGallery')) closeOffroadGallery();
+});
+
+// DOWNHILL GALLERY
+const downhillImages = [
+    'downhill/DSC03145.jpg',
+    'downhill/DSC03235.jpg',
+    'downhill/DSC03277.jpg',
+    'downhill/DSC03289.jpg',
+    'downhill/DSC03313.jpg',
+    'downhill/DSC03330.jpg',
+    'downhill/DSC03342.jpg',
+    'downhill/DSC03356-2.jpg'
+];
+let downhillIdx = 0;
+
+(function buildDownhillThumbs() {
+    const container = document.getElementById('downhillThumbs');
+    container.innerHTML = '';
+    downhillImages.forEach((src, i) => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = 'Miniatura ' + (i + 1);
+        img.loading = 'lazy';
+        if (i === 0) img.classList.add('active');
+        img.onclick = () => showDownhillImg(i);
+        container.appendChild(img);
+    });
+})();
+
+function showDownhillImg(idx) {
+    downhillIdx = idx;
+    const mainImg = document.getElementById('downhillMainImg');
+    mainImg.classList.remove('loaded');
+    const newImg = new Image();
+    newImg.onload = () => { mainImg.src = newImg.src; mainImg.classList.add('loaded'); };
+    newImg.src = downhillImages[idx];
+    document.getElementById('downhillCounter').textContent = (idx + 1) + ' / ' + downhillImages.length;
+    document.querySelectorAll('#downhillThumbs img').forEach((t, i) => t.classList.toggle('active', i === idx));
+    const activeThumb = document.querySelector('#downhillThumbs img.active');
+    if (activeThumb) activeThumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+}
+
+function openDownhillGallery() {
+    const overlay = document.getElementById('downhillGallery');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    showDownhillImg(0);
+}
+
+function closeDownhillGallery() {
+    document.getElementById('downhillGallery').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+function nextDownhillImg() { showDownhillImg((downhillIdx + 1) % downhillImages.length); }
+function prevDownhillImg() { showDownhillImg((downhillIdx - 1 + downhillImages.length) % downhillImages.length); }
+
+// Keyboard navigation for downhill
+document.addEventListener('keydown', (e) => {
+    const gallery = document.getElementById('downhillGallery');
+    if (!gallery.classList.contains('active')) return;
+    if (e.key === 'Escape') closeDownhillGallery();
+    if (e.key === 'ArrowRight') nextDownhillImg();
+    if (e.key === 'ArrowLeft') prevDownhillImg();
+});
+
+document.getElementById('downhillGallery').addEventListener('click', (e) => {
+    if (e.target === document.getElementById('downhillGallery')) closeDownhillGallery();
+});
+</script>
+
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/48519692404?text=Dzień%20dobry!%20Chciałbym%20zapytać%20o%20ofertę%20Noha%20Travel" target="_blank" rel="noopener" class="whatsapp-button" aria-label="Kontakt WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a5.505 5.505 0 00-5.487 5.505c0 1.416.356 2.786.997 3.973L3.957 21l4.8-1.257c1.164.639 2.487 1.01 3.822 1.01h.004A5.507 5.507 0 0018.35 15.494 5.505 5.505 0 0012.051 6.979"/>
+    </svg>
+</a>
+
+<script>
+let currentLang='pl';
+function switchLang(lang){
+  currentLang=lang;
+  const html=document.documentElement;
+  html.lang=lang;
+  html.dir=lang==='ar'?'rtl':'ltr';
+  document.querySelectorAll('[data-'+lang+']').forEach(el=>{
+    const val=el.getAttribute('data-'+lang);
+    if(val){
+      if(el.tagName==='INPUT'||el.tagName==='TEXTAREA'){el.placeholder=val}
+      else{el.textContent=val}
+    }
+  });
+  document.querySelectorAll('.lang-switch').forEach(s=>{
+    s.classList.toggle('active',s.getAttribute('data-lang')===lang);
+  });
+}
+</script>
+
+</body>
+</html>

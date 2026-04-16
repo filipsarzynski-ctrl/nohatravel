@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /offroad/
+Disallow: /downhill/
+
+Sitemap: https://nohatravel.com/sitemap.xml
+
+# Noha Travel - Luxury Travel in Poland
+# Contact: info@nohatravel.com

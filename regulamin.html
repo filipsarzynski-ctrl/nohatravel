@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulamin — Noha Travel | Luksusowe podróże po Polsce</title>
+    <meta name="description" content="Regulamin umowy imprez turystycznych Noha Travel. Przeczytaj warunki rezerwacji, zmian, odstąpień i odpowiedzialności.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80&fit=crop">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%23c9a96e' stroke-width='1'/%3E%3Cpolygon points='16,3 18,14 16,11 14,14' fill='%23c9a96e'/%3E%3Cpolygon points='16,29 14,18 16,21 18,18' fill='%23c9a96e' opacity='0.4'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{--gold:#c9a96e;--gold-light:#d4bc8b;--gold-dark:#a8884f;--black:#0a0a0a;--dark:#1a1a1a;--dark-gray:#2a2a2a;--medium-gray:#888;--white:#fff;--cream:#faf8f4;--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Montserrat','Helvetica Neue',sans-serif;--transition:0.4s cubic-bezier(.25,.46,.45,.94)}
+        html{scroll-behavior:smooth;font-size:16px}
+        body{font-family:var(--font-sans);font-weight:300;color:var(--dark);background:var(--white);overflow-x:hidden;line-height:1.7}
+        a{text-decoration:none;color:inherit;transition:color var(--transition)}
+        img{max-width:100%;display:block}
+
+        /* HEADER */
+        header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.5rem 3rem;display:flex;align-items:center;justify-content:space-between;transition:all var(--transition);background:rgba(10,10,10,.95);backdrop-filter:blur(20px);box-shadow:0 2px 40px rgba(0,0,0,.3)}
+        .logo-wrap{display:flex;align-items:center;gap:1rem}
+        .logo-svg{width:50px;height:auto}
+        .logo{font-family:var(--font-serif);font-size:1.8rem;font-weight:300;color:var(--white);letter-spacing:.25em;text-transform:uppercase;display:flex;flex-direction:column;line-height:1}
+        .logo-sub{font-family:var(--font-sans);font-size:.5rem;letter-spacing:.5em;color:var(--gold);font-weight:400;margin-top:4px}
+        nav{display:flex;align-items:center;gap:2.5rem}
+        nav a{font-size:.72rem;font-weight:400;color:rgba(255,255,255,.85);letter-spacing:.15em;text-transform:uppercase;position:relative;padding:.5rem 0}
+        nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width var(--transition)}
+        nav a:hover{color:var(--gold)}
+        nav a:hover::after{width:100%}
+        nav a.active-nav{color:var(--gold)}
+        nav a.active-nav::after{width:100%}
+        .nav-right{display:flex;align-items:center;gap:1rem}.lang-switch{font-size:.7rem;letter-spacing:.1em;color:rgba(255,255,255,.5);cursor:pointer;padding:.3rem .5rem;border:1px solid transparent;border-radius:3px;transition:all var(--transition)}.lang-switch:hover{color:var(--gold);border-color:var(--gold)}.lang-switch.active{color:var(--gold);border-color:var(--gold)}
+        .header-phone{font-size:.72rem;color:rgba(255,255,255,.7);letter-spacing:.1em}
+        .header-phone:hover{color:var(--gold)}
+        .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001}
+        .hamburger span{width:28px;height:1px;background:var(--white);transition:all .3s ease}
+
+        /* HERO */
+        .page-hero{position:relative;height:75vh;min-height:550px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+        .page-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+        .page-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.55) 100%)}
+        .page-hero-content{position:relative;z-index:2;text-align:center;max-width:800px;padding:0 2rem}
+        .page-hero-label{font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .page-hero-title{font-family:var(--font-serif);font-size:4.5rem;font-weight:300;color:var(--white);line-height:1.1;margin-bottom:1.5rem}
+        .page-hero-title em{font-style:italic;color:var(--gold)}
+        .page-hero-desc{font-size:.95rem;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto;line-height:1.8}
+
+        /* CONTENT */
+        .content{padding:6rem 5%;background:var(--white)}
+        .content-inner{max-width:900px;margin:0 auto}
+        .content-section{margin-bottom:4rem;padding-bottom:3rem;border-bottom:1px solid rgba(0,0,0,.1)}
+        .content-section:last-child{border-bottom:none}
+        .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .content h2{font-family:var(--font-serif);font-size:2rem;font-weight:400;color:var(--dark);line-height:1.3;margin-bottom:1.5rem;margin-top:0}
+        .content h3{font-family:var(--font-serif);font-size:1.4rem;font-weight:400;color:var(--dark);margin-top:1.5rem;margin-bottom:0.8rem}
+        .content p{font-size:.9rem;color:#555;line-height:1.9;margin-bottom:1rem}
+        .content ol,.content ul{margin-left:2rem;margin-bottom:1rem;font-size:.9rem;color:#555;line-height:1.8}
+        .content li{margin-bottom:0.5rem}
+        .content strong{font-weight:600;color:var(--dark)}
+        .content em{color:var(--gold);font-style:italic}
+
+        /* CTA */
+        .cta-section{position:relative;padding:8rem 5%;overflow:hidden;text-align:center}
+        .cta-section img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+        .cta-overlay{position:absolute;inset:0;background:rgba(0,0,0,.65)}
+        .cta-content{position:relative;z-index:2;max-width:700px;margin:0 auto}
+        .cta-content .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .cta-content h2{font-family:var(--font-serif);font-size:3rem;font-weight:300;color:var(--white);line-height:1.2;margin-bottom:1.5rem}
+        .cta-content h2 em{font-style:italic;color:var(--gold)}
+        .cta-content p{font-size:.9rem;color:rgba(255,255,255,.8);margin-bottom:2rem;line-height:1.8}
+        .cta-btn{display:inline-block;padding:1rem 3rem;border:1px solid var(--gold);color:var(--gold);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;font-weight:500;transition:all var(--transition);border-radius:2px}
+        .cta-btn:hover{background:var(--gold);color:var(--black)}
+
+        /* FOOTER */
+        footer{background:var(--black);padding:3rem 5%;text-align:center}
+        .footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+        .footer-brand{font-family:var(--font-serif);font-size:1.2rem;color:var(--white);letter-spacing:.2em}
+        .footer-links{display:flex;gap:2rem}
+        .footer-links a{font-size:.7rem;color:rgba(255,255,255,.5);letter-spacing:.12em;text-transform:uppercase;transition:color .3s}
+        .footer-links a:hover{color:var(--gold)}
+        .footer-copy{font-size:.65rem;color:rgba(255,255,255,.3);letter-spacing:.05em}
+        .footer-social{display:flex;gap:1rem;margin-top:1rem}
+        .footer-social a{width:38px;height:38px;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:.7rem;color:rgba(255,255,255,.5);transition:all var(--transition);border-radius:50%}
+        .footer-social a:hover{border-color:var(--gold);color:var(--gold)}
+
+        /* ANIMATIONS */
+        .reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+        .reveal.visible{opacity:1;transform:translateY(0)}
+
+        /* MOBILE NAV */
+        @media(max-width:768px){
+            nav.mob-open{display:flex;flex-direction:column;position:fixed;inset:0;background:rgba(10,10,10,.98);justify-content:center;align-items:center;gap:2rem;z-index:999}
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:1024px){
+            .page-hero-title{font-size:3rem}
+            .content-inner{padding:0 1.5rem}
+        }
+        @media(max-width:768px){
+            header{padding:1rem 1.5rem}
+            nav{display:none}
+            .hamburger{display:flex}
+            .page-hero{height:60vh;min-height:400px}
+            .page-hero-title{font-size:2.5rem}
+            .content h2{font-size:1.6rem}
+            .content h3{font-size:1.1rem}
+            .footer-inner{flex-direction:column;text-align:center}
+        }
+
+        /* WHATSAPP BUTTON */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 9999;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25D366;
+            border: 2px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.12);
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.4);
+            animation: whatsapp-pulse 0.6s ease;
+        }
+        @keyframes whatsapp-pulse {
+            0%, 100% {
+                box-shadow: 0 6px 28px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 8px 36px rgba(37, 211, 102, 0.6);
+            }
+        }
+        .whatsapp-button svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="index.html" class="logo-wrap">
+        <svg class="logo-svg" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="26" stroke="#c9a96e" stroke-width="0.8"/><polygon points="30,5 33,28 30,22 27,28" fill="#c9a96e"/><polygon points="30,55 27,32 30,38 33,32" fill="#c9a96e" opacity="0.35"/><line x1="30" y1="62" x2="30" y2="75" stroke="#c9a96e" stroke-width="0.5"/></svg>
+        <div class="logo" data-pl="NOHA TRAVEL" data-en="NOHA TRAVEL" data-ar="نهى تور">NOHA TRAVEL<span class="logo-sub" data-pl="LUXURY TRAVEL IN POLAND" data-en="LUXURY TRAVEL IN POLAND" data-ar="الرحلات الفاخرة في بولندا">LUXURY TRAVEL IN POLAND</span></div>
+    </a>
+    <nav>
+        <a href="index.html#destinations" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
+        <a href="index.html#inspirations" data-pl="Inspiracje" data-en="Inspirations" data-ar="إلهام">Inspiracje</a>
+        <a href="doswiadczenie.html" data-pl="Doświadczenie" data-en="Experience" data-ar="تجربة">Doświadczenie</a>
+        <a href="index.html#cars" data-pl="Wynajem aut" data-en="Car Rental" data-ar="تأجير سيارات">Wynajem aut</a>
+        <a href="index.html#about" data-pl="O nas" data-en="About Us" data-ar="من نحن">O nas</a>
+        <a href="index.html#contact" data-pl="Kontakt" data-en="Contact" data-ar="اتصل بنا">Kontakt</a>
+    </nav>
+    <div class="nav-right">
+        <a href="tel:+48519692404" class="header-phone">+48 519 692 404</a>
+        <span class="lang-switch active" data-lang="pl" onclick="switchLang('pl')">PL</span>
+        <span class="lang-switch" data-lang="en" onclick="switchLang('en')">EN</span>
+        <span class="lang-switch" data-lang="ar" onclick="switchLang('ar')">AR</span>
+        <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('mob-open')"><span></span><span></span><span></span></div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&q=80&fit=crop" alt="Regulamin umowy">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <div class="page-hero-label" data-pl="Warunki umowy" data-en="Terms and Conditions" data-ar="الشروط والأحكام">Warunki umowy</div>
+        <h1 class="page-hero-title" data-pl="Regulamin <em>Noha Travel</em>" data-en="Noha Travel <em>Terms of Service</em>" data-ar="شروط خدمة <em>نهى تور</em>">Regulamin <em>Noha Travel</em></h1>
+        <p class="page-hero-desc" data-pl="Przeczytaj wszystkie warunki imprez turystycznych, zmian, odstąpień i odpowiedzialności. Nasze regulacje zgodne z polskim prawem turystycznym." data-en="Read all terms of tourist events, changes, withdrawals and liability. Our regulations comply with Polish tourist law." data-ar="اقرأ جميع شروط الأحداث السياحية والتغييرات والانسحابات والمسؤولية. تتوافق لوائحنا مع القانون السياحي البولندي.">Przeczytaj wszystkie warunki imprez turystycznych, zmian, odstąpień i odpowiedzialności. Nasze regulacje zgodne z polskim prawem turystycznym.</p>
+    </div>
+</section>
+
+<!-- CONTENT -->
+<section class="content">
+    <div class="content-inner reveal">
+
+        <!-- 1. DEFINICJE -->
+        <div class="content-section">
+            <div class="section-label" data-pl="Artykuł 1" data-en="Article 1" data-ar="المادة 1">Artykuł 1</div>
+            <h2 data-pl="Definicje" data-en="Definitions" data-ar="التعريفات">Definicje</h2>
+
+            <h3 data-pl="1.1 Organizator" data-en="1.1 Organizer" data-ar="1.1 المنظم">1.1 Organizator</h3>
+            <p data-pl="Organizatorem imprez turystycznych jest Noha Travel Sp. z o.o., wpisana do Krajowego Rejestru Sądowego (KRS) pod numerem [do uzupełnienia], podatnik VAT o numerze NIP [do uzupełnienia], z siedzibą przy ul. Marszałkowskiej 1, 00-001 Warszawa." data-en="The organizer of tourist events is Noha Travel Sp. z o.o., registered in the National Court Register (KRS) under number [to be filled], VAT taxpayer with NIP number [to be filled], with headquarters at ul. Marszałkowska 1, 00-001 Warsaw." data-ar="منظم الأحداث السياحية هو شركة Noha Travel Sp. z o.o.، المسجلة في السجل المحكمة الوطنية (KRS) برقم [سيتم ملؤه لاحقا]، دافع ضرائب VAT برقم NIP [سيتم ملؤه لاحقا]، مع المقر الرئيسي في ul. Marszałkowska 1، 00-001 وارسو.">Organizatorem imprez turystycznych jest Noha Travel Sp. z o.o., wpisana do Krajowego Rejestru Sądowego (KRS) pod numerem [do uzupełnienia], podatnik VAT o numerze NIP [do uzupełnienia], z siedzibą przy ul. Marszałkowskiej 1, 00-001 Warszawa.</p>
+
+            <h3 data-pl="1.2 Podróżny" data-en="1.2 Traveler" data-ar="1.2 المسافر">1.2 Podróżny</h3>
+            <p data-pl="Podróżnym jest osoba fizyczna, która nabyła usługę turystyczną od Organizatora lub sprzedawcy detalicznego. Podróżnym może być także osoba prawna lub jednostka nie będąca osobą prawną." data-en="A traveler is a natural person who has purchased a tourist service from the Organizer or a retail seller. A traveler may also be a legal person or a non-legal entity." data-ar="المسافر هو شخص طبيعي اشترى خدمة سياحية من المنظم أو بائع التجزئة. قد يكون المسافر أيضا شخصا اعتباريا أو كيانا غير قانوني.">Podróżnym jest osoba fizyczna, która nabyła usługę turystyczną od Organizatora lub sprzedawcy detalicznego. Podróżnym może być także osoba prawna lub jednostka nie będąca osobą prawną.</p>
+
+            <h3 data-pl="1.3 Impreza turystyczna" data-en="1.3 Tourist Event" data-ar="1.3 الحدث السياحي">1.3 Impreza turystyczna</h3>
+            <p data-pl="Imprezą turystyczną jest skoordynowana kombinacja co najmniej dwóch usług turystycznych, obejmująca transport, noclegowe i usługi powiązane, zaplanowana na okres co najmniej 24 godzin albo w ciągu jednej doby nocnej, stanowiąca wycieczkę przygotowaną przez Organizatora, której towarzyszy plan połączeń, harmonogram itinerarium lub inne informacje." data-en="A tourist event is a coordinated combination of at least two tourist services, including transport, accommodation and related services, planned for a period of at least 24 hours or one night, constituting a trip prepared by the Organizer, accompanied by a travel plan, itinerary schedule or other information." data-ar="الحدث السياحي هو مزيج منسق من خدمتين سياحيتين على الأقل، يشمل النقل والإقامة والخدمات ذات الصلة، مخطط لمدة 24 ساعة على الأقل أو ليلة واحدة.">Imprezą turystyczną jest skoordynowana kombinacja co najmniej dwóch usług turystycznych, obejmująca transport, noclegowe i usługi powiązane, zaplanowana na okres co najmniej 24 godzin albo w ciągu jednej doby nocnej, stanowiąca wycieczkę przygotowaną przez Organizatora, której towarzyszy plan połączeń, harmonogram itinerarium lub inne informacje.</p>
+
+            <h3 data-pl="1.4 Usługa powiązana" data-en="1.4 Related Services" data-ar="1.4 الخدمات ذات الصلة">1.4 Usługa powiązana</h3>
+            <p data-pl="Usługą powiązaną jest usługa turystyczna, która nie wchodzi w skład imprez turystycznych, ale stanowi uzupełnienie oferty, takie jak: wynajem samochodu, ubezpieczenie podróży, posiłki, oprowadzanie turystyczne, wstępy do atrakcji." data-en="A related service is a tourist service that is not part of tourist events, but constitutes a supplement to the offer, such as: car rental, travel insurance, meals, guided tours, admission to attractions." data-ar="الخدمة ذات الصلة هي خدمة سياحية لا تشكل جزءا من الأحداث السياحية، ولكنها تشكل ملحق للعرض، مثل: تأجير السيارات والتأمين على السفر والوجبات والجولات المصحوبة بمرشدين وشهادات الدخول.">Usługą powiązaną jest usługa turystyczna, która nie wchodzi w skład imprez turystycznych, ale stanowi uzupełnienie oferty, takie jak: wynajem samochodu, ubezpieczenie podróży, posiłki, oprowadzanie turystyczne, wstępy do atrakcji.</p>
+        </div>
+
+        <!-- 2. ZAWARCIE UMOWY -->
+        <div class="content-section">
+            <div class="section-label" data-pl="Artykuł 2" data-en="Article 2" data-ar="المادة 2">Artykuł 2</div>
+            <h2 data-pl="Zawarcie umowy" data-en="Conclusion of the Contract" data-ar="إبرام العقد">Zawarcie umowy</h2>
+
+            <h3 data-pl="2.1 Sposoby rezerwacji" data-en="2.1 Booking Methods" data-ar="2.1 طرق الحجز">2.1 Sposoby rezerwacji</h3>
+            <p data-pl="Podróżny może dokonać rezerwacji imprez turystycznych i usług powiązanych poprzez:" data-en="A traveler may make a reservation for tourist events and related services through:" data-ar="قد يقوم المسافر بحجز الأحداث السياحية والخدمات ذات الصلة من خلال:">Podróżny może dokonać rezerwacji imprez turystycznych i usług powiązanych poprzez:</p>
+            <ul>
+                <li data-pl="Formularz rezerwacji dostępny na stronie www.nohatravel.com" data-en="Reservation form available at www.nohatravel.com" data-ar="نموذج الحجز المتاح على الموقع www.nohatravel.com">Formularz rezerwacji dostępny na stronie www.nohatravel.com</li>
+                <li data-pl="Wiadomość WhatsApp na numer +48 519 692 404" data-en="WhatsApp message to +48 519 692 404" data-ar="رسالة WhatsApp إلى +48 519 692 404">Wiadomość WhatsApp na numer +48 519 692 404</li>
+                <li data-pl="Email na adres info@nohatravel.com" data-en="Email to info@nohatravel.com" data-ar="البريد الإلكتروني إلى info@nohatravel.com">Email na adres info@nohatravel.com</li>
+                <li data-pl="Telefon: +48 519 692 404" data-en="Phone: +48 519 692 404" data-ar="الهاتف: +48 519 692 404">Telefon: +48 519 692 404</li>
+            </ul>
+
+            <h3 data-pl="2.2 Potwierdzenie rezerwacji" data-en="2.2 Booking Confirmation" data-ar="2.2 تأكيد الحجز">2.2 Potwierdzenie rezerwacji</h3>
+            <p data-pl="Rezerwacja staje się wiążącą umową po otrzymaniu od Organizatora potwierdzenia rezerwacji na piśmie (email, SMS, WhatsApp). Potwierdzenie zawiera szczegóły imprez turystycznej oraz warunki umowy." data-en="A reservation becomes a binding contract upon receipt from the Organizer of written booking confirmation (email, SMS, WhatsApp). The confirmation contains details of the tourist event and contract terms." data-ar="يصبح الحجز عقدا ملزما عند استقبال تأكيد الحجز المكتوب من المنظم (بريد إلكتروني أو رسالة نصية قصيرة أو WhatsApp). يحتوي التأكيد على تفاصيل الحدث السياحي وشروط العقد.">Rezerwacja staje się wiążącą umową po otrzymaniu od Organizatora potwierdzenia rezerwacji na piśmie (email, SMS, WhatsApp). Potwierdzenie zawiera szczegóły imprez turystycznej oraz warunki umowy.</p>
+        </div>
+
+        <!-- 3. CENY I PŁATNOŚCI -->
+        <div class="content-section">
+            <div class="section-label" data-pl="Artykuł 3" data-en="Article 3" data-ar="المادة 3">Artykuł 3</div>
+            <h2 data-pl="Ceny i płatności" data-en="Prices and Payments" data-ar="الأسعار والدفع">Ceny i płatności</h2>
+
+            <h3 data-pl="3.1 Waluta i ceny" data-en="3.1 Currency and Prices" data-ar="3.1 العملة والأسعار">3.1 Waluta i ceny</h3>
+            <p data-pl="Ceny imprez turystycznych podawane są w złotych polskich (PLN) lub euro (EUR) zgodnie ze wskazaniem na stronie internetowej lub w ofercie. Cena imprez turystycznej obejmuje wszystkie opłaty Organizatora oraz usługi wykazane w opisie." data-en="Prices for tourist events are quoted in Polish zloty (PLN) or euros (EUR) as indicated on the website or in the offer. The price of a tourist event includes all fees of the Organizer and services listed in the description." data-ar="يتم تقديم أسعار الأحداث السياحية بالزلوتي البولندي (PLN) أو اليورو (EUR) كما هو مبين على الموقع الإلكتروني أو في العرض. يشمل سعر الحدث السياحي جميع رسوم المنظم والخدمات المدرجة في الوصف.">Ceny imprez turystycznych podawane są w złotych polskich (PLN) lub euro (EUR) zgodnie ze wskazaniem na stronie internetowej lub w ofercie. Cena imprez turystycznej obejmuje wszystkie opłaty Organizatora oraz usługi wykazane w opisie.</p>
+
+            <h3 data-pl="3.2 Warunki płatności" data-en="3.2 Payment Terms" data-ar="3.2 شروط الدفع">3.2 Warunki płatności</h3>
+            <p data-pl="Płatność imprez turystycznej obejmuje:" data-en="Payment for the tourist event includes:" data-ar="يتضمن الدفع مقابل الحدث السياحي:">Płatność imprez turystycznej obejmuje:</p>
+            <ul>
+                <li data-pl="Zaliczka 30% — wymagana w ciągu 3 dni od potwierdzenia rezerwacji" data-en="Deposit of 30% — required within 3 days of booking confirmation" data-ar="وديعة بنسبة 30% - مطلوبة خلال 3 أيام من تأكيد الحجز">Zaliczka 30% — wymagana w ciągu 3 dni od potwierdzenia rezerwacji</li>
+                <li data-pl="Pozostałe 70% — wymagane nie później niż 14 dni przed datą rozpoczęcia imprez turystycznej" data-en="Remaining 70% — required no later than 14 days before the start of the tourist event" data-ar="الـ 70% المتبقية - مطلوبة في موعد أقصاه 14 يوما قبل بدء الحدث السياحي">Pozostałe 70% — wymagane nie później niż 14 dni przed datą rozpoczęcia imprez turystycznej</li>
+            </ul>
+
+            <h3 data-pl="3.3 Rachunki i faktury" data-en="3.3 Invoices" data-ar="3.3 الفواتير">3.3 Rachunki i faktury</h3>
+            <p data-pl="Faktura VAT wystawiana jest na życzenie Podróżnego. Organizator wystawia dowód platności w postaci rachunku/faktury na każdy etap płatności." data-en="A VAT invoice is issued at the request of the Traveler. The Organizer issues proof of payment in the form of an invoice/receipt for each payment stage." data-ar="يتم إصدار فاتورة ضريبة القيمة المضافة بناء على طلب المسافر. يصدر المنظم إثبات الدفع في شكل فاتورة/إيصال لكل مرحلة دفع.">Faktura VAT wystawiana jest na życzenie Podróżnego. Organizator wystawia dowód platności w postaci rachunku/faktury na każdy etap płatności.</p>
+        </div>
+
+        <!-- 4. ZMIANA I ODSTĄPIENIE OD UMOWY -->
+        <div class="content-section">
+            <div class="section-label" data-pl="Artykuł 4" data-en="Article 4" data-ar="المادة 4">Artykuł 4</div>
+            <h2 data-pl="Zmiana i odstąpienie od umowy" data-en="Changes and Withdrawal from the Contract" data-ar="التغييرات والانسحاب من العقد">Zmiana i odstąpienie od umowy</h2>
+
+            <h3 data-pl="4.1 Prawo do odstąpienia" data-en="4.1 Right to Withdraw" data-ar="4.1 الحق في الانسحاب">4.1 Prawo do odstąpienia</h3>
+            <p data-pl="Podróżny ma prawo odstąpić od umowy w dowolnym momencie przed datą rozpoczęcia imprez turystycznej bez podania przyczyny. Koszt odstąpienia uzależniony jest od liczby dni pozostałych do rozpoczęcia imprez turystycznej:" data-en="The Traveler has the right to withdraw from the contract at any time before the start of the tourist event without giving a reason. The cost of withdrawal depends on the number of days remaining before the start of the tourist event:" data-ar="للمسافر الحق في الانسحاب من العقد في أي وقت قبل بدء الحدث السياحي دون ذكر سبب. تعتمد تكلفة الانسحاب على عدد الأيام المتبقية قبل بدء الحدث السياحي:">Podróżny ma prawo odstąpić od umowy w dowolnym momencie przed datą rozpoczęcia imprez turystycznej bez podania przyczyny. Koszt odstąpienia uzależniony jest od liczby dni pozostałych do rozpoczęcia imprez turystycznej:</p>
+            <ul>
+                <li data-pl="Ponad 30 dni przed wyjazdem: zwrot 90% zapłaconej kwoty (koszty administracyjne 10%)" data-en="More than 30 days before departure: 90% refund of paid amount (administrative costs 10%)" data-ar="أكثر من 30 يوما قبل المغادرة: استرجاع 90% من المبلغ المدفوع (تكاليف إدارية 10%)">Ponad 30 dni przed wyjazdem: zwrot 90% zapłaconej kwoty (koszty administracyjne 10%)</li>
+                <li data-pl="14-30 dni przed wyjazdem: zwrot 70% zapłaconej kwoty" data-en="14-30 days before departure: 70% refund of paid amount" data-ar="14-30 يوما قبل المغادرة: استرجاع 70% من المبلغ المدفوع">14-30 dni przed wyjazdem: zwrot 70% zapłaconej kwoty</li>
+                <li data-pl="7-14 dni przed wyjazdem: zwrot 50% zapłaconej kwoty" data-en="7-14 days before departure: 50% refund of paid amount" data-ar="7-14 يوما قبل المغادرة: استرجاع 50% من المبلغ المدفوع">7-14 dni przed wyjazdem: zwrot 50% zapłaconej kwoty</li>
+                <li data-pl="3-7 dni przed wyjazdem: zwrot 30% zapłaconej kwoty" data-en="3-7 days before departure: 30% refund of paid amount" data-ar="3-7 أيام قبل المغادرة: استرجاع 30% من المبلغ المدفوع">3-7 dni przed wyjazdem: zwrot 30% zapłaconej kwoty</li>
+                <li data-pl="Mniej niż 3 dni przed wyjazdem: brak zwrotu pieniędzy" data-en="Less than 3 days before departure: no refund" data-ar="أقل من 3 أيام قبل المغادرة: لا يوجد استرجاع">Mniej niż 3 dni przed wyjazdem: brak zwrotu pieniędzy</li>
+            </ul>
+
+            <h3 data-pl="4.2 Procedura wznowienia" data-en="4.2 Withdrawal Procedure" data-ar="4.2 إجراء الانسحاب">4.2 Procedura wznowienia</h3>
+            <p data-pl="Aby dokonać odstąpienia od umowy, Podróżny musi przesłać pisemne oświadczenie o rezygnacji na adres email info@nohatravel.com. Zwrot pieniędzy następuje w ciągu 14 dni od daty otrzymania oświadczenia." data-en="To withdraw from the contract, the Traveler must send a written statement of resignation to info@nohatravel.com. The refund takes place within 14 days from the date of receipt of the statement." data-ar="للانسحاب من العقد، يجب على المسافر إرسال بيان كتابي بالتنازل إلى info@nohatravel.com. يتم استرجاع المبلغ خلال 14 يوما من تاريخ استقبال البيان.">Aby dokonać odstąpienia od umowy, Podróżny musi przesłać pisemne oświadczenie o rezygnacji na adres email info@nohatravel.com. Zwrot pieniędzy następuje w ciągu 14 dni od daty otrzymania oświadczenia.</p>
+
+            <h3 data-pl="4.3 Zmiany w programie przez Organizatora" data-en="4.3 Program Changes by the Organizer" data-ar="4.3 تغييرات البرنامج من قبل المنظم">4.3 Zmiany w programie przez Organizatora</h3>
+            <p data-pl="Organizator zastrzega sobie prawo do wprowadzenia zmian w programie imprez turystycznej, jeśli są to zmiany nieistotne. Istotne zmiany (zmiana daty, transportu, ponad 25% zmiana ceny) uprawniają Podróżnego do odstąpienia od umowy bez kar." data-en="The Organizer reserves the right to make changes to the tourist event program if they are insignificant. Significant changes (change of date, transport, more than 25% price change) entitle the Traveler to withdraw from the contract without penalties." data-ar="يحتفظ المنظم بالحق في إجراء تغييرات على برنامج الحدث السياحي إذا كانت تغييرات غير جوهرية. التغييرات الجوهرية (تغيير التاريخ أو النقل أو تغيير السعر بأكثر من 25%) تعطي المسافر الحق في الانسحاب من العقد بدون عقوبات.">Organizator zastrzega sobie prawo do wprowadzenia zmian w programie imprez turystycznej, jeśli są to zmiany nieistotne. Istotne zmiany (zmiana daty, transportu, ponad 25% zmiana ceny) uprawniają Podróżnego do odstąpienia od umowy bez kar.</p>
+        </div>
+
+        <!-- 5. OBOWIĄZKI ORGANIZATORA -->
+        <div class="content-section">
+            <div class="section-label" data-pl="Artykuł 5" data-en="Article 5" data-ar="المادة 5">Artykuł 5</div>
+            <h2 data-pl="Obowiązki organizatora" data-en="Organizer's Obligations" data-ar="التزامات المنظم">Obowiązki organizatora</h2>
+
+            <h3 data-pl="5.1 Zabezpieczenie usług" data-en="5.1 Service Security" data-ar="5.1 تأمين الخدمات">5.1 Zabezpieczenie usług</h3>
+            <p data-pl="Organizator zobowiązany jest do zapewnienia wszystkich usług wykazanych w opisie imprez turystycznej zgodnie z najwyższymi standardami jakości. W przypadku niemożliwości świadczenia usługi, Organizator musi zapewnić zastępczą usługę porównywalna lub wyższej jakości." data-en="The Organizer is obliged to provide all services listed in the tourist event description in accordance with the highest quality standards. In case of inability to provide a service, the Organizer must ensure an equivalent or higher quality substitute service." data-ar="يلتزم المنظم بتقديم جميع الخدمات المدرجة في وصف الحدث السياحي وفقا لأعلى معايير الجودة. في حالة عدم القدرة على تقديم خدمة، يجب على المنظم ضمان خدمة بديلة مماثلة أو أفضل.">Organizator zobowiązany jest do zapewnienia wszystkich usług wykazanych w opisie imprez turystycznej zgodnie z najwyższymi standardami jakości. W przypadku niemożliwości świadczenia usługi, Organizator musi zapewnić zastępczą usługę porównywalna lub wyższej jakości.</p>
+
+            <h3 data-pl="5.2 Ubezpieczenie" data-en="5.2 Insurance" data-ar="5.2 التأمين">5.2 Ubezpieczenie</h3>
+            <p data-pl="Organizator posiada ubezpieczenie odpowiedzialności cywilnej obejmujące szkody wyrządzone Podróżnym w wyniku niewykonania lub nienależytego wykonania umowy. Certyfikat ubezpieczenia dostępny jest na życzenie." data-en="The Organizer has liability insurance covering damages caused to the Traveler as a result of non-performance or improper performance of the contract. The insurance certificate is available upon request." data-ar="يمتلك المنظم تأمينا ضد المسؤولية المدنية يغطي الأضرار الناجمة عن عدم تنفيذ العقد أو تنفيذه بشكل غير صحيح. شهادة التأمين متاحة عند الطلب.">Organizator posiada ubezpieczenie odpowiedzialności cywilnej obejmujące szkody wyrządzone Podróżnym w wyniku niewykonania lub nienależytego wykonania umowy. Certyfikat ubezpieczenia dostępny jest na życzenie.</p>
+
+            <h3 data-pl="5.3 Informacje przed podróżą" data-en="5.3 Pre-travel Information" data-ar="5.3 المعلومات قبل السفر">5.3 Informacje przed podróżą</h3>
+            <p data-pl="Organizator zobowiązany jest dostarczyć Podróżnemu, co najmniej 14 dni przed началом imprez turystycznej, informacje zawierające:" data-en="The Organizer is obliged to provide the Traveler, at least 14 days before the start of the tourist event, information containing:" data-ar="يلتزم المنظم بتزويد المسافر، قبل بدء الحدث السياحي بـ 14 يوما على الأقل، معلومات تحتوي على:">Organizator zobowiązany jest dostarczyć Podróżnemu, co najmniej 14 dni przed początek imprez turystycznej, informacje zawierające:</p>
+            <ul>
+                <li data-pl="Szczegółowy plan podróży i harmonogram" data-en="Detailed travel plan and schedule" data-ar="خطة السفر المفصلة والجدول الزمني">Szczegółowy plan podróży i harmonogram</li>
+                <li data-pl="Dane kontaktowe hoteli i usługodawców" data-en="Contact details of hotels and service providers" data-ar="بيانات الاتصال للفنادق ومقدمي الخدمات">Dane kontaktowe hoteli i usługodawców</li>
+                <li data-pl="Wymogi wizowe i dokumentów" data-en="Visa and document requirements" data-ar="متطلبات التأشيرة والمستندات">Wymogi wizowe i dokumentów</li>
+                <li data-pl="Informacje o ubezpieczeniu" data-en="Insurance information" data-ar="معلومات التأمين">Informacje o ubezpieczeniu</li>
+                <li data-pl="Dane kierownika grupy/opiekuna" data-en="Group leader/guide contact details" data-ar="بيانات اتصال قائد المجموعة/المرشد">Dane kierownika grupy/opiekuna</li>
+            </ul>
+        </div>
+
+        <!-- 6. OBOWIĄZKI PODRÓŻNEGO -->
+        <div class="content-section">
+            <div class="section-label" data-pl="Artykuł 6" data-en="Article 6" data-ar="المادة 6">Artykuł 6</div>
+            <h2 data-pl="Obowiązki podróżnego" data-en="Traveler's Obligations" data-ar="التزامات المسافر">Obowiązki podróżnego</h2>
+
+            <h3 data-pl="6.1 Dokumenty podróży" data-en="6.1 Travel Documents" data-ar="6.1 وثائق السفر">6.1 Dokumenty podróży</h3>
+            <p data-pl="Podróżny zobowiązany jest posiadać ważny dokument tożsamości (paszport) niezbędny do wjazdu do kraju destynacji. Organizator nie ponosi odpowiedzialności za problemy z dokumentami, wizami lub zezwoleniami na pobyt." data-en="The Traveler is obliged to have a valid identity document (passport) necessary for entry into the destination country. The Organizer is not responsible for problems with documents, visas or residence permits." data-ar="يلتزم المسافر بحمل وثيقة هوية صحيحة (جواز سفر) ضرورية للدخول إلى بلد الوجهة. لا يتحمل المنظم المسؤولية عن المشاكل المتعلقة بالمستندات أو التأشيرات أو تصاريح الإقامة.">Podróżny zobowiązany jest posiadać ważny dokument tożsamości (paszport) niezbędny do wjazdu do kraju destynacji. Organizator nie ponosi odpowiedzialności za problemy z dokumentami, wizami lub zezwoleniami na pobyt.</p>
+
+            <h3 data-pl="6.2 Ubezpieczenie zdrowotne" data-en="6.2 Health Insurance" data-ar="6.2 التأمين الصحي">6.2 Ubezpieczenie zdrowotne</h3>
+            <p data-pl="Podróżny zobowiązany jest posiadać ważne ubezpieczenie zdrowotne obejmujące leczenie w kraju destynacji oraz repatriację w przypadku choroby lub wypadku. Rekomendujemy ubezpieczenie turystyczne u renomowanego ubezpieczyciela." data-en="The Traveler is obliged to have valid health insurance covering treatment in the destination country and repatriation in case of illness or accident. We recommend travel insurance from a reputable insurer." data-ar="يلتزم المسافر بحمل تأمين صحي صحيح يغطي العلاج في بلد الوجهة والإخلاء الطبي في حالة المرض أو الحادث. نوصي بتأمين السفر من شركة تأمين موثوقة.">Podróżny zobowiązany jest posiadać ważne ubezpieczenie zdrowotne obejmujące leczenie w kraju destynacji oraz repatriację w przypadku choroby lub wypadku. Rekomendujemy ubezpieczenie turystyczne u renomowanego ubezpieczyciela.</p>
+
+            <h3 data-pl="6.3 Zasady zachowania" data-en="6.3 Code of Conduct" data-ar="6.3 قواعس السلوك">6.3 Zasady zachowania</h3>
+            <p data-pl="Podróżny zobowiązany jest stosować się do praw, regulacji i zwyczajów kraju destynacji. Zachowanie się niezgodne z prawem lub niebezpieczne może skutkować usunięciem z wycieczki bez możliwości zwrotu pieniędzy." data-en="The Traveler must comply with the laws, regulations and customs of the destination country. Illegal or dangerous behavior may result in removal from the tour without refund." data-ar="يجب على المسافر الامتثال لقوانين ولوائح وعادات بلد الوجهة. قد يؤدي السلوك غير القانوني أو الخطير إلى إزالته من الجولة بدون استرجاع.">Podróżny zobowiązany jest stosować się do praw, regulacji i zwyczajów kraju destynacji. Zachowanie się niezgodne z prawem lub niebezpieczne może skutkować usunięciem z wycieczki bez możliwości zwrotu pieniędzy.</p>
+        </div>
+
+        <!-- 7. REKLAMACJE -->
+        <div class="content-section">
+            <div class="section-label" data-pl="Artykuł 7" data-en="Article 7" data-ar="المادة 7">Artykuł 7</div>
+            <h2 data-pl="Reklamacje" data-en="Complaints" data-ar="الشكاوى">Reklamacje</h2>
+
+            <h3 data-pl="7.1 Termin złożenia reklamacji" data-en="7.1 Complaint Deadline" data-ar="7.1 موعد تقديم الشكوى">7.1 Termin złożenia reklamacji</h3>
+            <p data-pl="Podróżny ma prawo złożyć reklamację dotyczącą braku lub nienależytego wykonania usług turystycznych w ciągu 30 dni od zakończenia imprez turystycznej." data-en="The Traveler has the right to file a complaint regarding non-performance or improper performance of tourist services within 30 days of the end of the tourist event." data-ar="للمسافر الحق في تقديم شكوى بشأن عدم تقديم أو عدم التنفيذ الصحيح للخدمات السياحية خلال 30 يوما من انتهاء الحدث السياحي.">Podróżny ma prawo złożyć reklamację dotyczącą braku lub nienależytego wykonania usług turystycznych w ciągu 30 dni od zakończenia imprez turystycznej.</p>
+
+            <h3 data-pl="7.2 Forma reklamacji" data-en="7.2 Form of Complaint" data-ar="7.2 شكل الشكوى">7.2 Forma reklamacji</h3>
+            <p data-pl="Reklamacja powinna być przesłana w postaci pisemnej (email) na adres info@nohatravel.com i musi zawierać:" data-en="The complaint should be sent in written form (email) to info@nohatravel.com and must include:" data-ar="يجب أن يتم إرسال الشكوى في شكل مكتوب (بريد إلكتروني) إلى info@nohatravel.com ويجب أن تحتوي على:">Reklamacja powinna być przesłana w postaci pisemnej (email) na adres info@nohatravel.com i musi zawierać:</p>
+            <ul>
+                <li data-pl="Dane Podróżnego (imię, nazwisko, adres email)" data-en="Traveler's data (name, surname, email address)" data-ar="بيانات المسافر (الاسم الأول واسم العائلة وعنوان البريد الإلكتروني)">Dane Podróżnego (imię, nazwisko, adres email)</li>
+                <li data-pl="Numer rezerwacji" data-en="Booking number" data-ar="رقم الحجز">Numer rezerwacji</li>
+                <li data-pl="Opis problemu i dyskrepancji" data-en="Description of the problem and discrepancies" data-ar="وصف المشكلة والتناقضات">Opis problemu i dyskrepancji</li>
+                <li data-pl="Dat zdarzenia" data-en="Date of occurrence" data-ar="تاريخ الحدوث">Data zdarzenia</li>
+                <li data-pl="Dokumenty potwierdzające (zdjęcia, kwity itp.)" data-en="Supporting documents (photos, receipts, etc.)" data-ar="الوثائق الداعمة (صور وإيصالات وما إلى ذلك)">Dokumenty potwierdzające (zdjęcia, kwity itp.)</li>
+            </ul>
+
+            <h3 data-pl="7.3 Rozpatrzenie reklamacji" data-en="7.3 Complaint Review" data-ar="7.3 مراجعة الشكوى">7.3 Rozpatrzenie reklamacji</h3>
+            <p data-pl="Organizator zobowiązany jest udzielić odpowiedzi na reklamację w ciągu 30 dni od jej otrzymania. Odpowiedź przesłana będzie w formie pisemnej na adres email Podróżnego." data-en="The Organizer is obliged to respond to the complaint within 30 days of receipt. The response will be sent in written form to the Traveler's email address." data-ar="يلتزم المنظم برد الشكوى خلال 30 يوما من استقبالها. سيتم إرسال الرد في شكل مكتوب إلى عنوان البريد الإلكتروني للمسافر.">Organizator zobowiązany jest udzielić odpowiedzi na reklamację w ciągu 30 dni od jej otrzymania. Odpowiedź przesłana będzie w formie pisemnej na adres email Podróżnego.</p>
+        </div>
+
+        <!-- 8. ODPOWIEDZIALNOŚĆ -->
+        <div class="content-section">
+            <div class="section-label" data-pl="Artykuł 8" data-en="Article 8" data-ar="المادة 8">Artykuł 8</div>
+            <h2 data-pl="Odpowiedzialność" data-en="Liability" data-ar="المسؤولية">Odpowiedzialność</h2>
+
+            <h3 data-pl="8.1 Siła wyższa (force majeure)" data-en="8.1 Force Majeure" data-ar="8.1 القوة القاهرة">8.1 Siła wyższa (force majeure)</h3>
+            <p data-pl="Organizator nie ponosi odpowiedzialności za niemożliwość wykonania umowy wynikającą z siły wyższej, takie jak: klęski żywiołowe, wojny, zamachy terrorystyczne, epidemie, strajki, czy inne zdarzenia poza kontrolą stron umowy. W takim przypadku Podróżny ma prawo do zmiany terminu lub pełnego zwrotu zapłaconej kwoty." data-en="The Organizer is not liable for failure to perform the contract resulting from force majeure, such as: natural disasters, wars, terrorist attacks, epidemics, strikes, or other events beyond the control of the parties. In such cases, the Traveler is entitled to change the date or receive a full refund." data-ar="المنظم غير مسؤول عن عدم القدرة على تنفيذ العقد الناشئ عن القوة القاهرة، مثل الكوارث الطبيعية والحروب والهجمات الإرهابية والأوبئة والإضرابات أو الأحداث الأخرى خارج السيطرة. في هذه الحالات، للمسافر الحق في تغيير التاريخ أو استرجاع المبلغ كاملا.">Organizator nie ponosi odpowiedzialności za niemożliwość wykonania umowy wynikającą z siły wyższej, takie jak: klęski żywiołowe, wojny, zamachy terrorystyczne, epidemie, strajki, czy inne zdarzenia poza kontrolą stron umowy. W takim przypadku Podróżny ma prawo do zmiany terminu lub pełnego zwrotu zapłaconej kwoty.</p>
+
+            <h3 data-pl="8.2 Limity odpowiedzialności" data-en="8.2 Liability Limits" data-ar="8.2 حدود المسؤولية">8.2 Limity odpowiedzialności</h3>
+            <p data-pl="Odpowiedzialność Organizatora za szkody wyrządzone Podróżnemu jest ograniczona do maksymalnie pełnej ceny zapłaconej za imprezę turystyczną. W żadnym wypadku Organizator nie jest odpowiedzialny za straty pośrednie, utratę dochodów, utratę danych, koszty zastępcze lub inne szmaty wynikające z niedokonania lub nienależytego wykonania umowy." data-en="The Organizer's liability for damages caused to the Traveler is limited to a maximum of the full price paid for the tourist event. In no case is the Organizer liable for indirect damages, loss of income, loss of data, replacement costs or other damages resulting from non-performance or improper performance of the contract." data-ar="تقتصر مسؤولية المنظم عن الأضرار الناجمة عن المسافر على أقصى حد يساوي السعر الكامل المدفوع مقابل الحدث السياحي. لا يتحمل المنظم في أي حال من الأحوال المسؤولية عن الأضرار غير المباشرة أو فقدان الدخل أو فقدان البيانات أو تكاليف الاستبدال أو أي أضرار أخرى ناشئة عن عدم الامتثال أو عدم الأداء السليم للعقد.">Odpowiedzialność Organizatora za szkody wyrządzone Podróżnemu jest ograniczona do maksymalnie pełnej ceny zapłaconej za imprezę turystyczną. W żadnym wypadku Organizator nie jest odpowiedzialny za straty pośrednie, utratę dochodów, utratę danych, koszty zastępcze lub inne szmaty wynikające z niedokonania lub nienależytego wykonania umowy.</p>
+
+            <h3 data-pl="8.3 Ubezpieczenie Podróżnego" data-en="8.3 Traveler's Insurance" data-ar="8.3 تأمين المسافر">8.3 Ubezpieczenie Podróżnego</h3>
+            <p data-pl="Podróżny jest całkowicie odpowiedzialny za zgłoszenie, wznowienie i utrzymanie odpowiedniej polisy ubezpieczeniowej. Organizator stanowczo zaleca ubezpieczenie obejmujące unieważnienie rezerwacji, choroby i wypadki, ratowanie medyczne i repatriację." data-en="The Traveler is solely responsible for obtaining, maintaining, and renewing appropriate insurance coverage. The Organizer strongly recommends insurance covering trip cancellation, illness and accidents, medical rescue and repatriation." data-ar="المسافر مسؤول بالكامل عن الحصول على تغطية التأمين المناسبة والحفاظ عليها وتجديدها. يوصي المنظم بقوة بالتأمين الذي يغطي إلغاء الرحلة والمرض والحوادث والإنقاذ الطبي والإخلاء الطبي.">Podróżny jest całkowicie odpowiedzialny za zgłoszenie, wznowienie i utrzymanie odpowiedniej polisy ubezpieczeniowej. Organizator stanowczo zaleca ubezpieczenie obejmujące unieważnienie rezerwacji, choroby i wypadki, ratowanie medyczne i repatriację.</p>
+        </div>
+
+        <!-- 9. OCHRONA DANYCH OSOBOWYCH -->
+        <div class="content-section">
+            <div class="section-label" data-pl="Artykuł 9" data-en="Article 9" data-ar="المادة 9">Artykuł 9</div>
+            <h2 data-pl="Ochrona danych osobowych" data-en="Personal Data Protection" data-ar="حماية البيانات الشخصية">Ochrona danych osobowych</h2>
+
+            <h3 data-pl="9.1 Przetwarzanie danych" data-en="9.1 Data Processing" data-ar="9.1 معالجة البيانات">9.1 Przetwarzanie danych</h3>
+            <p data-pl="Dane osobowe Podróżnego zbierane podczas rezerwacji (imię, nazwisko, adres email, numer telefonu) są przetwarzane wyłącznie w celu realizacji umowy o imprezę turystyczną. Dane nie będą przekazywane osobom trzecim bez zgody Podróżnego." data-en="Personal data of the Traveler collected during booking (name, surname, email address, phone number) are processed solely for the purpose of implementing the tourist event contract. Data will not be shared with third parties without the Traveler's consent." data-ar="يتم معالجة البيانات الشخصية للمسافر التي يتم جمعها أثناء الحجز (الاسم واسم العائلة وعنوان البريد الإلكتروني ورقم الهاتف) حصريا لغرض تنفيذ عقد الحدث السياحي. لن يتم مشاركة البيانات مع أطراف ثالثة بدون موافقة المسافر.">Dane osobowe Podróżnego zbierane podczas rezerwacji (imię, nazwisko, adres email, numer telefonu) są przetwarzane wyłącznie w celu realizacji umowy o imprezę turystyczną. Dane nie będą przekazywane osobom trzecim bez zgody Podróżnego.</p>
+
+            <h3 data-pl="9.2 Polityka prywatności" data-en="9.2 Privacy Policy" data-ar="9.2 سياسة الخصوصية">9.2 Polityka prywatności</h3>
+            <p data-pl="Pełną Politykę Prywatności oraz szczegółowe informacje o ochronie danych osobowych znajdują się w dokumencie Polityka Prywatności dostępnym na stronie www.nohatravel.com." data-en="The complete Privacy Policy and detailed information on personal data protection can be found in the Privacy Policy document available on www.nohatravel.com." data-ar="يمكن العثور على الخصوصية الكاملة والمعلومات التفصيلية حول حماية البيانات الشخصية في وثيقة سياسة الخصوصية المتاحة على www.nohatravel.com.">Pełną Politykę Prywatności oraz szczegółowe informacje o ochronie danych osobowych znajdują się w dokumencie Polityka Prywatności dostępnym na stronie www.nohatravel.com.</p>
+        </div>
+
+        <!-- 10. POSTANOWIENIA KOŃCOWE -->
+        <div class="content-section">
+            <div class="section-label" data-pl="Artykuł 10" data-en="Article 10" data-ar="المادة 10">Artykuł 10</div>
+            <h2 data-pl="Postanowienia końcowe" data-en="Final Provisions" data-ar="الأحكام النهائية">Postanowienia końcowe</h2>
+
+            <h3 data-pl="10.1 Prawo właściwe" data-en="10.1 Governing Law" data-ar="10.1 القانون الواجب التطبيق">10.1 Prawo właściwe</h3>
+            <p data-pl="Niniejszy regulamin oraz wszystkie umowy zawarte z Noha Travel podlegają prawu Rzeczypospolitej Polskiej, w szczególności Ustawie z dnia 25 czerwca 2015 r. o imprezach turystycznych i powiązanych usługach turystycznych (Dz.U. 2015, poz. 1205)." data-en="This terms of service and all contracts concluded with Noha Travel are governed by the law of the Republic of Poland, in particular the Act of June 25, 2015 on tourist events and related tourist services (Journal of Laws 2015, No. 1205)." data-ar="ينطبق هذا النظام الأساسي وجميع العقود المبرمة مع Noha Travel على قانون جمهورية بولندا، وخاصة قانون 25 يونيو 2015 بشأن الأحداث السياحية والخدمات السياحية ذات الصلة (Journal of Laws 2015، No. 1205).">Niniejszy regulamin oraz wszystkie umowy zawarte z Noha Travel podlegają prawu Rzeczypospolitej Polskiej, w szczególności Ustawie z dnia 25 czerwca 2015 r. o imprezach turystycznych i powiązanych usługach turystycznych (Dz.U. 2015, poz. 1205).</p>
+
+            <h3 data-pl="10.2 Sąd właściwy" data-en="10.2 Jurisdiction" data-ar="10.2 الاختصاص القضائي">10.2 Sąd właściwy</h3>
+            <p data-pl="Wszelkie spory dotyczące umów zawartych na podstawie niniejszego regulaminu rozstrzygane będą przez sądy powszechne Rzeczypospolitej Polskiej, a dla spraw dotyczących relacji z konsumentem — przez Sąd Okręgowy w Warszawie. Podróżnemu przysługuje również prawo zwrócenia się do Rzecznika Praw Podróżnych lub do konsumencji arbitrażu." data-en="All disputes concerning contracts concluded under these terms of service shall be settled by the common courts of the Republic of Poland, and for matters concerning relations with a consumer by the District Court in Warsaw. The Traveler also has the right to appeal to the Ombudsman for Travelers or consumer arbitration." data-ar="يتم تسوية جميع النزاعات المتعلقة بالعقود المبرمة بموجب هذا النظام الأساسي من قبل المحاكم العامة في جمهورية بولندا، وبالنسبة للمسائل المتعلقة بالعلاقات مع المستهلك، بواسطة محكمة الاستئناف في وارسو. للمسافر أيضا الحق في الاستئناف إلى أمين المظالم للمسافرين أو التحكيم الاستهلاكي.">Wszelkie spory dotyczące umów zawartych na podstawie niniejszego regulaminu rozstrzygane będą przez sądy powszechne Rzeczypospolitej Polskiej, a dla spraw dotyczących relacji z konsumentem — przez Sąd Okręgowy w Warszawie. Podróżnemu przysługuje również prawo zwrócenia się do Rzecznika Praw Podróżnych lub do konsumencki arbitrażu.</p>
+
+            <h3 data-pl="10.3 Zmiany regulaminu" data-en="10.3 Changes to Terms" data-ar="10.3 التعديلات على الشروط">10.3 Zmiany regulaminu</h3>
+            <p data-pl="Organizator zastrzega sobie prawo do zmian niniejszego regulaminu. Zmiany będą opublikowane na stronie www.nohatravel.com. W przypadku istotnych zmian, Podróżni zostaną powiadomieni drogą elektroniczną co najmniej 30 dni przed wejściem zmian w życie." data-en="The Organizer reserves the right to change these terms. Changes will be published on www.nohatravel.com. In case of significant changes, Travelers will be notified electronically at least 30 days before the changes take effect." data-ar="يحتفظ المنظم بالحق في تغيير هذه الشروط. سيتم نشر التغييرات على www.nohatravel.com. في حالة التغييرات الجوهرية، سيتم إخطار المسافرين إلكترونيا قبل 30 يوما على الأقل من دخول التغييرات حيز التنفيذ.">Organizator zastrzega sobie prawo do zmian niniejszego regulaminu. Zmiany będą opublikowane na stronie www.nohatravel.com. W przypadku istotnych zmian, Podróżni zostaną powiadomieni drogą elektroniczną co najmniej 30 dni przed wejściem zmian w życie.</p>
+
+            <h3 data-pl="10.4 Kontakt" data-en="10.4 Contact" data-ar="10.4 الاتصال">10.4 Kontakt</h3>
+            <p data-pl="W razie pytań dotyczących niniejszego regulaminu lub imprez turystycznych, prosimy o kontakt:" data-en="If you have any questions about these terms or our tourist events, please contact:" data-ar="إذا كان لديك أي أسئلة حول هذه الشروط أو الأحداث السياحية الخاصة بنا، يرجى الاتصال بنا:">W razie pytań dotyczących niniejszego regulaminu lub imprez turystycznych, prosimy o kontakt:</p>
+            <p>
+                <strong>Noha Travel Sp. z o.o.</strong><br>
+                <strong data-pl="Adres:" data-en="Address:" data-ar="العنوان:">Adres:</strong> ul. Marszałkowska 1, 00-001 Warszawa<br>
+                <strong data-pl="Email:" data-en="Email:" data-ar="البريد الإلكتروني:">Email:</strong> info@nohatravel.com<br>
+                <strong data-pl="Telefon:" data-en="Phone:" data-ar="الهاتف:">Telefon:</strong> +48 519 692 404<br>
+                <strong data-pl="WhatsApp:" data-en="WhatsApp:" data-ar="واتس اب:">WhatsApp:</strong> +48 519 692 404
+            </p>
+
+            <h3 data-pl="10.5 Data wejścia w życie" data-en="10.5 Effective Date" data-ar="10.5 تاريخ السريان">10.5 Data wejścia w życie</h3>
+            <p data-pl="Niniejszy regulamin wchodzi w życie z dniem 14 kwietnia 2026 r. i obowiązuje wszystkie rezerwacje dokonane od tej daty." data-en="These terms become effective as of April 14, 2026 and apply to all bookings made from that date." data-ar="تسري هذه الشروط اعتبارا من 14 أبريل 2026 وتنطبق على جميع الحجوزات التي تتم من هذا التاريخ.">Niniejszy regulamin wchodzi w życie z dniem 14 kwietnia 2026 r. i obowiązuje wszystkie rezerwacje dokonane od tej daty.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <img src="https://images.unsplash.com/photo-1488815157433-81342f52e6b7?w=1920&q=80&fit=crop" alt="Kontakt">
+    <div class="cta-overlay"></div>
+    <div class="cta-content reveal">
+        <div class="section-label" data-pl="Masz pytania?" data-en="Have questions?" data-ar="هل لديك أسئلة؟">Masz pytania?</div>
+        <h2 data-pl="Skontaktuj się z <em>naszym zespołem</em>" data-en="Contact our <em>team</em>" data-ar="اتصل بـ <em>فريقنا</em>">Skontaktuj się z <em>naszym zespołem</em></h2>
+        <p data-pl="Chętnie wyjaśnimy wszelkie wątpliwości dotyczące regulaminu lub pomożemy w rezerwacji Twojej wymarzonej podróży." data-en="We are happy to clarify any doubts about our terms or help you book your dream trip." data-ar="يسعدنا توضيح أي التباسات حول شروطنا أو مساعدتك في حجز رحلتك المنشودة.">Chętnie wyjaśnimy wszelkie wątpliwości dotyczące regulaminu lub pomożemy w rezerwacji Twojej wymarzonej podróży.</p>
+        <a href="index.html#contact" class="cta-btn">Skontaktuj się z nami</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">NOHA TRAVEL</div>
+        <div class="footer-links">
+            <a href="index.html">Strona główna</a>
+            <a href="index.html#destinations" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
+            <a href="doswiadczenie.html" data-pl="Doświadczenie" data-en="Experience" data-ar="تجربة">Doświadczenie</a>
+            <a href="regulamin.html" data-pl="Regulamin" data-en="Terms of Service" data-ar="الشروط والأحكام">Regulamin</a>
+            <a href="index.html#contact" data-pl="Kontakt" data-en="Contact" data-ar="اتصل بنا">Kontakt</a>
+        </div>
+        <div class="footer-social"><a href="https://www.instagram.com/mypolishgetaway" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a><a href="https://www.tiktok.com/@mypolishgetaway" target="_blank" rel="noopener" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52V6.8a4.84 4.84 0 01-1-.11z"/></svg></a><a href="https://wa.me/48519692404" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.47A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-2.115 0-4.09-.652-5.716-1.764l-.41-.243-2.742.872.871-2.692-.27-.427A9.709 9.709 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg></a></div>
+        <div class="footer-copy">&copy; 2026 Noha Travel. Wszelkie prawa zastrzeżone.</div>
+    </div>
+</footer>
+
+<script>
+// Scroll reveal
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+}, {threshold: 0.15});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// Smooth scroll to top on load
+window.scrollTo(0, 0);
+</script>
+
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/48519692404?text=Dzień%20dobry!%20Chciałbym%20zapytać%20o%20ofertę%20Noha%20Travel" target="_blank" rel="noopener" class="whatsapp-button" aria-label="Kontakt WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a5.505 5.505 0 00-5.487 5.505c0 1.416.356 2.786.997 3.973L3.957 21l4.8-1.257c1.164.639 2.487 1.01 3.822 1.01h.004A5.507 5.507 0 0018.35 15.494 5.505 5.505 0 0012.051 6.979"/>
+    </svg>
+</a>
+
+<script>
+let currentLang='pl';
+function switchLang(lang){
+  currentLang=lang;
+  const html=document.documentElement;
+  html.lang=lang;
+  html.dir=lang==='ar'?'rtl':'ltr';
+  document.querySelectorAll('[data-'+lang+']').forEach(el=>{
+    const val=el.getAttribute('data-'+lang);
+    if(val){
+      if(el.tagName==='INPUT'||el.tagName==='TEXTAREA'){el.placeholder=val}
+      else{el.textContent=val}
+    }
+  });
+  document.querySelectorAll('.lang-switch').forEach(s=>{
+    s.classList.toggle('active',s.getAttribute('data-lang')===lang);
+  });
+}
+</script>
+
+</body>
+</html>

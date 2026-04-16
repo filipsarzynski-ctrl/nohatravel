@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konkurs Chopinowski — Noha Travel | Międzynarodowy Konkurs Pianistyczny</title>
+    <meta name="description" content="Noha Travel — Międzynarodowy Konkurs Pianistyczny im. Fryderyka Chopina w Warszawie. Najstarszy i najbardziej prestiżowy konkurs pianistyczny na świecie. Luksusowe podróże po Polsce.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1759306725469-ce04b6600540?w=1200&q=80&fit=crop">
+    <link rel="canonical" href="https://nohatravel.com/chopin.html">
+    <link rel="alternate" hreflang="pl" href="https://nohatravel.com/chopin.html">
+    <link rel="alternate" hreflang="en" href="https://nohatravel.com/chopin.html">
+    <link rel="alternate" hreflang="ar" href="https://nohatravel.com/chopin.html">
+    <link rel="alternate" hreflang="x-default" href="https://nohatravel.com/chopin.html">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Noha Travel Sp. z o.o.">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="ar_SA">
+    <meta property="og:url" content="https://nohatravel.com/chopin.html">
+    <meta property="og:site_name" content="Noha Travel">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%23c9a96e' stroke-width='1'/%3E%3Cpolygon points='16,3 18,14 16,11 14,14' fill='%23c9a96e'/%3E%3Cpolygon points='16,29 14,18 16,21 18,18' fill='%23c9a96e' opacity='0.4'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+        :root{--gold:#c9a96e;--gold-light:#d4bc8b;--gold-dark:#a8884f;--black:#0a0a0a;--dark:#1a1a1a;--dark-gray:#2a2a2a;--medium-gray:#888;--white:#fff;--cream:#faf8f4;--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Montserrat','Helvetica Neue',sans-serif;--transition:0.4s cubic-bezier(.25,.46,.45,.94)}
+        html{scroll-behavior:smooth;font-size:16px}
+        body{font-family:var(--font-sans);font-weight:300;color:var(--dark);background:var(--white);overflow-x:hidden;line-height:1.7}
+        a{text-decoration:none;color:inherit;transition:color var(--transition)}
+        img{max-width:100%;display:block}
+
+        /* HEADER */
+        header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.5rem 3rem;display:flex;align-items:center;justify-content:space-between;transition:all var(--transition);background:rgba(10,10,10,.95);backdrop-filter:blur(20px);box-shadow:0 2px 40px rgba(0,0,0,.3)}
+        .logo-wrap{display:flex;align-items:center;gap:1rem}
+        .logo-svg{width:50px;height:auto}
+        .logo{font-family:var(--font-serif);font-size:1.8rem;font-weight:300;color:var(--white);letter-spacing:.25em;text-transform:uppercase;display:flex;flex-direction:column;line-height:1}
+        .logo-sub{font-family:var(--font-sans);font-size:.5rem;letter-spacing:.5em;color:var(--gold);font-weight:400;margin-top:4px}
+        nav{display:flex;align-items:center;gap:2.5rem}
+        nav a{font-size:.72rem;font-weight:400;color:rgba(255,255,255,.85);letter-spacing:.15em;text-transform:uppercase;position:relative;padding:.5rem 0}
+        nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:1px;background:var(--gold);transition:width var(--transition)}
+        nav a:hover{color:var(--gold)}
+        nav a:hover::after{width:100%}
+        nav a.active-nav{color:var(--gold)}
+        nav a.active-nav::after{width:100%}
+        .nav-right{display:flex;align-items:center;gap:1rem}.lang-switch{font-size:.7rem;letter-spacing:.1em;color:rgba(255,255,255,.5);cursor:pointer;padding:.3rem .5rem;border:1px solid transparent;border-radius:3px;transition:all var(--transition)}.lang-switch:hover{color:var(--gold);border-color:var(--gold)}.lang-switch.active{color:var(--gold);border-color:var(--gold)}
+        .header-phone{font-size:.72rem;color:rgba(255,255,255,.7);letter-spacing:.1em}
+        .header-phone:hover{color:var(--gold)}
+        .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;z-index:1001}
+        .hamburger span{width:28px;height:1px;background:var(--white);transition:all .3s ease}
+
+        /* HERO */
+        .page-hero{position:relative;height:75vh;min-height:550px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+        .page-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+        .page-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,.55) 100%)}
+        .page-hero-content{position:relative;z-index:2;text-align:center;max-width:800px;padding:0 2rem}
+        .page-hero-label{font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .page-hero-title{font-family:var(--font-serif);font-size:4.5rem;font-weight:300;color:var(--white);line-height:1.1;margin-bottom:1.5rem}
+        .page-hero-title em{font-style:italic;color:var(--gold)}
+        .page-hero-desc{font-size:.95rem;color:rgba(255,255,255,.8);max-width:600px;margin:0 auto;line-height:1.8}
+
+        /* INTRO */
+        .intro{padding:6rem 5%;background:var(--cream)}
+        .intro-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+        .intro-img{border-radius:8px;overflow:hidden;aspect-ratio:4/3}
+        .intro-img img{width:100%;height:100%;object-fit:cover;transition:transform 6s ease}
+        .intro-img:hover img{transform:scale(1.05)}
+        .intro-text .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .intro-text h2{font-family:var(--font-serif);font-size:2.8rem;font-weight:300;color:var(--dark);line-height:1.2;margin-bottom:1.5rem}
+        .intro-text h2 em{font-style:italic;color:var(--gold)}
+        .intro-text p{font-size:.9rem;color:#555;line-height:1.9;margin-bottom:1rem}
+
+        /* SECTION HEADER */
+        .section-header{text-align:center;margin-bottom:4rem}
+        .section-header .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .section-header h2{font-family:var(--font-serif);font-size:3rem;font-weight:300;color:var(--dark);line-height:1.2;margin-bottom:1rem}
+        .section-header h2 em{font-style:italic;color:var(--gold)}
+        .section-header p{font-size:.9rem;color:#555;max-width:600px;margin:0 auto}
+
+        /* VIDEO SECTION */
+        .video-section{padding:6rem 5%;background:var(--white)}
+        .video-wrap{max-width:900px;margin:0 auto;border-radius:12px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.15);aspect-ratio:16/9;position:relative}
+        .video-wrap iframe{width:100%;height:100%;border:none}
+
+        /* HISTORY TIMELINE */
+        .history{padding:6rem 5%;background:var(--cream)}
+        .timeline{max-width:800px;margin:3rem auto 0;position:relative}
+        .timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--gold);opacity:.3;transform:translateX(-50%)}
+        .timeline-item{display:flex;align-items:flex-start;margin-bottom:3rem;position:relative}
+        .timeline-item:nth-child(odd){flex-direction:row-reverse;text-align:right}
+        .timeline-date{flex:0 0 50%;padding:0 2.5rem;font-family:var(--font-serif);font-size:2rem;color:var(--gold);font-weight:300}
+        .timeline-content{flex:0 0 50%;padding:0 2.5rem}
+        .timeline-content h3{font-family:var(--font-serif);font-size:1.3rem;font-weight:400;color:var(--dark);margin-bottom:.5rem}
+        .timeline-content p{font-size:.82rem;color:#666;line-height:1.7}
+        .timeline-dot{position:absolute;left:50%;top:.5rem;width:12px;height:12px;background:var(--gold);border-radius:50%;transform:translateX(-50%);z-index:2}
+
+        /* ATTRACTIONS GRID */
+        .attractions{padding:6rem 5%;background:var(--white)}
+        .attr-grid{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+        .attr-card{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:3/4;cursor:pointer}
+        .attr-card.featured{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+        .attr-card img{width:100%;height:100%;object-fit:cover;transition:transform 8s ease}
+        .attr-card:hover img{transform:scale(1.06)}
+        .attr-card-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.7) 0%,rgba(0,0,0,.05) 50%);transition:background .5s ease}
+        .attr-card:hover .attr-card-overlay{background:linear-gradient(0deg,rgba(0,0,0,.8) 0%,rgba(0,0,0,.15) 50%)}
+        .attr-card-content{position:absolute;bottom:0;left:0;right:0;padding:2rem;z-index:2;transform:translateY(15px);transition:transform .5s ease}
+        .attr-card:hover .attr-card-content{transform:translateY(0)}
+        .attr-card-tag{font-size:.6rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem;font-weight:500}
+        .attr-card-title{font-family:var(--font-serif);font-size:1.8rem;font-weight:400;color:var(--white);line-height:1.25;margin-bottom:.5rem}
+        .attr-card.featured .attr-card-title{font-size:2.5rem}
+        .attr-card-desc{font-size:.78rem;color:rgba(255,255,255,.7);line-height:1.7;max-height:0;overflow:hidden;opacity:0;transition:max-height .5s ease,opacity .4s ease}
+        .attr-card:hover .attr-card-desc{max-height:200px;opacity:1}
+        .attr-card-meta{display:flex;gap:1.5rem;margin-top:.8rem;padding-top:.8rem;border-top:1px solid rgba(255,255,255,.15)}
+        .attr-card-meta span{font-size:.6rem;letter-spacing:.1em;color:rgba(255,255,255,.5);text-transform:uppercase}
+
+        /* KEY FACTS */
+        .facts{padding:5rem 5%;background:var(--dark)}
+        .facts-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:3rem;text-align:center}
+        .fact-num{font-family:var(--font-serif);font-size:3rem;color:var(--gold);font-weight:300;line-height:1}
+        .fact-label{font-size:.7rem;color:rgba(255,255,255,.6);letter-spacing:.15em;text-transform:uppercase;margin-top:.5rem}
+
+        /* LAUREATES */
+        .laureates{padding:6rem 5%;background:var(--white)}
+        .laureate-grid{max-width:1000px;margin:3rem auto 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:2rem}
+        .laureate-card{background:var(--cream);border-radius:10px;padding:2rem;text-align:center;transition:transform .4s ease,box-shadow .4s ease}
+        .laureate-card:hover{transform:translateY(-5px);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+        .laureate-year{font-family:var(--font-serif);font-size:2.5rem;color:var(--gold);font-weight:300;line-height:1;margin-bottom:.5rem}
+        .laureate-name{font-family:var(--font-serif);font-size:1.4rem;color:var(--dark);font-weight:400;margin-bottom:.3rem}
+        .laureate-country{font-size:.7rem;color:var(--medium-gray);letter-spacing:.15em;text-transform:uppercase}
+
+        /* CTA */
+        .cta-section{position:relative;padding:8rem 5%;overflow:hidden;text-align:center}
+        .cta-section img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+        .cta-overlay{position:absolute;inset:0;background:rgba(0,0,0,.65)}
+        .cta-content{position:relative;z-index:2;max-width:700px;margin:0 auto}
+        .cta-content .section-label{font-size:.65rem;letter-spacing:.4em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;font-weight:500}
+        .cta-content h2{font-family:var(--font-serif);font-size:3rem;font-weight:300;color:var(--white);line-height:1.2;margin-bottom:1.5rem}
+        .cta-content h2 em{font-style:italic;color:var(--gold)}
+        .cta-content p{font-size:.9rem;color:rgba(255,255,255,.8);margin-bottom:2rem;line-height:1.8}
+        .cta-btn{display:inline-block;padding:1rem 3rem;border:1px solid var(--gold);color:var(--gold);font-size:.7rem;letter-spacing:.25em;text-transform:uppercase;font-weight:500;transition:all var(--transition);border-radius:2px}
+        .cta-btn:hover{background:var(--gold);color:var(--black)}
+
+        /* FOOTER */
+        footer{background:var(--black);padding:3rem 5%;text-align:center}
+        .footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+        .footer-brand{font-family:var(--font-serif);font-size:1.2rem;color:var(--white);letter-spacing:.2em}
+        .footer-links{display:flex;gap:2rem}
+        .footer-links a{font-size:.7rem;color:rgba(255,255,255,.5);letter-spacing:.12em;text-transform:uppercase;transition:color .3s}
+        .footer-links a:hover{color:var(--gold)}
+        .footer-copy{font-size:.65rem;color:rgba(255,255,255,.3);letter-spacing:.05em}
+        .footer-social{display:flex;gap:1rem;margin-top:1rem}
+        .footer-social a{width:38px;height:38px;border:1px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:.7rem;color:rgba(255,255,255,.5);transition:all var(--transition);border-radius:50%}
+        .footer-social a:hover{border-color:var(--gold);color:var(--gold)}
+
+        /* ANIMATIONS */
+        .reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+        .reveal.visible{opacity:1;transform:translateY(0)}
+
+        @media(max-width:768px){
+            nav.mob-open{display:flex;flex-direction:column;position:fixed;inset:0;background:rgba(10,10,10,.98);justify-content:center;align-items:center;gap:2rem;z-index:999}
+        }
+        @media(max-width:1024px){
+            .intro-inner{grid-template-columns:1fr;gap:2rem}
+            .attr-grid{grid-template-columns:1fr 1fr}
+            .attr-card.featured{grid-column:span 2}
+            .page-hero-title{font-size:3rem}
+            .facts-grid{grid-template-columns:repeat(2,1fr);gap:2rem}
+            .timeline-item,.timeline-item:nth-child(odd){flex-direction:column;text-align:left}
+            .timeline-date,.timeline-content{flex:1;padding:0 0 0 3rem}
+            .timeline::before{left:0}
+            .timeline-dot{left:0;transform:translateX(-50%)}
+        }
+        @media(max-width:768px){
+            header{padding:1rem 1.5rem}
+            nav{display:none}
+            .hamburger{display:flex}
+            .page-hero{height:60vh;min-height:400px}
+            .page-hero-title{font-size:2.5rem}
+            .section-header h2{font-size:2.2rem}
+            .intro-text h2{font-size:2rem}
+            .attr-grid{grid-template-columns:1fr}
+            .attr-card.featured{grid-column:span 1}
+            .attr-card-desc{max-height:200px;opacity:1}
+            .attr-card-content{transform:translateY(0)}
+            .facts-grid{grid-template-columns:1fr 1fr}
+            .laureate-grid{grid-template-columns:1fr}
+            .footer-inner{flex-direction:column;text-align:center}
+        }
+
+        /* WHATSAPP BUTTON */
+        .whatsapp-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 9999;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25D366;
+            border: 2px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .whatsapp-button:hover {
+            transform: scale(1.12);
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.4);
+            animation: whatsapp-pulse 0.6s ease;
+        }
+        @keyframes whatsapp-pulse {
+            0%, 100% {
+                box-shadow: 0 6px 28px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 8px 36px rgba(37, 211, 102, 0.6);
+            }
+        }
+        .whatsapp-button svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <a href="index.html" class="logo-wrap">
+        <svg class="logo-svg" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="26" stroke="#c9a96e" stroke-width="0.8"/><polygon points="30,5 33,28 30,22 27,28" fill="#c9a96e"/><polygon points="30,55 27,32 30,38 33,32" fill="#c9a96e" opacity="0.35"/><line x1="30" y1="62" x2="30" y2="75" stroke="#c9a96e" stroke-width="0.5"/></svg>
+        <div class="logo" data-pl="NOHA TRAVEL" data-en="NOHA TRAVEL" data-ar="نهى تور">NOHA TRAVEL<span class="logo-sub" data-pl="LUXURY TRAVEL IN POLAND" data-en="LUXURY TRAVEL IN POLAND" data-ar="الرحلات الفاخرة في بولندا">LUXURY TRAVEL IN POLAND</span></div>
+    </a>
+    <nav>
+        <a href="index.html#destinations" class="active-nav" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
+        <a href="index.html#inspirations" data-pl="Inspiracje" data-en="Inspirations" data-ar="إلهام">Inspiracje</a>
+        <a href="doswiadczenie.html" data-pl="Doświadczenie" data-en="Experience" data-ar="تجربة">Doświadczenie</a>
+        <a href="index.html#cars" data-pl="Wynajem aut" data-en="Car Rental" data-ar="تأجير سيارات">Wynajem aut</a>
+        <a href="index.html#about" data-pl="O nas" data-en="About Us" data-ar="من نحن">O nas</a>
+        <a href="index.html#contact" data-pl="Kontakt" data-en="Contact" data-ar="اتصل بنا">Kontakt</a>
+    </nav>
+    <div class="nav-right">
+        <a href="tel:+48519692404" class="header-phone">+48 519 692 404</a>
+        <span class="lang-switch active" data-lang="pl" onclick="switchLang('pl')">PL</span>
+        <span class="lang-switch" data-lang="en" onclick="switchLang('en')">EN</span>
+        <span class="lang-switch" data-lang="ar" onclick="switchLang('ar')">AR</span>
+        <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('mob-open')"><span></span><span></span><span></span></div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1759306725469-ce04b6600540?w=1920&q=80&fit=crop" alt="Sala koncertowa — Konkurs Chopinowski">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+        <div class="page-hero-label" data-pl="Warszawa, Polska" data-en="Warsaw, Poland" data-ar="وارسو، بولندا">Warszawa, Polska</div>
+        <h1 class="page-hero-title" data-pl="Konkurs <em>Chopinowski</em>" data-en="Chopin <em>Competition</em>" data-ar="مسابقة <em>شوبان</em>">Konkurs <em>Chopinowski</em></h1>
+        <p class="page-hero-desc" data-pl="Najstarszy i najbardziej prestiżowy konkurs pianistyczny na świecie. Od 1927 roku Warszawa co pięć lat staje się światową stolicą muzyki fortepianowej." data-en="The oldest and most prestigious piano competition in the world. Since 1927, every five years Warsaw becomes the world capital of piano music." data-ar="أقدم وأعرق مسابقة بيانو في العالم. منذ عام 1927، تصبح وارسو كل خمس سنوات عاصمة العالم لموسيقى البيانو.">Najstarszy i najbardziej prestiżowy konkurs pianistyczny na świecie. Od 1927 roku Warszawa co pięć lat staje się światową stolicą muzyki fortepianowej.</p>
+    </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+    <div class="intro-inner reveal">
+        <div class="intro-img">
+            <img src="https://images.unsplash.com/photo-1650064175040-67d7e7fd77fb?w=800&q=80&fit=crop" alt="Fortepian" loading="lazy">
+        </div>
+        <div class="intro-text">
+            <div class="section-label" data-pl="Od 1927 roku" data-en="Since 1927" data-ar="منذ 1927">Od 1927 roku</div>
+            <h2 data-pl="Międzynarodowy Konkurs Pianistyczny im. <em>Fryderyka Chopina</em>" data-en="International <em>Fryderyk Chopin</em> Piano Competition" data-ar="مسابقة <em>فريدريك شوبان</em> الدولية للبيانو">Międzynarodowy Konkurs Pianistyczny im. <em>Fryderyka Chopina</em></h2>
+            <p data-pl="Konkurs Chopinowski to jedno z najważniejszych wydarzeń muzycznych na świecie — porównywany do Olimpiady muzyki klasycznej. Co pięć lat najzdolniejsi pianiści z całego globu przyjeżdżają do Warszawy, by zmierzyć się z dziedzictwem Fryderyka Chopina." data-en="The Chopin Competition is one of the world's most important musical events — compared to the Olympics of classical music. Every five years, the most talented pianists from around the globe come to Warsaw to engage with Fryderyk Chopin's legacy." data-ar="مسابقة شوبان هي واحدة من أهم الأحداث الموسيقية في العالم — تُقارن بأولمبياد الموسيقى الكلاسيكية. كل خمس سنوات، يأتي أكثر عازفي البيانو موهبة من جميع أنحاء العالم إلى وارسو.">Konkurs Chopinowski to jedno z najważniejszych wydarzeń muzycznych na świecie — porównywany do Olimpiady muzyki klasycznej. Co pięć lat najzdolniejsi pianiści z całego globu przyjeżdżają do Warszawy, by zmierzyć się z dziedzictwem Fryderyka Chopina.</p>
+            <p data-pl="Konkurs odbywa się w legendarnej Filharmonii Narodowej w Warszawie. Każdy uczestnik gra wyłącznie utwory Chopina na fortepianie Steinway. Trzy tygodnie przesłuchań, od eliminacji po wielki finał z orkiestrą — to spektakl, który elektryzuje melomanów na całym świecie." data-en="The competition takes place at the legendary Warsaw Philharmonic. Every contestant plays exclusively Chopin's works on a Steinway piano. Three weeks of auditions, from qualifiers to the grand finale with orchestra." data-ar="تُقام المسابقة في أوركسترا وارسو الفيلهارمونية الأسطورية. يعزف كل متسابق حصرياً أعمال شوبان على بيانو ستاينواي. ثلاثة أسابيع من الاختبارات، من التصفيات إلى النهائي الكبير مع الأوركسترا.">Konkurs odbywa się w legendarnej Filharmonii Narodowej w Warszawie. Każdy uczestnik gra wyłącznie utwory Chopina na fortepianie Steinway. Trzy tygodnie przesłuchań, od eliminacji po wielki finał z orkiestrą — to spektakl, który elektryzuje melomanów na całym świecie.</p>
+        </div>
+    </div>
+</section>
+
+<!-- KEY FACTS -->
+<section class="facts">
+    <div class="facts-grid reveal">
+        <div>
+            <div class="fact-num" data-pl="1927" data-en="1927" data-ar="١٩٢٧">1927</div>
+            <div class="fact-label" data-pl="Pierwsza edycja" data-en="First edition" data-ar="الطبعة الأولى">Pierwsza edycja</div>
+        </div>
+        <div>
+            <div class="fact-num" data-pl="500+" data-en="500+" data-ar="+٥٠٠">500+</div>
+            <div class="fact-label" data-pl="Kandydatów co edycję" data-en="Candidates per edition" data-ar="مرشح في كل دورة">Kandydatów co edycję</div>
+        </div>
+        <div>
+            <div class="fact-num" data-pl="co 5 lat" data-en="Every 5 years" data-ar="كل ٥ سنوات">co 5 lat</div>
+            <div class="fact-label" data-pl="Cykl konkursu" data-en="Competition cycle" data-ar="دورة المسابقة">Cykl konkursu</div>
+        </div>
+        <div>
+            <div class="fact-num" data-pl="3 tyg." data-en="3 weeks" data-ar="٣ أسابيع">3 tyg.</div>
+            <div class="fact-label" data-pl="Czas trwania" data-en="Duration" data-ar="المدة">Czas trwania</div>
+        </div>
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section">
+    <div class="section-header reveal">
+        <div class="section-label" data-pl="Zobacz i posłuchaj" data-en="Watch and listen" data-ar="شاهد واستمع">Zobacz i posłuchaj</div>
+        <h2 data-pl="Magia Konkursu <em>Chopinowskiego</em>" data-en="The magic of the <em>Chopin Competition</em>" data-ar="سحر مسابقة <em>شوبان</em>">Magia Konkursu <em>Chopinowskiego</em></h2>
+        <p data-pl="Poczuj atmosferę Konkursu Chopinowskiego — emocje, napięcie i piękno muzyki Chopina w wykonaniu najlepszych pianistów świata." data-en="Feel the atmosphere of the Chopin Competition — emotions, tension and the beauty of Chopin's music performed by the world's finest pianists." data-ar="اشعر بأجواء مسابقة شوبان — المشاعر والتوتر وجمال موسيقى شوبان بأداء أفضل عازفي البيانو في العالم.">Poczuj atmosferę Konkursu Chopinowskiego — emocje, napięcie i piękno muzyki Chopina w wykonaniu najlepszych pianistów świata.</p>
+    </div>
+    <div class="video-wrap reveal">
+        <iframe src="https://www.youtube.com/embed/QADFQm9bQ3I" title="Konkurs Chopinowski" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+</section>
+
+<!-- HISTORY -->
+<section class="history">
+    <div class="section-header reveal">
+        <div class="section-label" data-pl="Historia" data-en="History" data-ar="التاريخ">Historia</div>
+        <h2 data-pl="Prawie sto lat <em>tradycji</em>" data-en="Nearly a century of <em>tradition</em>" data-ar="ما يقرب من قرن من <em>التقاليد</em>">Prawie sto lat <em>tradycji</em></h2>
+    </div>
+    <div class="timeline reveal">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">1927</div>
+            <div class="timeline-content">
+                <h3>Pierwsza edycja</h3>
+                <p>Prof. Jerzy Żurawlew organizuje pierwszy Międzynarodowy Konkurs Pianistyczny im. Chopina. Zwycięża Lev Oborin z Rosji. Konkurs natychmiast zyskuje światowy rozgłos.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">1955</div>
+            <div class="timeline-content">
+                <h3>Złota era — Harasiewicz</h3>
+                <p>Adam Harasiewicz zdobywa I nagrodę, stając się legendą polskiej pianistyki. Konkurs przyciąga transmisje radiowe z całego świata i staje się najważniejszym wydarzeniem muzyki klasycznej.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">1975</div>
+            <div class="timeline-content">
+                <h3>Zimerman podbija świat</h3>
+                <p>19-letni Krystian Zimerman, dziś uważany za jednego z najwybitniejszych pianistów w historii, wygrywa Konkurs Chopinowski i rozpoczyna międzynarodową karierę.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021</div>
+            <div class="timeline-content">
+                <h3>Bruce Liu — nowa era</h3>
+                <p>Kanadyjczyk Bruce Liu wygrywa XVIII edycję Konkursu, a transmisje online przyciągają miliony widzów z całego świata. Konkurs Chopinowski wchodzi w erę cyfrową.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LAUREATES -->
+<section class="laureates">
+    <div class="section-header reveal">
+        <div class="section-label" data-pl="Laureaci" data-en="Laureates" data-ar="الفائزون">Laureaci</div>
+        <h2 data-pl="Wielcy zwycięzcy <em>Konkursu</em>" data-en="Great <em>Competition</em> winners" data-ar="الفائزون العظماء في <em>المسابقة</em>">Wielcy zwycięzcy <em>Konkursu</em></h2>
+    </div>
+    <div class="laureate-grid reveal">
+        <div class="laureate-card">
+            <div class="laureate-year">1965</div>
+            <div class="laureate-name">Martha Argerich</div>
+            <div class="laureate-country">Argentyna</div>
+        </div>
+        <div class="laureate-card">
+            <div class="laureate-year">1975</div>
+            <div class="laureate-name">Krystian Zimerman</div>
+            <div class="laureate-country">Polska</div>
+        </div>
+        <div class="laureate-card">
+            <div class="laureate-year">1980</div>
+            <div class="laureate-name">Đặng Thái Sơn</div>
+            <div class="laureate-country">Wietnam</div>
+        </div>
+        <div class="laureate-card">
+            <div class="laureate-year">2000</div>
+            <div class="laureate-name">Yundi Li</div>
+            <div class="laureate-country">Chiny</div>
+        </div>
+        <div class="laureate-card">
+            <div class="laureate-year">2015</div>
+            <div class="laureate-name">Seong-Jin Cho</div>
+            <div class="laureate-country">Korea Południowa</div>
+        </div>
+        <div class="laureate-card">
+            <div class="laureate-year">2021</div>
+            <div class="laureate-name">Bruce Liu</div>
+            <div class="laureate-country">Kanada</div>
+        </div>
+    </div>
+</section>
+
+<!-- ATTRACTIONS -->
+<section class="attractions">
+    <div class="section-header reveal">
+        <div class="section-label" data-pl="Chopin w Warszawie" data-en="Chopin in Warsaw" data-ar="شوبان في وارسو">Chopin w Warszawie</div>
+        <h2 data-pl="Śladami <em>Chopina</em>" data-en="In <em>Chopin's</em> footsteps" data-ar="على خطى <em>شوبان</em>">Śladami <em>Chopina</em></h2>
+        <p>Warszawa żyje muzyką Chopina przez cały rok — nie tylko podczas Konkursu.</p>
+    </div>
+
+    <div class="attr-grid reveal">
+        <div class="attr-card featured">
+            <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=1200&q=80&fit=crop" alt="Filharmonia Narodowa" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag" data-pl="Scena główna" data-en="Main stage" data-ar="المسرح الرئيسي">Scena główna</div>
+                <div class="attr-card-title" data-pl="Filharmonia Narodowa" data-en="National Philharmonic" data-ar="الفيلهارمونية الوطنية">Filharmonia Narodowa</div>
+                <div class="attr-card-desc">Siedziba Konkursu Chopinowskiego od 1955 roku. Wielka Sala Koncertowa na 1072 miejsca to jedno z najbardziej akustycznie doskonałych wnętrz koncertowych na świecie. Tu rodzą się muzyczne legendy.</div>
+                <div class="attr-card-meta">
+                    <span>ul. Jasna 5</span>
+                    <span>1072 miejsca</span>
+                    <span>Od 1901 r.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="attr-card">
+            <img src="https://images.unsplash.com/photo-1650064175040-67d7e7fd77fb?w=800&q=80&fit=crop" alt="Ławeczka Chopina" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag" data-pl="Łazienki Królewskie" data-en="Royal Łazienki" data-ar="لازينكي الملكية">Łazienki Królewskie</div>
+                <div class="attr-card-title" data-pl="Koncerty w Łazienkach" data-en="Concerts at Łazienki" data-ar="حفلات في لازينكي">Koncerty w Łazienkach</div>
+                <div class="attr-card-desc">Darmowe niedzielne koncerty chopinowskie w Parku Łazienkowskim od maja do września. Przy pomniku Chopina najlepsi pianiści grają pod gołym niebem — tradycja od 1959 roku.</div>
+            </div>
+        </div>
+
+        <div class="attr-card">
+            <img src="https://images.unsplash.com/photo-1696236530823-5e4a77176925?w=800&q=80&fit=crop" alt="Muzeum Chopina" loading="lazy">
+            <div class="attr-card-overlay"></div>
+            <div class="attr-card-content">
+                <div class="attr-card-tag" data-pl="Muzeum" data-en="Museum" data-ar="متحف">Muzeum</div>
+                <div class="attr-card-title" data-pl="Muzeum Fryderyka Chopina" data-en="Fryderyk Chopin Museum" data-ar="متحف فريدريك شوبان">Muzeum Fryderyka Chopina</div>
+                <div class="attr-card-desc">Nowoczesne, interaktywne muzeum w Pałacu Ostrogskich. Manuskrypty, listy, ostatni fortepian Chopina. Jedno z najbardziej zaawansowanych technologicznie muzeów muzycznych na świecie.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <img src="https://images.unsplash.com/photo-1519197924294-4ba991a11128?w=1920&q=80&fit=crop" alt="Warszawa nocą" loading="lazy">
+    <div class="cta-overlay"></div>
+    <div class="cta-content reveal">
+        <div class="section-label" data-pl="Zaplanuj wizytę" data-en="Plan Your Visit" data-ar="خطط لزيارتك">Zaplanuj wizytę</div>
+        <h2 data-pl="Przeżyj <em>Konkurs Chopinowski</em> z nami" data-en="Experience the <em>Chopin Competition</em> with us" data-ar="عش <em>مسابقة شوبان</em> معنا">Przeżyj <em>Konkurs Chopinowski</em> z nami</h2>
+        <p data-pl="Pozwól nam zorganizować Twoją wizytę na Konkursie Chopinowskim — bilety VIP na przesłuchania i finał, luksusowy hotel w centrum Warszawy, prywatne zwiedzanie miejsc związanych z Chopinem i kolacja w najlepszych restauracjach." data-en="Let us organize your visit to the Chopin Competition — VIP tickets to auditions and the finale, luxury hotel in central Warsaw, private tour of Chopin-related sites and dinner at the finest restaurants." data-ar="دعنا ننظم زيارتك إلى مسابقة شوبان — تذاكر كبار الشخصيات للاختبارات والنهائي، فندق فاخر في وسط وارسو، جولة خاصة في الأماكن المرتبطة بشوبان وعشاء في أرقى المطاعم.">Pozwól nam zorganizować Twoją wizytę na Konkursie Chopinowskim — bilety VIP na przesłuchania i finał, luksusowy hotel w centrum Warszawy, prywatne zwiedzanie miejsc związanych z Chopinem i kolacja w najlepszych restauracjach.</p>
+        <a href="index.html#contact" class="cta-btn" data-pl="Skontaktuj się z nami" data-en="Contact us" data-ar="اتصل بنا">Skontaktuj się z nami</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">NOHA TRAVEL</div>
+        <div class="footer-links">
+            <a href="index.html">Strona główna</a>
+            <a href="index.html#destinations" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
+            <a href="doswiadczenie.html" data-pl="Doświadczenie" data-en="Experience" data-ar="تجربة">Doświadczenie</a>
+            <a href="index.html#contact" data-pl="Kontakt" data-en="Contact" data-ar="اتصل بنا">Kontakt</a>
+        </div>
+        <div class="footer-social"><a href="https://www.instagram.com/mypolishgetaway" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a><a href="https://www.tiktok.com/@mypolishgetaway" target="_blank" rel="noopener" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.73a8.19 8.19 0 004.76 1.52V6.8a4.84 4.84 0 01-1-.11z"/></svg></a><a href="https://wa.me/48519692404" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.625-1.47A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-2.115 0-4.09-.652-5.716-1.764l-.41-.243-2.742.872.871-2.692-.27-.427A9.709 9.709 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg></a></div>
+        <div class="footer-copy">&copy; 2026 Noha Travel. Wszelkie prawa zastrzeżone.</div>
+    </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/48519692404" target="_blank" style="position:fixed;bottom:2rem;right:2rem;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,.2);z-index:999;transition:transform .3s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.319 0-4.476-.673-6.303-1.833l-.452-.276-3.148 1.055 1.055-3.148-.276-.452A9.96 9.96 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+</a>
+
+<script>
+// Scroll reveal
+const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+}, {threshold: 0.15});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+window.scrollTo(0, 0);
+</script>
+
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/48519692404?text=Dzień%20dobry!%20Chciałbym%20zapytać%20o%20ofertę%20Noha%20Travel" target="_blank" rel="noopener" class="whatsapp-button" aria-label="Kontakt WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a5.505 5.505 0 00-5.487 5.505c0 1.416.356 2.786.997 3.973L3.957 21l4.8-1.257c1.164.639 2.487 1.01 3.822 1.01h.004A5.507 5.507 0 0018.35 15.494 5.505 5.505 0 0012.051 6.979"/>
+    </svg>
+</a>
+
+<script>
+let currentLang='pl';
+function switchLang(lang){
+  currentLang=lang;
+  const html=document.documentElement;
+  html.lang=lang;
+  html.dir=lang==='ar'?'rtl':'ltr';
+  document.querySelectorAll('[data-'+lang+']').forEach(el=>{
+    const val=el.getAttribute('data-'+lang);
+    if(val){
+      if(el.tagName==='INPUT'||el.tagName==='TEXTAREA'){el.placeholder=val}
+      else{el.textContent=val}
+    }
+  });
+  document.querySelectorAll('.lang-switch').forEach(s=>{
+    s.classList.toggle('active',s.getAttribute('data-lang')===lang);
+  });
+}
+</script>
+
+</body>
+</html>
