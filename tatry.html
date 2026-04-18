@@ -214,7 +214,7 @@
 <header>
     <a href="index.html" class="logo-wrap">
         <svg class="logo-svg" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="26" stroke="#c9a96e" stroke-width="0.8"/><polygon points="30,5 33,28 30,22 27,28" fill="#c9a96e"/><polygon points="30,55 27,32 30,38 33,32" fill="#c9a96e" opacity="0.35"/><line x1="30" y1="62" x2="30" y2="75" stroke="#c9a96e" stroke-width="0.5"/></svg>
-        <div class="logo" data-pl="NOHA TRAVEL" data-en="NOHA TRAVEL" data-ar="Noha Travel">NOHA TRAVEL<span class="logo-sub" data-pl="LUXURY TRAVEL IN POLAND" data-en="LUXURY TRAVEL IN POLAND" data-ar="الرحلات الفاخرة في بولندا">LUXURY TRAVEL IN POLAND</span></div>
+        <div class="logo">NOHA TRAVEL<span class="logo-sub" data-pl="LUXURY TRAVEL IN POLAND" data-en="LUXURY TRAVEL IN POLAND" data-ar="الرحلات الفاخرة في بولندا">LUXURY TRAVEL IN POLAND</span></div>
     </a>
     <nav>
         <a href="index.html#destinations" class="active-nav" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
@@ -239,7 +239,7 @@
     <div class="page-hero-overlay"></div>
     <div class="page-hero-content">
         <div class="page-hero-label" data-pl="Góry — Alpejska Perła Polski" data-en="Mountains — Alpine Pearl of Poland" data-ar="الجبال — الجوهرة الألبية لبولندا">Góry — Alpejska Perła Polski</div>
-        <h1 class="page-hero-title">Odkryj<br><em>Tatry</em></h1>
+        <h1 class="page-hero-title" data-pl="Odkryj<br><em>Tatry</em>" data-en="Discover<br><em>Tatras</em>" data-ar="اكتشف<br><em>جبال تاترا</em>">Odkryj<br><em>Tatry</em></h1>
         <p class="page-hero-desc">Najmniejszy łańcuch gór alpejskich w Europie, otoczony Tatrzańskim Parkiem Narodowym. Tatry to ikoniczne szczyty, szmaragdowe jeziora, wymagające szlaki i niezapomniane widoki.</p>
     </div>
 </section>
@@ -488,7 +488,7 @@ function switchLang(lang){
     const val=el.getAttribute('data-'+lang);
     if(val){
       if(el.tagName==='INPUT'||el.tagName==='TEXTAREA'){el.placeholder=val}
-      else{el.textContent=val}
+      else{el.innerHTML=val}
     }
   });
   document.querySelectorAll('.lang-switch').forEach(s=>{

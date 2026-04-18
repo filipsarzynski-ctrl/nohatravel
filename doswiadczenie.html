@@ -231,7 +231,7 @@
 <header>
     <a href="index.html" class="logo-wrap">
         <svg class="logo-svg" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="26" stroke="#c9a96e" stroke-width="0.8"/><polygon points="30,5 33,28 30,22 27,28" fill="#c9a96e"/><polygon points="30,55 27,32 30,38 33,32" fill="#c9a96e" opacity="0.35"/><line x1="30" y1="62" x2="30" y2="75" stroke="#c9a96e" stroke-width="0.5"/></svg>
-        <div class="logo" data-pl="NOHA TRAVEL" data-en="NOHA TRAVEL" data-ar="Noha Travel">NOHA TRAVEL<span class="logo-sub" data-pl="LUXURY TRAVEL IN POLAND" data-en="LUXURY TRAVEL IN POLAND" data-ar="الرحلات الفاخرة في بولندا">LUXURY TRAVEL IN POLAND</span></div>
+        <div class="logo">NOHA TRAVEL<span class="logo-sub" data-pl="LUXURY TRAVEL IN POLAND" data-en="LUXURY TRAVEL IN POLAND" data-ar="الرحلات الفاخرة في بولندا">LUXURY TRAVEL IN POLAND</span></div>
     </a>
     <nav>
         <a href="index.html#destinations" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
@@ -256,7 +256,7 @@
     <div class="page-hero-overlay"></div>
     <div class="page-hero-content">
         <div class="page-hero-label" data-pl="Noha Travel — Doświadczenie" data-en="Noha Travel — Experiences" data-ar="Noha Travel — التجارب">Noha Travel — Doświadczenie</div>
-        <h1 class="page-hero-title">Przeżycia, które<br><em>zbliżają ludzi</em></h1>
+        <h1 class="page-hero-title" data-pl="Przeżycia, które<br><em>zbliżają ludzi</em>" data-en="Experiences that<br><em>bring people together</em>" data-ar="تجارب<br><em>تُقرّب الناس</em>">Przeżycia, które<br><em>zbliżają ludzi</em></h1>
         <p class="page-hero-desc">Krótkie, 3-4 dniowe wyjazdy w kameralnych grupach do 10 osób. Niecodzienne aktywności prowadzone przez najlepszych ekspertów w Polsce. Buduj relacje przez wspólne przygody.</p>
     </div>
 </section>
@@ -816,7 +816,7 @@ function switchLang(lang){
     const val=el.getAttribute('data-'+lang);
     if(val){
       if(el.tagName==='INPUT'||el.tagName==='TEXTAREA'){el.placeholder=val}
-      else{el.textContent=val}
+      else{el.innerHTML=val}
     }
   });
   document.querySelectorAll('.lang-switch').forEach(s=>{

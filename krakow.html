@@ -239,7 +239,7 @@
     <div class="page-hero-overlay"></div>
     <div class="page-hero-content">
         <div class="page-hero-label" data-pl="Małopolska — Królewskie Miasto" data-en="Małopolska — Royal City" data-ar="ماوبولسكا — مدينة ملكية">Małopolska — Królewskie Miasto</div>
-        <h1 class="page-hero-title">Odkryj<br><em>Kraków</em></h1>
+        <h1 class="page-hero-title" data-pl="Odkryj<br><em>Kraków</em>" data-en="Discover<br><em>Kraków</em>" data-ar="اكتشف<br><em>كراكوف</em>">Odkryj<br><em>Kraków</em></h1>
         <p class="page-hero-desc" data-pl="Stołica Polski przez siedem wieków, UNESCO światowe dziedzictwo kultury, pełne zabytkowych kamienic, kościołów i autorskich restauracji. Kraków to serce Małopolski — miasto, które oddycha sztuką, historią i szampanią." data-en="The capital of Poland for seven centuries, a UNESCO World Heritage site, filled with historic townhouses, churches, and acclaimed restaurants. Kraków is the heart of Małopolska — a city that breathes art, history, and elegance." data-ar="عاصمة بولندا لسبعة قرون، موقع تراث عالمي لليونسكو، مليء بالمباني التاريخية والكنائس والمطاعم المعروفة. كراكوف هو قلب ماوبولسكا — مدينة تنبض بالفن والتاريخ والأناقة.">Stołica Polski przez siedem wieków, UNESCO światowe dziedzictwo kultury, pełne zabytkowych kamienic, kościołów i autorskich restauracji. Kraków to serce Małopolski — miasto, które oddycha sztuką, historią i szampanią.</p>
     </div>
 </section>
@@ -488,7 +488,7 @@ function switchLang(lang){
     const val=el.getAttribute('data-'+lang);
     if(val){
       if(el.tagName==='INPUT'||el.tagName==='TEXTAREA'){el.placeholder=val}
-      else{el.textContent=val}
+      else{el.innerHTML=val}
     }
   });
   document.querySelectorAll('.lang-switch').forEach(s=>{
