@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl" dir="ltr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -231,7 +231,7 @@
 <header>
     <a href="index.html" class="logo-wrap">
         <svg class="logo-svg" viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="26" stroke="#c9a96e" stroke-width="0.8"/><polygon points="30,5 33,28 30,22 27,28" fill="#c9a96e"/><polygon points="30,55 27,32 30,38 33,32" fill="#c9a96e" opacity="0.35"/><line x1="30" y1="62" x2="30" y2="75" stroke="#c9a96e" stroke-width="0.5"/></svg>
-        <div class="logo" data-pl="NOHA TRAVEL" data-en="NOHA TRAVEL" data-ar="نهى تور">NOHA TRAVEL<span class="logo-sub" data-pl="LUXURY TRAVEL IN POLAND" data-en="LUXURY TRAVEL IN POLAND" data-ar="الرحلات الفاخرة في بولندا">LUXURY TRAVEL IN POLAND</span></div>
+        <div class="logo" data-pl="NOHA TRAVEL" data-en="NOHA TRAVEL" data-ar="Noha Travel">NOHA TRAVEL<span class="logo-sub" data-pl="LUXURY TRAVEL IN POLAND" data-en="LUXURY TRAVEL IN POLAND" data-ar="الرحلات الفاخرة في بولندا">LUXURY TRAVEL IN POLAND</span></div>
     </a>
     <nav>
         <a href="index.html#destinations" data-pl="Kierunki" data-en="Destinations" data-ar="الوجهات">Kierunki</a>
@@ -243,9 +243,9 @@
     </nav>
     <div class="nav-right">
         <a href="tel:+48519692404" class="header-phone">+48 519 692 404</a>
-        <span class="lang-switch active" data-lang="pl" onclick="switchLang('pl')">PL</span>
+        <span class="lang-switch" data-lang="pl" onclick="switchLang('pl')">PL</span>
         <span class="lang-switch" data-lang="en" onclick="switchLang('en')">EN</span>
-        <span class="lang-switch" data-lang="ar" onclick="switchLang('ar')">AR</span>
+        <span class="lang-switch active" data-lang="ar" onclick="switchLang('ar')">AR</span>
         <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('mob-open')"><span></span><span></span><span></span></div>
     </div>
 </header>
@@ -255,7 +255,7 @@
     <img src="https://images.unsplash.com/photo-1483634831823-4fb19cf47c3a?w=1920&q=80&fit=crop" alt="Przyjaciele na przygodzie">
     <div class="page-hero-overlay"></div>
     <div class="page-hero-content">
-        <div class="page-hero-label" data-pl="Noha Travel — Doświadczenie" data-en="Noha Travel — Experiences" data-ar="نهى تور — التجارب">Noha Travel — Doświadczenie</div>
+        <div class="page-hero-label" data-pl="Noha Travel — Doświadczenie" data-en="Noha Travel — Experiences" data-ar="Noha Travel — التجارب">Noha Travel — Doświadczenie</div>
         <h1 class="page-hero-title">Przeżycia, które<br><em>zbliżają ludzi</em></h1>
         <p class="page-hero-desc">Krótkie, 3-4 dniowe wyjazdy w kameralnych grupach do 10 osób. Niecodzienne aktywności prowadzone przez najlepszych ekspertów w Polsce. Buduj relacje przez wspólne przygody.</p>
     </div>
@@ -799,14 +799,14 @@ document.getElementById('downhillGallery').addEventListener('click', (e) => {
 
 
 <!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/48519692404?text=Dzień%20dobry!%20Chciałbym%20zapytać%20o%20ofertę%20Noha%20Travel" target="_blank" rel="noopener" class="whatsapp-button" aria-label="Kontakt WhatsApp">
+<a href="https://wa.me/48519692404?text=Dzień%20dobry!%20Chciałbym%20zapytać%20o%20ofertę%20Noha%20Travel" target="_blank" rel="noopener" class="whatsapp-button" aria-label="Kontakt WhatsApp" data-wa-pl="Dzień dobry! Chciałbym zapytać o ofertę Noha Travel" data-wa-en="Hello! I would like to inquire about Noha Travel offers" data-wa-ar="مرحباً! أود الاستفسار عن عروض Noha Travel">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a5.505 5.505 0 00-5.487 5.505c0 1.416.356 2.786.997 3.973L3.957 21l4.8-1.257c1.164.639 2.487 1.01 3.822 1.01h.004A5.507 5.507 0 0018.35 15.494 5.505 5.505 0 0012.051 6.979"/>
     </svg>
 </a>
 
 <script>
-let currentLang='pl';
+let currentLang='ar';
 function switchLang(lang){
   currentLang=lang;
   const html=document.documentElement;
@@ -825,5 +825,6 @@ function switchLang(lang){
 }
 </script>
 
+<script>(function(){var initLang=document.documentElement.lang||"ar";function updateWA(lang){var link=document.querySelector(".whatsapp-button");if(!link)return;var msg=link.getAttribute("data-wa-"+lang)||link.getAttribute("data-wa-pl")||"";if(msg)link.href="https://wa.me/48519692404?text="+encodeURIComponent(msg);}if(typeof window.switchLang==="function"){var _s=window.switchLang;window.switchLang=function(lang){_s(lang);updateWA(lang);};switchLang(initLang);}else if(typeof window.switchLanguage==="function"){var _s=window.switchLanguage;window.switchLanguage=function(lang){_s(lang);updateWA(lang);};updateWA(initLang);}else{updateWA(initLang);}})();</script>
 </body>
 </html>
